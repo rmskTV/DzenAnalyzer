@@ -28,7 +28,7 @@
             <td>{{ d.title.slice(0, 70) }}</td>
             <td>{{ d.headline_pattern }}</td>
             <td><span :class="'badge st-' + d.status">{{ d.status }}</span></td>
-            <td>{{ d.result_vpd ? d.result_vpd + ' vpd' : '' }}</td>
+            <td>{{ d.result_views ? Number(d.result_views).toLocaleString('ru-RU') : '' }}</td>
           </tr>
         </tbody>
       </table>

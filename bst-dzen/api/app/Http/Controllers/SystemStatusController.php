@@ -7,6 +7,7 @@ use App\Models\EventCluster;
 use App\Models\OwnPublication;
 use App\Models\Post;
 use App\Models\PostSnapshot;
+use App\Models\Setting;
 use App\Models\SourceMaterial;
 use App\Services\LLM\LlmClient;
 use Illuminate\Http\JsonResponse;
@@ -44,7 +45,7 @@ class SystemStatusController extends Controller
                 ]),
             'ingest' => [
                 'parsers_configured' => count(array_filter(
-                    (array) (\App\Models\Setting::where('key', 'parsers')->value('value') ?? []),
+                    (array) (Setting::where('key', 'parsers')->value('value') ?? []),
                     fn ($p) => ($p['active'] ?? false) && ! empty($p['url']),
                 )),
                 'materials_total' => SourceMaterial::count(),
@@ -60,7 +61,7 @@ class SystemStatusController extends Controller
                     ->pluck('n', 'status'),
                 'generated_today' => OwnPublication::whereDate('created_at', today())->count(),
                 'queued_in_feed' => OwnPublication::where('status', 'queued')->count(),
-                'tracked_results' => OwnPublication::whereNotNull('result_vpd')->count(),
+                'tracked_results' => OwnPublication::whereNotNull('result_views')->count(),
             ],
             'llm' => [
                 'configured' => $llm->isConfigured(),
@@ -102,14 +103,14 @@ class SystemStatusController extends Controller
     private function schedule(): array
     {
         return [
-            ['command' => 'dzen:collect', 'utc' => '22:00', 'irk' => '06:00'],
-            ['command' => 'dzen:ingest', 'utc' => '22:10', 'irk' => '06:10'],
-            ['command' => 'dzen:classify', 'utc' => '22:15', 'irk' => '06:15'],
-            ['command' => 'dzen:events', 'utc' => '22:18', 'irk' => '06:18'],
-            ['command' => 'dzen:generate', 'utc' => '22:20', 'irk' => '06:20'],
-            ['command' => 'dzen:publish', 'utc' => '23:00', 'irk' => '07:00'],
-            ['command' => 'dzen:track', 'utc' => '23:30', 'irk' => '07:30'],
-            ['command' => 'dzen:rules (вс)', 'utc' => '01:00', 'irk' => '09:00'],
+            ['command' => 'dzen:collect', 'utc' => '22:00', 'irk' => '06:00', 'desc' => 'сбор постов каналов + снапшоты просмотров'],
+            ['command' => 'dzen:ingest', 'utc' => '22:10', 'irk' => '06:10', 'desc' => 'забор материалов с внешних парсеров'],
+            ['command' => 'dzen:classify', 'utc' => '22:15', 'irk' => '06:15', 'desc' => 'рубрики/форматы новым постам (LLM)'],
+            ['command' => 'dzen:events', 'utc' => '22:18', 'irk' => '06:18', 'desc' => 'пересборка кластеров событий (дуэли, покрытие)'],
+            ['command' => 'dzen:generate', 'utc' => '22:20', 'irk' => '06:20', 'desc' => 'черновики: evergreen-сетка + рерайты материалов'],
+            ['command' => 'dzen:publish', 'utc' => '23:00', 'irk' => '07:00', 'desc' => 'постановка одобренных публикаций в RSS-очередь'],
+            ['command' => 'dzen:track', 'utc' => '23:30', 'irk' => '07:30', 'desc' => 'связка публикаций с постами Дзена, фиксация результатов'],
+            ['command' => 'dzen:rules (вс)', 'utc' => '01:00', 'irk' => '09:00', 'desc' => 'предложение новой версии правил рерайта (LLM)'],
         ];
     }
 }

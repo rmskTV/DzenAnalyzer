@@ -27,7 +27,7 @@ docker-compose: nginx (порт **8090**), app (php-fpm 8.4, Laravel 13), queue,
 - `dzen:classify [--days=3] [--force]` (батчи по 20, JSON-режим). Всё окно переклассифицировано: **0 постов без рубрики**
 
 ### Аналитика
-- `MetricsService` → `GET /api/competitive?own=<id>&days=21`: скоуп = own + его конкуренты; benchmark, `length`/`length_set` (интервалы времени чтения, без отбрасываний), `formats` (n + медиана vpd по форматам), `publish_grid` (7×24 в таймзоне канала), `dynamics`
+- `MetricsService` → `GET /api/competitive?own=<id>&days=21`: скоуп = own + его конкуренты; benchmark, `length`/`length_set` (интервалы времени чтения, без отбрасываний), `formats` (n + медиана просмотров по форматам), `publish_grid` (7×24 в таймзоне канала), `dynamics`. Охватная метрика — сырые просмотры созревших постов (прожили в паблике ≥ 16 ч, `Post::MATURITY_HOURS`); объёмные метрики — по всем постам
 - `EventClusterer` (`dzen:events [--days=21]`) — порт python-кластеризации: токенный Жаккар ≥ 0.3, окно ±48 ч, scope на own-канал; `GET /api/events?own=` — покрытие/скорость/дуэли
 
 ### Контент
@@ -41,7 +41,7 @@ docker-compose: nginx (порт **8090**), app (php-fpm 8.4, Laravel 13), queue,
 - `dzen:publish` — режимы `publish/draft/hold` по `source_type` из settings `publish_modes`; лимит `content.max_per_day`; режим publish требует статуса `approved`
 
 ### Фидбек
-- `dzen:track` — связка очереди с постами Дзена (Жаккар заголовков ≥ 0.5), `result_vpd`, статус → published
+- `dzen:track` — связка очереди с постами Дзена (Жаккар заголовков ≥ 0.5), статус → published; фиксация `result_views` (просмотры поста после 16 ч жизни, однократно)
 - `dzen:rules` (воскресенье) — LLM предлагает версию правил по win-rate'ам приёмов заголовков (нужно ≥5 результатов); активация вручную на экране «Правила»
 
 ### SPA (6 экранов, Vue 3 + Vite + Chart.js)

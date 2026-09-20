@@ -76,6 +76,7 @@
             <tr v-for="row in s.schedule" :key="row.command">
               <td><code>{{ row.command }}</code></td>
               <td class="muted">{{ row.irk }} Ирк ({{ row.utc }} UTC)</td>
+              <td class="muted">{{ row.desc }}</td>
             </tr>
           </table>
         </div>

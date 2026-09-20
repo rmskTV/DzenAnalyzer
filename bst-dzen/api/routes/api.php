@@ -6,6 +6,7 @@ use App\Http\Controllers\DraftController;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\RuleController;
 use App\Http\Controllers\SettingController;
+use App\Http\Controllers\SystemStatusController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/health', fn () => response()->json([
@@ -13,12 +14,13 @@ Route::get('/health', fn () => response()->json([
     'time' => now()->toIso8601String(),
 ]));
 
-Route::get('/system-status', \App\Http\Controllers\SystemStatusController::class);
+Route::get('/system-status', SystemStatusController::class);
 Route::get('/competitive', [DashboardController::class, 'index']);
 Route::get('/events', [EventController::class, 'index']);
 
 Route::apiResource('channels', ChannelController::class)->only(['index', 'update']);
 Route::get('/channels/{channel}/posts', [ChannelController::class, 'posts']);
+Route::get('/channels/{channel}/posts/filters', [ChannelController::class, 'postFilters']);
 Route::get('/channels/{channel}/stats', [ChannelController::class, 'stats']);
 
 Route::get('/drafts', [DraftController::class, 'index']);

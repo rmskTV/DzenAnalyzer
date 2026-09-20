@@ -5,10 +5,10 @@
     <div class="card">
       <h3>Win-rate приёмов заголовков (наши опубликованные посты)</h3>
       <table v-if="patternStats.length">
-        <thead><tr><th>Приём</th><th>Постов</th><th>Медиана vpd</th><th>Максимум</th></tr></thead>
+        <thead><tr><th>Приём</th><th>Постов</th><th>Медиана просмотров (16ч+)</th><th>Максимум</th></tr></thead>
         <tbody>
           <tr v-for="p in patternStats" :key="p.pattern">
-            <td>{{ p.pattern }}</td><td>{{ p.n }}</td><td>{{ p.median_vpd }}</td><td>{{ p.max_vpd }}</td>
+            <td>{{ p.pattern }}</td><td>{{ p.n }}</td><td>{{ p.median_views }}</td><td>{{ p.max_views }}</td>
           </tr>
         </tbody>
       </table>

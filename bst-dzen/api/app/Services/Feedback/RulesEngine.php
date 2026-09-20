@@ -5,7 +5,6 @@ namespace App\Services\Feedback;
 use App\Models\OwnPublication;
 use App\Models\RuleVersion;
 use App\Services\LLM\LlmClient;
-use Illuminate\Support\Collection;
 
 /**
  * Движок правил рерайта: еженедельная выжимка статистики ->
@@ -13,13 +12,11 @@ use Illuminate\Support\Collection;
  */
 class RulesEngine
 {
-    public function __construct(private readonly LlmClient $llm)
-    {
-    }
+    public function __construct(private readonly LlmClient $llm) {}
 
     public function proposeGlobal(): ?RuleVersion
     {
-        $published = OwnPublication::whereNotNull('result_vpd')->orderByDesc('result_vpd')->get();
+        $published = OwnPublication::whereNotNull('result_views')->orderByDesc('result_views')->get();
 
         if ($published->count() < 5) {
             return null; // недостаточно данных для обучения
@@ -32,10 +29,10 @@ class RulesEngine
         $context = [
             'win_rate_patternов' => $patterns,
             'топ-5_наших_постов' => $published->take(5)->map(fn ($p) => [
-                'title' => $p->title, 'vpd' => $p->result_vpd, 'pattern' => $p->headline_pattern,
+                'title' => $p->title, 'views' => $p->result_views, 'pattern' => $p->headline_pattern,
             ])->values(),
             'худшие-5' => $published->reverse()->take(5)->map(fn ($p) => [
-                'title' => $p->title, 'vpd' => $p->result_vpd, 'pattern' => $p->headline_pattern,
+                'title' => $p->title, 'views' => $p->result_views, 'pattern' => $p->headline_pattern,
             ])->values(),
         ];
 
@@ -44,9 +41,10 @@ class RulesEngine
         $result = $this->llm->chatJson('rules', [
             ['role' => 'system', 'content' => <<<'TXT'
             Ты оптимизируешь правила рерайта постов для дзен-канала. На вход — статистика
-            приёмов заголовков (median_vpd — просмотры за день жизни поста) и лучшие/худшие посты,
-            текущие правила. Предложи обновлённый набор правил рерайта (3-8 конкретных пунктов,
-            приоритизированных). Правила должны быть проверяемыми и адресовать найденные паттерны.
+            приёмов заголовков (median_views — просмотры поста, прожившего в паблике не менее 16 ч)
+            и лучшие/худшие посты, текущие правила. Предложи обновлённый набор правил рерайта
+            (3-8 конкретных пунктов, приоритизированных). Правила должны быть проверяемыми
+            и адресовать найденные паттерны.
             Верни JSON: {"title": "версия от <дата>", "content": "markdown-правила",
             "summary": "что изменил и почему (2-4 предложения)"}
             TXT],
@@ -59,7 +57,7 @@ class RulesEngine
         return RuleVersion::create([
             'own_channel_id' => null,
             'layer' => 'global',
-            'title' => (string) ($result['title'] ?? 'Версия от ' . now()->toDateString()),
+            'title' => (string) ($result['title'] ?? 'Версия от '.now()->toDateString()),
             'content' => (string) ($result['content'] ?? ''),
             'summary' => (string) ($result['summary'] ?? ''),
             'is_active' => false,

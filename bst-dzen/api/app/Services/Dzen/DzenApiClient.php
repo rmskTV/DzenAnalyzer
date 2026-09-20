@@ -15,13 +15,15 @@ use Illuminate\Support\Facades\Http;
  *
  * Сессии/CSRF не требуются: GET-запросы проверяются без токенов
  * (проверено серийной эксплуатацией python-прототипа).
+ * Важно: next_page_id обязателен и на первой странице (синтетический
+ * курсор), без него API отвечает пустым набором.
  */
 class DzenApiClient
 {
     public const API_URL = 'https://dzen.ru/api/web/v1/channel-more';
 
     private const UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 '
-        . '(KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36';
+        .'(KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36';
 
     private const BASE_PARAMS = [
         'sort_type' => 'regular',

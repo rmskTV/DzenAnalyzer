@@ -13,9 +13,9 @@
     <template v-else>
       <div class="kpis">
         <div class="card kpi">
-          <div class="kpi-label">Медиана vpd</div>
-          <div class="kpi-value">{{ compOwn?.vpd_median ?? '—' }}</div>
-          <div class="muted">лучший конкурент: {{ best('vpd_median')?.vpd_median ?? '—' }} ({{ best('vpd_median')?.title ?? '—' }})</div>
+          <div class="kpi-label">Медиана просмотров (16ч+)</div>
+          <div class="kpi-value">{{ compOwn?.views_median ?? '—' }}</div>
+          <div class="muted">лучший конкурент: {{ best('views_median')?.views_median ?? '—' }} ({{ best('views_median')?.title ?? '—' }})</div>
         </div>
         <div class="card kpi">
           <div class="kpi-label">Вовлечённость, комм/1000</div>
@@ -36,8 +36,8 @@
 
       <div class="grid2">
         <div class="card">
-          <h3>Охваты: медиана просмотров/день (лог)</h3>
-          <canvas ref="vpdChart"></canvas>
+          <h3>Охваты: медиана просмотров (лог)</h3>
+          <canvas ref="viewsChart"></canvas>
         </div>
         <div class="card">
           <h3>Динамика публикаций (шт/день)</h3>
@@ -131,12 +131,12 @@
             <span class="muted">{{ fmtDate(d.first_published_at) }}</span>
           </div>
           <div class="post">
-            <b>Мы</b> ({{ d.own.delay_min === 0 ? 'первый' : '+' + d.own.delay_min + ' мин' }}, {{ d.own.vpd }} vpd):
+            <b>Мы</b> ({{ d.own.delay_min === 0 ? 'первый' : '+' + d.own.delay_min + ' мин' }}, {{ fmtViews(d.own.views) }}):
             <a v-if="d.own.url" :href="d.own.url" target="_blank">{{ d.own.title }}</a>
             <template v-else>{{ d.own.title }}</template>
           </div>
           <div v-if="d.best" class="post">
-            <b>{{ d.best.channel }}</b> ({{ d.best.delay_min === 0 ? 'первый' : '+' + d.best.delay_min + ' мин' }}, {{ d.best.vpd }} vpd):
+            <b>{{ d.best.channel }}</b> ({{ d.best.delay_min === 0 ? 'первый' : '+' + d.best.delay_min + ' мин' }}, {{ fmtViews(d.best.views) }}):
             <a v-if="d.best.url" :href="d.best.url" target="_blank">{{ d.best.title }}</a>
             <template v-else>{{ d.best.title }}</template>
           </div>
@@ -144,24 +144,42 @@
       </div>
 
       <div class="card">
-        <h3>Топ постов каналов набора (включая наш)</h3>
-        <select v-model="selectedCompetitor" class="own-switch">
-          <option v-for="c in topChannelsList" :key="c.channel_id" :value="c.channel_id">
-            {{ c.is_own ? '★ ' : '' }}{{ c.title }}
-          </option>
-        </select>
-        <table v-if="topPosts.length" style="margin-top:12px">
-          <thead><tr><th>Дата</th><th>Заголовок</th><th>Рубрика</th><th>Просмотры</th></tr></thead>
+        <div class="card-head">
+          <h3>Топ постов каналов набора (включая наш)</h3>
+          <div class="filters">
+            <select v-model="selectedCompetitor" class="own-switch">
+              <option v-for="c in topChannelsList" :key="c.channel_id" :value="c.channel_id">
+                {{ c.is_own ? '★ ' : '' }}{{ c.title }}
+              </option>
+            </select>
+            <select v-model="topFormat" class="own-switch">
+              <option value="">Все форматы</option>
+              <option v-for="f in topFilters.formats" :key="f.name" :value="f.name">
+                {{ f.name }} ({{ f.n }})
+              </option>
+            </select>
+            <select v-model="topRubric" class="own-switch">
+              <option value="">Все рубрики</option>
+              <option v-for="r in topFilters.rubrics" :key="r.name" :value="r.name">
+                {{ r.name }} ({{ r.n }})
+              </option>
+            </select>
+          </div>
+        </div>
+        <table v-if="topPosts.length">
+          <thead><tr><th>Дата</th><th>Заголовок</th><th>Рубрика</th><th>Формат</th><th>Просмотры</th></tr></thead>
           <tbody>
             <tr v-for="p in topPosts" :key="p.id">
               <td>{{ p.published_at?.slice(0, 10) }}</td>
               <td class="wrap"><a v-if="p.url" :href="p.url" target="_blank">{{ p.title }}</a>
                 <template v-else>{{ p.title }}</template></td>
               <td>{{ p.rubric || '—' }}</td>
+              <td>{{ p.content_format || '—' }}</td>
               <td>{{ p.views }}</td>
             </tr>
           </tbody>
         </table>
+        <p v-else class="muted">Нет постов по выбранным фильтрам.</p>
       </div>
     </template>
   </div>
@@ -179,7 +197,7 @@ const ev = ref(null)
 const loading = ref(true)
 const error = ref(null)
 
-const vpdChart = ref(null)
+const viewsChart = ref(null)
 const dynamicsChart = ref(null)
 const formatChart = ref(null)
 const engagementChart = ref(null)
@@ -193,6 +211,9 @@ const heatTarget = ref('set')
 
 const selectedCompetitor = ref(null)
 const topPosts = ref([])
+const topFilters = ref({ rubrics: [], formats: [] })
+const topFormat = ref('')
+const topRubric = ref('')
 
 const compChannels = computed(() => competitive.value?.channels ?? [])
 const compOwn = computed(() => compChannels.value.find((c) => c.is_own) ?? null)
@@ -220,6 +241,10 @@ function best(key) {
 
 function fmtDate(iso) {
   return iso?.slice(0, 16).replace('T', ' ') ?? ''
+}
+
+function fmtViews(v) {
+  return Number(v ?? 0).toLocaleString('ru-RU')
 }
 
 const PALETTE = ['#e74c3c', '#3498db', '#2ecc71', '#f39c12', '#9b59b6', '#1abc9c']
@@ -250,15 +275,15 @@ async function loadAll() {
 function renderCharts() {
   charts.forEach((c) => c?.destroy())
   charts.length = 0
-  if (!competitive.value || !vpdChart.value) return
+  if (!competitive.value || !viewsChart.value) return
 
   const channels = competitive.value.channels
 
-  charts.push(new Chart(vpdChart.value, {
+  charts.push(new Chart(viewsChart.value, {
     type: 'bar',
     data: {
       labels: channels.map((c) => (c.is_own ? '★ ' : '') + c.title.slice(0, 14)),
-      datasets: [{ data: channels.map((c) => Math.max(c.vpd_median, 0.05)), backgroundColor: channels.map((c) => (c.is_own ? '#e74c3c' : '#3498db')) }],
+      datasets: [{ data: channels.map((c) => Math.max(c.views_median, 0.05)), backgroundColor: channels.map((c) => (c.is_own ? '#e74c3c' : '#3498db')) }],
     },
     options: {
       indexAxis: 'y', responsive: true,
@@ -306,14 +331,14 @@ function renderCharts() {
       labels: formatData.map((f) => [f.format, `n=${f.n}`]),
       datasets: [{
         label: formatChannel ? formatChannel.title : 'Набор в среднем',
-        data: formatData.map((f) => (f.vpd_median == null ? null : Math.max(f.vpd_median, 0.05))),
+        data: formatData.map((f) => (f.views_median == null ? null : Math.max(f.views_median, 0.05))),
         backgroundColor: formatChannel?.is_own ? '#e74c3c' : '#3498db',
       }],
     },
     options: {
       responsive: true,
       plugins: { legend: { display: false } },
-      scales: { y: { type: 'logarithmic', title: { display: true, text: 'медиана просмотров/день (лог)' } } },
+      scales: { y: { type: 'logarithmic', title: { display: true, text: 'медиана просмотров (лог)' } } },
     },
   }))
 
@@ -341,14 +366,14 @@ function renderCharts() {
       labels: lengthData.map((b) => [`${b.bucket} мин`, `n=${b.n}`]),
       datasets: [{
         label: lengthChannel ? lengthChannel.title : 'Набор в среднем',
-        data: lengthData.map((b) => b.vpd_median),
+        data: lengthData.map((b) => b.views_median),
         backgroundColor: lengthChannel?.is_own ? '#e74c3c' : '#3498db',
       }],
     },
     options: {
       responsive: true,
       plugins: { legend: { display: false } },
-      scales: { y: { beginAtZero: true, title: { display: true, text: 'медиана просмотров/день' } } },
+      scales: { y: { beginAtZero: true, title: { display: true, text: 'медиана просмотров' } } },
     },
   }))
 
@@ -408,13 +433,31 @@ function drawHeatmap(canvas, grid) {
   }
 }
 
+async function loadTopFilters() {
+  topFormat.value = ''
+  topRubric.value = ''
+  topFilters.value = { rubrics: [], formats: [] }
+  if (!selectedCompetitor.value) return
+  topFilters.value = await api.get(`/channels/${selectedCompetitor.value}/posts/filters?days=21`)
+}
+
 async function loadTop() {
   if (!selectedCompetitor.value) return
-  topPosts.value = await api.get(`/channels/${selectedCompetitor.value}/posts?sort=views&days=21&limit=15`)
+  const params = new URLSearchParams({ sort: 'views', days: '21', limit: '15' })
+  if (topFormat.value) params.set('format', topFormat.value)
+  if (topRubric.value) params.set('rubric', topRubric.value)
+  topPosts.value = await api.get(`/channels/${selectedCompetitor.value}/posts?${params}`)
+}
+
+async function onTopChannelChange() {
+  await loadTopFilters()
+  await loadTop()
 }
 
 watch(selectedOwn, loadAll)
-watch(selectedCompetitor, loadTop)
+watch(selectedCompetitor, onTopChannelChange)
+watch(topFormat, loadTop)
+watch(topRubric, loadTop)
 watch(formatSource, () => nextTick().then(renderCharts))
 watch(lengthSource, () => nextTick().then(renderCharts))
 watch(heatTarget, drawSelectedHeatmap)
@@ -441,6 +484,7 @@ onMounted(async () => {
 .card-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
 .card-head h3 { margin: 0; }
 .own-switch { padding: 8px 12px; border: 1px solid #cbd5e1; border-radius: 8px; font-size: 14px; }
+.filters { display: flex; gap: 8px; }
 .kpis { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 16px; }
 .kpi-label { font-size: 12px; color: #64748b; text-transform: uppercase; letter-spacing: 0.04em; }
 .kpi-value { font-size: 24px; font-weight: 700; margin: 4px 0; }

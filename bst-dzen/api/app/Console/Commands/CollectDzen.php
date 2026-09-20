@@ -4,16 +4,18 @@ namespace App\Console\Commands;
 
 use App\Jobs\CrawlChannel;
 use App\Models\Channel;
+use App\Services\Dzen\DzenCrawler;
 use Illuminate\Console\Command;
 
 /**
  * Ежедневный сбор: все активные каналы -> посты + снапшоты просмотров.
- * По умолчанию окно 2 дня (инкремент); для бэкфилла --days=21.
+ * По умолчанию окно 21 день — совпадает с окном отчётов, просмотры постов
+ * обновляются всю их жизнь в отчёте.
  */
 class CollectDzen extends Command
 {
     protected $signature = 'dzen:collect
-        {--days=2 : глубина окна сбора}
+        {--days=21 : глубина окна сбора}
         {--sync : выполнять без очереди (последовательно)}';
 
     protected $description = 'Собрать публикации активных каналов Дзена + снапшоты';
@@ -35,7 +37,7 @@ class CollectDzen extends Command
             if ($this->option('sync')) {
                 $this->line("→ {$channel->dzen_key} ({$channel->title})");
                 $job = new CrawlChannel($channel->id, $days);
-                $job->handle(app(\App\Services\Dzen\DzenCrawler::class));
+                $job->handle(app(DzenCrawler::class));
                 $this->info("  ✓ {$channel->dzen_key}: обновлён ({$channel->refresh()->last_crawled_at?->format('H:i')})");
             } else {
                 CrawlChannel::dispatch($channel->id, $days);

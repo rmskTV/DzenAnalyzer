@@ -11,6 +11,7 @@ class OwnPublication extends Model
         'own_channel_id', 'published_post_id', 'source_type', 'source_url',
         'title', 'title_variant', 'headline_pattern', 'body', 'rubric',
         'status', 'scheduled_at', 'published_at', 'experiment_tags',
+        'result_views', 'last_checked_at',
     ];
 
     protected function casts(): array

@@ -22,9 +22,7 @@ class DzenCrawler
         'short_video_compact' => 'short',
     ];
 
-    public function __construct(private readonly DzenApiClient $api)
-    {
-    }
+    public function __construct(private readonly DzenApiClient $api) {}
 
     /**
      * Собрать публикации канала за последние $days дней (с дедупликацией по url).
@@ -87,6 +85,7 @@ class DzenCrawler
     {
         $cutoff = Carbon::now()->subDays($days)->getTimestamp();
         $rows = [];
+        $undatedPages = 0;
 
         for ($page = 1; $page <= $maxPages; $page++) {
             $payload = $fetchPage($cursor);
@@ -103,6 +102,9 @@ class DzenCrawler
                 array_filter($pageRows, fn (array $r) => $r['published_at']->getTimestamp() > 0),
             );
             $oldest = $dated ? min($dated) : 0;
+            // страницы без дат (promo/brief) не двигают условие остановки по возрасту —
+            // считаем их и выходим, если идут подряд
+            $undatedPages = $dated ? 0 : $undatedPages + 1;
 
             if ($onPage) {
                 $onPage($page, count($pageRows), $oldest ? Carbon::createFromTimestamp($oldest) : null);
@@ -111,7 +113,7 @@ class DzenCrawler
             usleep(700_000); // пауза между страницами, как в прототипе
 
             $next = $this->nextPageId($payload);
-            if ($pageRows === [] || ($oldest && $oldest < $cutoff) || $next === null) {
+            if ($pageRows === [] || ($oldest && $oldest < $cutoff) || $next === null || $undatedPages >= 2) {
                 break;
             }
             $cursor = $next;
@@ -153,7 +155,7 @@ class DzenCrawler
                 $kind = self::TAB_TYPES[data_get($item, 'tab', '')] ?? $type;
                 foreach ((array) $item['items'] as $video) {
                     if (is_array($video)) {
-                        $rows[] = $this->makeRow($video, $kind);
+                        $this->pushRow($rows, $this->makeRow($video, $kind));
                     }
                 }
 
@@ -163,10 +165,18 @@ class DzenCrawler
             $kind = $type === 'article'
                 ? 'article'
                 : (self::ITEM_TYPES[$type] ?? $type);
-            $rows[] = $this->makeRow($item, $kind);
+            $this->pushRow($rows, $this->makeRow($item, $kind));
         }
 
         return $rows;
+    }
+
+    /** Promo/brief-карточки без заголовка — не публикации, отбрасываем */
+    private function pushRow(array &$rows, array $row): void
+    {
+        if ($row['title'] !== '') {
+            $rows[] = $row;
+        }
     }
 
     /** @return array{type: string, title: string, lead: ?string, url: string, published_at: Carbon, views: int, comments: int, size_sec: int} */

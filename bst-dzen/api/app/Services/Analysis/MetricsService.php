@@ -9,6 +9,8 @@ use Illuminate\Support\Collection;
 /**
  * Серийная аналитика: порт показателей из analyze.py/analyze2.py.
  * Все расчёты в PHP поверх Eloquent-коллекций (объёмы ~тысячи строк).
+ * Охватная метрика — сырые просмотры созревших постов (прожили в паблике >= Post::MATURITY_HOURS);
+ * объёмные метрики (постов/день, сетка, динамика) считаются по всем постам.
  */
 class MetricsService
 {
@@ -40,6 +42,7 @@ class MetricsService
             ->get();
 
         $now = now()->getTimestamp();
+        $matured = $this->matured($posts, $now);
 
         $rows = [];
         foreach ($channels as $channel) {
@@ -48,20 +51,19 @@ class MetricsService
                 continue;
             }
 
-            $vpds = $channelPosts
-                ->map(fn (Post $p) => $p->views / max(0.5, ($now - $p->published_at->getTimestamp()) / 86400))
-                ->sort()->values();
+            $channelMatured = $matured->where('channel_id', $channel->id);
+            $viewsList = $channelMatured->pluck('views')->sort()->values();
 
-            $viewsSum = (int) $channelPosts->sum('views');
-            $commentsSum = (int) $channelPosts->sum('comments');
+            $viewsSum = (int) $channelMatured->sum('views');
+            $commentsSum = (int) $channelMatured->sum('comments');
 
             $articles = $channelPosts->where('type', 'article');
             // evergreen — производное от формата (formats.is_evergreen);
             // посты без формата считаем новостными
-            $evergreenFormats = \App\Services\Analysis\RubricClassifier::evergreenFormats();
+            $evergreenFormats = RubricClassifier::evergreenFormats();
             $isEvergreen = fn (Post $p) => in_array($p->content_format, $evergreenFormats, true);
-            $evergreen = $articles->filter($isEvergreen);
-            $regular = $articles->reject($isEvergreen);
+            $evergreen = $channelMatured->where('type', 'article')->filter($isEvergreen);
+            $regular = $channelMatured->where('type', 'article')->reject($isEvergreen);
 
             $rows[] = [
                 'id' => $channel->id,
@@ -76,23 +78,19 @@ class MetricsService
                 'shorts' => $channelPosts->where('type', 'short')->count(),
                 'longs' => $channelPosts->where('type', 'video_long')->count(),
                 'views_sum' => $viewsSum,
-                'vpd_median' => round($this->median($vpds), 1),
-                'vpd_mean' => round($vpds->avg(), 1),
+                'views_median' => round($this->median($viewsList), 1),
+                'views_mean' => round($viewsList->avg() ?? 0, 1),
                 'engagement' => $viewsSum > 0
                     ? round($commentsSum / $viewsSum * 1000, 2)
                     : 0,
                 'evergreen_n' => $evergreen->count(),
                 'regular_n' => $regular->count(),
-                'evergreen_median_vpd' => $evergreen->isEmpty() ? null : round($this->median(
-                    $evergreen->map(fn ($p) => $p->views / max(0.5, ($now - $p->published_at->getTimestamp()) / 86400))
-                ), 1),
-                'regular_median_vpd' => $regular->isEmpty() ? null : round($this->median(
-                    $regular->map(fn ($p) => $p->views / max(0.5, ($now - $p->published_at->getTimestamp()) / 86400))
-                ), 1),
+                'evergreen_median_views' => $evergreen->isEmpty() ? null : round($this->median($evergreen->pluck('views')), 1),
+                'regular_median_views' => $regular->isEmpty() ? null : round($this->median($regular->pluck('views')), 1),
             ];
         }
 
-        usort($rows, fn ($a, $b) => ($b['is_own'] <=> $a['is_own']) ?: ($b['vpd_median'] <=> $a['vpd_median']));
+        usort($rows, fn ($a, $b) => ($b['is_own'] <=> $a['is_own']) ?: ($b['views_median'] <=> $a['views_median']));
 
         return [
             'window_days' => $days,
@@ -107,23 +105,22 @@ class MetricsService
         ];
     }
 
-    /** Форматы -> n и медиана vpd: набор в среднем ('set') + по каналам; все форматы реестра всегда */
+    /** Форматы -> n и медиана просмотров: набор в среднем ('set') + по каналам; все форматы реестра всегда */
     private function formatStats(Collection $posts, int $now): array
     {
         $formatNames = RubricClassifier::formatNames();
-        $vpd = fn (Post $p) => $p->views / max(0.5, ($now - $p->published_at->getTimestamp()) / 86400);
 
-        $build = function (Collection $group) use ($formatNames, $vpd): array {
-            $byFormat = $group->groupBy(fn (Post $p) => $p->content_format ?? '');
+        $build = function (Collection $group) use ($formatNames, $now): array {
+            $byFormat = $this->matured($group, $now)->groupBy(fn (Post $p) => $p->content_format ?? '');
 
             return collect($formatNames)
-                ->map(function (string $name) use ($byFormat, $vpd) {
+                ->map(function (string $name) use ($byFormat) {
                     $bucket = $byFormat->get($name, collect());
 
                     return [
                         'format' => $name,
                         'n' => $bucket->count(),
-                        'vpd_median' => $bucket->isEmpty() ? null : round($this->median($bucket->map($vpd)), 1),
+                        'views_median' => $bucket->isEmpty() ? null : round($this->median($bucket->pluck('views')), 1),
                     ];
                 })
                 ->values()
@@ -165,8 +162,8 @@ class MetricsService
     }
 
     /**
-     * Вёдра времени чтения -> медиана vpd, по каналам.
-     * Ничего не отбрасываем: все вёдра присутствуют всегда (n=0 -> vpd null).
+     * Вёдра времени чтения -> медиана просмотров, по каналам.
+     * Ничего не отбрасываем: все вёдра присутствуют всегда (n=0 -> медиана null).
      */
     private function lengthBuckets(Collection $posts, int $now): array
     {
@@ -181,6 +178,7 @@ class MetricsService
     /** @param  Collection<int, Post>  $articles только статьи одного канала или набора */
     private function lengthBucketsFor(Collection $articles, int $now): array
     {
+        $articles = $this->matured($articles, $now);
         $buckets = [];
         foreach (self::LENGTH_BUCKETS as [$label, $lo, $hi]) {
             $bucket = $articles
@@ -189,9 +187,7 @@ class MetricsService
             $buckets[] = [
                 'bucket' => $label,
                 'n' => $bucket->count(),
-                'vpd_median' => $bucket->isEmpty() ? null : round($this->median(
-                    $bucket->map(fn (Post $p) => $p->views / max(0.5, ($now - $p->published_at->getTimestamp()) / 86400)),
-                ), 1),
+                'views_median' => $bucket->isEmpty() ? null : round($this->median($bucket->pluck('views')), 1),
             ];
         }
 
@@ -225,7 +221,7 @@ class MetricsService
         }
 
         $metrics = [
-            ['key' => 'vpd_median', 'title' => 'Медиана просмотров/день (статьи+видео)'],
+            ['key' => 'views_median', 'title' => 'Медиана просмотров (посты '.Post::MATURITY_HOURS.'ч+)'],
             ['key' => 'engagement', 'title' => 'Комментариев на 1000 просмотров'],
             ['key' => 'posts_per_day', 'title' => 'Публикаций в день'],
             ['key' => 'views_sum', 'title' => 'Суммарные просмотры за окно'],
@@ -254,6 +250,14 @@ class MetricsService
         }
 
         return $result;
+    }
+
+    /** Посты, прожившие в паблике достаточно для участия в охватных метриках */
+    private function matured(Collection $posts, int $now): Collection
+    {
+        $cutoff = $now - Post::MATURITY_HOURS * 3600;
+
+        return $posts->filter(fn (Post $p) => $p->published_at->getTimestamp() <= $cutoff);
     }
 
     private function median(Collection $values): float

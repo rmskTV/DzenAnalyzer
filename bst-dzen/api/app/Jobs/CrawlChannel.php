@@ -25,9 +25,8 @@ class CrawlChannel implements ShouldQueue
 
     public function __construct(
         public readonly int $channelId,
-        public readonly int $days = 2,
-    ) {
-    }
+        public readonly int $days = 21,
+    ) {}
 
     public function handle(DzenCrawler $crawler): void
     {

@@ -9,7 +9,8 @@ use Illuminate\Support\Collection;
 
 /**
  * Обратная связь: связывает наши публикации с постами Дзена (по совпадению
- * заголовков) и считает результат (vpd) для экспериментов над заголовками.
+ * заголовков) и фиксирует результат (просмотры созревшего поста) для
+ * экспериментов над заголовками.
  */
 class PublicationTracker
 {
@@ -55,20 +56,29 @@ class PublicationTracker
             }
         }
 
-        // 2) обновляем vpd у уже опубликованных
+        // 2) фиксируем результат созревших публикаций (однократно)
         $published = OwnPublication::where('own_channel_id', $own->id)
             ->where('status', 'published')
             ->whereNotNull('published_post_id')
             ->get();
 
         foreach ($published as $publication) {
+            if ($publication->result_views !== null) {
+                continue; // результат уже зафиксирован
+            }
+
             $post = $publication->publishedPost;
             if (! $post) {
                 continue;
             }
-            $ageDays = max(0.5, (now()->getTimestamp() - $post->published_at->getTimestamp()) / 86400);
+
+            $ageHours = (now()->getTimestamp() - $post->published_at->getTimestamp()) / 3600;
+            if ($ageHours < Post::MATURITY_HOURS) {
+                continue; // пост ещё не созрел
+            }
+
             $publication->update([
-                'result_vpd' => round($post->views / $ageDays, 2),
+                'result_views' => $post->views,
                 'last_checked_at' => now(),
             ]);
             $stats['updated']++;
@@ -77,27 +87,27 @@ class PublicationTracker
         return $stats;
     }
 
-    /** Win-rate'ы приёмов заголовков по нашим опубликованным постам */
+    /** Статистика приёмов заголовков по нашим опубликованным постам */
     public static function patternStats(int $ownChannelId): array
     {
         $rows = OwnPublication::where('own_channel_id', $ownChannelId)
-            ->whereNotNull('result_vpd')
+            ->whereNotNull('result_views')
             ->get()
             ->groupBy('headline_pattern');
 
         $result = [];
         foreach ($rows as $pattern => $group) {
             /** @var Collection $group */
-            $sorted = $group->pluck('result_vpd')->sort()->values();
+            $sorted = $group->pluck('result_views')->sort()->values();
             $result[] = [
                 'pattern' => $pattern ?? 'plain',
                 'n' => $group->count(),
-                'median_vpd' => round((float) $sorted[(int) ($sorted->count() / 2)], 2),
-                'max_vpd' => round((float) $sorted->max(), 2),
+                'median_views' => round((float) $sorted[(int) ($sorted->count() / 2)], 1),
+                'max_views' => round((float) $sorted->max(), 1),
             ];
         }
 
-        usort($result, fn ($a, $b) => $b['median_vpd'] <=> $a['median_vpd']);
+        usort($result, fn ($a, $b) => $b['median_views'] <=> $a['median_views']);
 
         return $result;
     }

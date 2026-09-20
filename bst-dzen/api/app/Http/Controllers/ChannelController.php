@@ -30,6 +30,7 @@ class ChannelController extends Controller
             ))
             ->when($request->input('rubric'), fn ($q, $rubric) => $q->where('rubric', $rubric))
             ->when($request->input('kind'), fn ($q, $kind) => $q->where('content_kind', $kind))
+            ->when($request->input('format'), fn ($q, $format) => $q->where('content_format', $format))
             ->when(
                 $request->input('sort') === 'views',
                 fn ($q) => $q->orderByDesc('views'),
@@ -39,6 +40,25 @@ class ChannelController extends Controller
             ->get();
 
         return response()->json($posts);
+    }
+
+    /** Значения для фильтров топа постов: рубрики/форматы, встречающиеся у постов канала за окно */
+    public function postFilters(Channel $channel, Request $request): JsonResponse
+    {
+        $days = $request->integer('days');
+
+        $values = fn (string $column) => $channel->posts()
+            ->whereNotNull($column)
+            ->when($days > 0, fn ($q) => $q->where('published_at', '>=', now()->subDays($days)))
+            ->select($column)->selectRaw('count(*) as n')
+            ->groupBy($column)
+            ->orderByDesc('n')
+            ->get();
+
+        return response()->json([
+            'rubrics' => $values('rubric')->map(fn ($r) => ['name' => $r->rubric, 'n' => $r->n]),
+            'formats' => $values('content_format')->map(fn ($r) => ['name' => $r->content_format, 'n' => $r->n]),
+        ]);
     }
 
     /** Обновление роли/активности и конкурентного набора */

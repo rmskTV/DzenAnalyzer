@@ -10,7 +10,7 @@ cd bst-dzen
 docker compose up -d --build
 docker compose exec app php artisan migrate --force
 docker compose exec app php artisan dzen:import-history   # разовый импорт истории прототипа
-docker compose exec app php artisan dzen:collect --sync --days=2   # разовый/ручной сбор
+docker compose exec app php artisan dzen:collect --sync --days=21   # разовый/ручной сбор
 ```
 
 - UI и API: http://localhost:8090 (SPA) · http://localhost:8090/api/health
@@ -21,19 +21,19 @@ docker compose exec app php artisan dzen:collect --sync --days=2   # разов�
 
 | Команда | Назначение |
 |---|---|
-| `dzen:collect [--days=2] [--sync]` | сбор постов всех активных каналов + снапшоты просмотров/комментариев |
+| `dzen:collect [--days=21] [--sync]` | сбор постов всех активных каналов + снапшоты просмотров/комментариев |
 | `dzen:ingest` | забор материалов с внешних парсеров (настройка `parsers` в settings) |
 | `dzen:classify [--days=3]` | рубрики/тип контента новых постов (LLM или keyword-эвристика) |
 | `dzen:generate [--limit=N]` | evergreen-сетка дня + рерайты новых материалов (нужен LLM) |
 | `dzen:publish` | постановка одобренных публикаций в RSS-очередь по режимам |
-| `dzen:track` | связка наших публикаций с постами Дзена, расчёт vpd-результатов |
+| `dzen:track` | связка наших публикаций с постами Дзена, фиксация просмотров созревших постов (16 ч+) |
 | `dzen:rules` | предложение новой версии правил рерайта по статистике (вс) |
 | `dzen:import-history` | разовый импорт из CSV python-прототипа |
 
 ## API
 
 `GET /api/health` · `GET /api/dashboard?days=21&own=<id>` · `GET /api/channels` ·
-`PUT /api/channels/{id}` (флаги, конкурентный набор) · `GET /api/channels/{id}/posts|stats` ·
+`PUT /api/channels/{id}` (флаги, конкурентный набор) · `GET /api/channels/{id}/posts|posts/filters|stats` ·
 `GET|PUT /api/drafts[/{id}]` + `POST /api/drafts/{id}/approve|reject` ·
 `GET /api/rules` + `POST /api/rules/{id}/activate` · `GET|PUT /api/settings` ·
 `GET /feed/{dzen_key}.xml` — публичный RSS для студии Дзена
