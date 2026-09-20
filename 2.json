@@ -1,0 +1,2943 @@
+{
+    "rid": "3689788995.1646.1789800485723.40496",
+    "items": [
+        {
+            "id": "6aab7a59df212e0df99a9a0e",
+            "type": "article",
+            "itemId": "5540066988004382942",
+            "itemType": "native",
+            "title": "Погода в Братске 18 сентября",
+            "text": "В ночь на пятницу +5°, +6°, днём +6°…+9°, пасмурно, небольшой дождь. Ветер северо-восточный, до 9,8 м/с. Атмосферное давление – 724 мм рт. ст.",
+            "sourceId": "599aa25d57906a8ab6553398",
+            "shareLink": "https://dzen.ru/a/aqt6Wd8hLg35mpoO",
+            "allCommentsLink": "https://dzen.ru/a/aqt6Wd8hLg35mpoO?feed_exp=ordinary_feed&from=channel&rid=3689788995.1646.1789800485723.40496&integration=site_desktop&place=more&secdata=CJie0O6KNCABUA9qAQGQAQA%3D&referrer_clid=1400&#comments_data=p_root",
+            "link": "https://dzen.ru/a/aqt6Wd8hLg35mpoO?feed_exp=ordinary_feed&from=channel&integration=site_desktop&place=more&secdata=CJie0O6KNCABUA9qAQGQAQA%3D&rid=3689788995.1646.1789800485723.40496&referrer_clid=1400&",
+            "isPromoPublication": false,
+            "views": 1,
+            "timeToReadSeconds": 7,
+            "repostUrl": "https://dzen.ru/media/zen/login?repostId=6aab7a59df212e0df99a9a0e&briefEditorPublicationId=draft",
+            "publicationDate": "1789622751",
+            "source": {
+                "id": "599aa25d57906a8ab6553398",
+                "itemId": "4036240292142625435",
+                "type": "publisher",
+                "title": "Братская студия телевидения",
+                "description": "Из жизни Братска",
+                "link": "https://dzen.ru/bst24bratsk?lang=ru&country_code=ru&parent_rid=3689788995.1646.1789800485723.40496&from_parent_id=5540066988004382942&from_parent_type=native&from_page=other_page",
+                "shareLink": "https://dzen.ru/bst24bratsk",
+                "isVerified": false,
+                "image": {
+                    "logo": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/xxh",
+                    "framedLogo": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed_3x",
+                    "logoSizes": {
+                        "framed_100x128_1x": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed_100x128_1x",
+                        "framed_132x176_1x": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed",
+                        "framed_212x280_1x": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed_212x280_1x",
+                        "framed_202x260_1x": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed_202x260_1x",
+                        "smart_crop_160": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/smart_crop_160"
+                    },
+                    "logoBackgroundColor": "#F8F8F8",
+                    "titleBackgroundColor": "#C7C7C7",
+                    "titleColor": "#000000",
+                    "headerBackgroundColor": "#B2B2B2",
+                    "redesignLogos": {},
+                    "isStubLogo": false
+                },
+                "metricaId": 45934887,
+                "subscribers": 6310,
+                "status": "not_subscribed",
+                "telegramBotSubscriptionUrl": "https://t.me/dzenpushbot?start=CF_599aa25d57906a8ab6553398_466370828",
+                "isMyChannel": true,
+                "isPremiumAuthor": false,
+                "isDonationEnabled": false,
+                "isBirthday": false
+            },
+            "recommendationsInfo": {},
+            "promoLabel": {
+                "text": "6,3K подписчиков",
+                "text_color": "#FFFFFF",
+                "channel_info_subscribed": "6,3K подписчиков",
+                "channel_info_unsubscribed": "6,3K подписчиков"
+            },
+            "image": {
+                "urlTemplate": "https://avatars.dzeninfra.ru/get-{namespace}/271828/pub_6aab7a59df212e0df99a9a0e_6aab7a59af703c41cde1919d/{size}",
+                "id": "pub_6aab7a59df212e0df99a9a0e_6aab7a59af703c41cde1919d",
+                "namespace": "zen_doc",
+                "originalSize": {
+                    "width": 1200,
+                    "height": 720
+                },
+                "wasRotated": false,
+                "meta": {
+                    "mainColor": "#080808"
+                },
+                "width": 1200,
+                "height": 720,
+                "sizeName": "scale_1200"
+            },
+            "bulkData": {
+                "url": "https://dzen.ru/a/aqt6Wd8hLg35mpoO",
+                "url_type": "plain",
+                "rec_secdata": "CJie0O6KNCABUA9qAQGQAQA=",
+                "origin_id": "4036240292142625435",
+                "origin_type": "publisher",
+                "place": "more",
+                "isStellaBoosted": false,
+                "isCoolNews": false,
+                "isCuratedArticle": false
+            },
+            "socialInfo": {
+                "commentsEnabled": true,
+                "commentCount": 0,
+                "avatarUrls": []
+            },
+            "version": "newApi",
+            "isPremium": false,
+            "isNativeAds": false,
+            "isArchive": false,
+            "isArchiveBoughtByStella": false,
+            "feedSpecificData": {
+                "isSavedToBookmarks": false,
+                "suites": [],
+                "isFreshFromSubscriptions": false
+            },
+            "allAdSettings": {},
+            "viewsTillEnd": 0
+        },
+        {
+            "id": "6aab79a3df212e0df99a9669",
+            "type": "article",
+            "itemId": "-859480089615445898",
+            "itemType": "native",
+            "title": "Пять медведей застрелили в Братске с начала недели",
+            "text": "Ситуация с выходами медведей остаётся напряжённой – с начала недели в Братске застрелили пять особей. Охотоведы и охотники выследили двух зверей их в районе СНТ «Василёк» в Энергетике, по одному – у кафе «Фараон», возле дачного посёлка Дунайка и вблизи СНТ «Учитель». Работа продолжается, мэрия просит жителей быть осторожными. В случае встречи с хищником не пытайтесь прогнать его самостоятельно или снять на телефон. Сразу звоните в единую диспетчерскую службу по номерам 8 (3953) 45-51-12 или 112...",
+            "sourceId": "599aa25d57906a8ab6553398",
+            "shareLink": "https://dzen.ru/a/aqt5o98hLg35mpZp",
+            "allCommentsLink": "https://dzen.ru/a/aqt5o98hLg35mpZp?feed_exp=ordinary_feed&from=channel&rid=3689788995.1646.1789800485723.40496&integration=site_desktop&place=more&secdata=COifq%2B6KNCABUA9qAQGQAQA%3D&referrer_clid=1400&#comments_data=p_root",
+            "link": "https://dzen.ru/a/aqt5o98hLg35mpZp?feed_exp=ordinary_feed&from=channel&integration=site_desktop&place=more&secdata=COifq%2B6KNCABUA9qAQGQAQA%3D&rid=3689788995.1646.1789800485723.40496&referrer_clid=1400&",
+            "isPromoPublication": false,
+            "views": 4,
+            "timeToReadSeconds": 46,
+            "repostUrl": "https://dzen.ru/media/zen/login?repostId=6aab79a3df212e0df99a9669&briefEditorPublicationId=draft",
+            "publicationDate": "1789622145",
+            "source": {
+                "id": "599aa25d57906a8ab6553398",
+                "itemId": "4036240292142625435",
+                "type": "publisher",
+                "title": "Братская студия телевидения",
+                "description": "Из жизни Братска",
+                "link": "https://dzen.ru/bst24bratsk?lang=ru&country_code=ru&parent_rid=3689788995.1646.1789800485723.40496&from_parent_id=-859480089615445898&from_parent_type=native&from_page=other_page",
+                "shareLink": "https://dzen.ru/bst24bratsk",
+                "isVerified": false,
+                "image": {
+                    "logo": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/xxh",
+                    "framedLogo": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed_3x",
+                    "logoSizes": {
+                        "framed_100x128_1x": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed_100x128_1x",
+                        "framed_132x176_1x": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed",
+                        "framed_212x280_1x": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed_212x280_1x",
+                        "framed_202x260_1x": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed_202x260_1x",
+                        "smart_crop_160": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/smart_crop_160"
+                    },
+                    "logoBackgroundColor": "#F8F8F8",
+                    "titleBackgroundColor": "#C7C7C7",
+                    "titleColor": "#000000",
+                    "headerBackgroundColor": "#B2B2B2",
+                    "redesignLogos": {},
+                    "isStubLogo": false
+                },
+                "metricaId": 45934887,
+                "subscribers": 6310,
+                "status": "not_subscribed",
+                "telegramBotSubscriptionUrl": "https://t.me/dzenpushbot?start=CF_599aa25d57906a8ab6553398_466370828",
+                "isMyChannel": true,
+                "isPremiumAuthor": false,
+                "isDonationEnabled": false,
+                "isBirthday": false
+            },
+            "recommendationsInfo": {},
+            "promoLabel": {
+                "text": "6,3K подписчиков",
+                "text_color": "#FFFFFF",
+                "channel_info_subscribed": "6,3K подписчиков",
+                "channel_info_unsubscribed": "6,3K подписчиков"
+            },
+            "image": {
+                "urlTemplate": "https://avatars.dzeninfra.ru/get-{namespace}/271828/pub_6aab79a3df212e0df99a9669_6aab79a3a3b8c53a9834def3/{size}",
+                "id": "pub_6aab79a3df212e0df99a9669_6aab79a3a3b8c53a9834def3",
+                "namespace": "zen_doc",
+                "originalSize": {
+                    "width": 1200,
+                    "height": 720
+                },
+                "wasRotated": false,
+                "meta": {
+                    "mainColor": "#605050"
+                },
+                "width": 1200,
+                "height": 720,
+                "sizeName": "scale_1200"
+            },
+            "bulkData": {
+                "url": "https://dzen.ru/a/aqt5o98hLg35mpZp",
+                "url_type": "plain",
+                "rec_secdata": "COifq+6KNCABUA9qAQGQAQA=",
+                "origin_id": "4036240292142625435",
+                "origin_type": "publisher",
+                "place": "more",
+                "isStellaBoosted": false,
+                "isCoolNews": false,
+                "isCuratedArticle": false
+            },
+            "socialInfo": {
+                "commentsEnabled": true,
+                "commentCount": 0,
+                "avatarUrls": []
+            },
+            "version": "newApi",
+            "isPremium": false,
+            "isNativeAds": false,
+            "isArchive": false,
+            "isArchiveBoughtByStella": false,
+            "feedSpecificData": {
+                "isSavedToBookmarks": false,
+                "suites": [],
+                "isFreshFromSubscriptions": false
+            },
+            "allAdSettings": {},
+            "viewsTillEnd": 1
+        },
+        {
+            "id": "6aab66b548d4813e638c7b3f",
+            "type": "article",
+            "itemId": "-6713112116856164180",
+            "itemType": "native",
+            "title": "Троих мужчин арестовали в Иркутске по обвинению в похищении человека и разбое",
+            "text": "В Иркутском районе задержаны трое мужчин, которых подозревают в похищении 19‑летнего знакомого и разбойном нападении на него. Об этом сообщает ИА «БСТ» со ссылкой на пресс-службу следственного управления Следственного комитета Российской Федерации по Иркутской области. Фигурантам предъявлено обвинение по ч. 2 ст. 126 УК РФ (похищение человека группой лиц по предварительному сговору с угрозой насилия и применением предмета в качестве оружия) и ч. 2 ст. 162 УК РФ (разбой, совершённый группой лиц по предварительному сговору)...",
+            "sourceId": "599aa25d57906a8ab6553398",
+            "shareLink": "https://dzen.ru/a/aqtmtUjUgT5jjHs_",
+            "allCommentsLink": "https://dzen.ru/a/aqtmtUjUgT5jjHs_?feed_exp=ordinary_feed&from=channel&rid=3689788995.1646.1789800485723.40496&integration=site_desktop&place=more&secdata=CIjDhuyKNCABUA9qAQGQAQA%3D&referrer_clid=1400&#comments_data=p_root",
+            "link": "https://dzen.ru/a/aqtmtUjUgT5jjHs_?feed_exp=ordinary_feed&from=channel&integration=site_desktop&place=more&secdata=CIjDhuyKNCABUA9qAQGQAQA%3D&rid=3689788995.1646.1789800485723.40496&referrer_clid=1400&",
+            "isPromoPublication": false,
+            "views": 10,
+            "timeToReadSeconds": 63,
+            "repostUrl": "https://dzen.ru/media/zen/login?repostId=6aab66b548d4813e638c7b3f&briefEditorPublicationId=draft",
+            "publicationDate": "1789617349",
+            "source": {
+                "id": "599aa25d57906a8ab6553398",
+                "itemId": "4036240292142625435",
+                "type": "publisher",
+                "title": "Братская студия телевидения",
+                "description": "Из жизни Братска",
+                "link": "https://dzen.ru/bst24bratsk?lang=ru&country_code=ru&parent_rid=3689788995.1646.1789800485723.40496&from_parent_id=-6713112116856164180&from_parent_type=native&from_page=other_page",
+                "shareLink": "https://dzen.ru/bst24bratsk",
+                "isVerified": false,
+                "image": {
+                    "logo": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/xxh",
+                    "framedLogo": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed_3x",
+                    "logoSizes": {
+                        "framed_100x128_1x": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed_100x128_1x",
+                        "framed_132x176_1x": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed",
+                        "framed_212x280_1x": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed_212x280_1x",
+                        "framed_202x260_1x": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed_202x260_1x",
+                        "smart_crop_160": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/smart_crop_160"
+                    },
+                    "logoBackgroundColor": "#F8F8F8",
+                    "titleBackgroundColor": "#C7C7C7",
+                    "titleColor": "#000000",
+                    "headerBackgroundColor": "#B2B2B2",
+                    "redesignLogos": {},
+                    "isStubLogo": false
+                },
+                "metricaId": 45934887,
+                "subscribers": 6310,
+                "status": "not_subscribed",
+                "telegramBotSubscriptionUrl": "https://t.me/dzenpushbot?start=CF_599aa25d57906a8ab6553398_466370828",
+                "isMyChannel": true,
+                "isPremiumAuthor": false,
+                "isDonationEnabled": false,
+                "isBirthday": false
+            },
+            "recommendationsInfo": {},
+            "promoLabel": {
+                "text": "6,3K подписчиков",
+                "text_color": "#FFFFFF",
+                "channel_info_subscribed": "6,3K подписчиков",
+                "channel_info_unsubscribed": "6,3K подписчиков"
+            },
+            "image": {
+                "urlTemplate": "https://avatars.dzeninfra.ru/get-{namespace}/271828/pub_6aab66b548d4813e638c7b3f_6aab66b5a3b8c53a9834dc2d/{size}",
+                "id": "pub_6aab66b548d4813e638c7b3f_6aab66b5a3b8c53a9834dc2d",
+                "namespace": "zen_doc",
+                "originalSize": {
+                    "width": 1200,
+                    "height": 720
+                },
+                "wasRotated": false,
+                "meta": {
+                    "mainColor": "#101010"
+                },
+                "width": 1200,
+                "height": 720,
+                "sizeName": "scale_1200"
+            },
+            "bulkData": {
+                "url": "https://dzen.ru/a/aqtmtUjUgT5jjHs_",
+                "url_type": "plain",
+                "rec_secdata": "CIjDhuyKNCABUA9qAQGQAQA=",
+                "origin_id": "4036240292142625435",
+                "origin_type": "publisher",
+                "place": "more",
+                "isStellaBoosted": false,
+                "isCoolNews": false,
+                "isCuratedArticle": false
+            },
+            "socialInfo": {
+                "commentsEnabled": true,
+                "commentCount": 0,
+                "avatarUrls": []
+            },
+            "version": "newApi",
+            "isPremium": false,
+            "isNativeAds": false,
+            "isArchive": false,
+            "isArchiveBoughtByStella": false,
+            "feedSpecificData": {
+                "isSavedToBookmarks": false,
+                "suites": [],
+                "isFreshFromSubscriptions": false
+            },
+            "allAdSettings": {},
+            "viewsTillEnd": 3
+        },
+        {
+            "id": "6aab4bae48d4813e638bebc7",
+            "type": "article",
+            "itemId": "770857071554302009",
+            "itemType": "native",
+            "title": "Российским школьникам рекомендуют зубрить стихи перед ЕГЭ по литературе",
+            "text": "Школьникам, сдающим ЕГЭ по литературе, и их родителям добавят придётся усилить подготовку. Федеральный институт педагогических измерений (ФИПИ) настаивает: детям нужно снова зубрить стихи наизусть и вести цитатники. Об этом говорится в свежих методичках ведомства для учителей, сообщает ИА «БСТ» со ссылкой на РИА Новости. Эксперты проанализировали типичные ошибки выпускников на экзаменах 2026 года. Оказалось, что в заданиях под номерами 5 и 10 подростки массово путают строчки из стихотворений и не могут точно процитировать классиков...",
+            "sourceId": "599aa25d57906a8ab6553398",
+            "shareLink": "https://dzen.ru/a/aqtLrkjUgT5ji-vH",
+            "allCommentsLink": "https://dzen.ru/a/aqtLrkjUgT5ji-vH?feed_exp=ordinary_feed&from=channel&rid=3689788995.1646.1789800485723.40496&integration=site_desktop&place=more&secdata=CLjG3%2BiKNCABUA9qAQGQAQA%3D&referrer_clid=1400&#comments_data=p_root",
+            "link": "https://dzen.ru/a/aqtLrkjUgT5ji-vH?feed_exp=ordinary_feed&from=channel&integration=site_desktop&place=more&secdata=CLjG3%2BiKNCABUA9qAQGQAQA%3D&rid=3689788995.1646.1789800485723.40496&referrer_clid=1400&",
+            "isPromoPublication": false,
+            "views": 2,
+            "timeToReadSeconds": 79,
+            "repostUrl": "https://dzen.ru/media/zen/login?repostId=6aab4bae48d4813e638bebc7&briefEditorPublicationId=draft",
+            "publicationDate": "1789610419",
+            "source": {
+                "id": "599aa25d57906a8ab6553398",
+                "itemId": "4036240292142625435",
+                "type": "publisher",
+                "title": "Братская студия телевидения",
+                "description": "Из жизни Братска",
+                "link": "https://dzen.ru/bst24bratsk?lang=ru&country_code=ru&parent_rid=3689788995.1646.1789800485723.40496&from_parent_id=770857071554302009&from_parent_type=native&from_page=other_page",
+                "shareLink": "https://dzen.ru/bst24bratsk",
+                "isVerified": false,
+                "image": {
+                    "logo": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/xxh",
+                    "framedLogo": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed_3x",
+                    "logoSizes": {
+                        "framed_100x128_1x": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed_100x128_1x",
+                        "framed_132x176_1x": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed",
+                        "framed_212x280_1x": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed_212x280_1x",
+                        "framed_202x260_1x": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed_202x260_1x",
+                        "smart_crop_160": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/smart_crop_160"
+                    },
+                    "logoBackgroundColor": "#F8F8F8",
+                    "titleBackgroundColor": "#C7C7C7",
+                    "titleColor": "#000000",
+                    "headerBackgroundColor": "#B2B2B2",
+                    "redesignLogos": {},
+                    "isStubLogo": false
+                },
+                "metricaId": 45934887,
+                "subscribers": 6310,
+                "status": "not_subscribed",
+                "telegramBotSubscriptionUrl": "https://t.me/dzenpushbot?start=CF_599aa25d57906a8ab6553398_466370828",
+                "isMyChannel": true,
+                "isPremiumAuthor": false,
+                "isDonationEnabled": false,
+                "isBirthday": false
+            },
+            "recommendationsInfo": {},
+            "promoLabel": {
+                "text": "6,3K подписчиков",
+                "text_color": "#000000",
+                "channel_info_subscribed": "6,3K подписчиков",
+                "channel_info_unsubscribed": "6,3K подписчиков"
+            },
+            "image": {
+                "urlTemplate": "https://avatars.dzeninfra.ru/get-{namespace}/271828/pub_6aab4bae48d4813e638bebc7_6aab4baec2afe525818525c4/{size}",
+                "id": "pub_6aab4bae48d4813e638bebc7_6aab4baec2afe525818525c4",
+                "namespace": "zen_doc",
+                "originalSize": {
+                    "width": 1200,
+                    "height": 720
+                },
+                "wasRotated": false,
+                "meta": {
+                    "mainColor": "#E0E0E8"
+                },
+                "width": 1200,
+                "height": 720,
+                "sizeName": "scale_1200"
+            },
+            "bulkData": {
+                "url": "https://dzen.ru/a/aqtLrkjUgT5ji-vH",
+                "url_type": "plain",
+                "rec_secdata": "CLjG3+iKNCABUA9qAQGQAQA=",
+                "origin_id": "4036240292142625435",
+                "origin_type": "publisher",
+                "place": "more",
+                "isStellaBoosted": false,
+                "isCoolNews": false,
+                "isCuratedArticle": false
+            },
+            "socialInfo": {
+                "commentsEnabled": true,
+                "commentCount": 0,
+                "avatarUrls": []
+            },
+            "version": "newApi",
+            "isPremium": false,
+            "isNativeAds": false,
+            "isArchive": false,
+            "isArchiveBoughtByStella": false,
+            "feedSpecificData": {
+                "isSavedToBookmarks": false,
+                "suites": [],
+                "isFreshFromSubscriptions": false
+            },
+            "allAdSettings": {},
+            "viewsTillEnd": 1
+        },
+        {
+            "id": "6aab3cb31ddc5a0aab300cd3",
+            "type": "article",
+            "itemId": "-8234705867308413461",
+            "itemType": "native",
+            "title": "Предупредите родителей: мошенники обещают пенсионерам выплаты к 1 октября",
+            "text": "В преддверии Дня пожилого человека, который отмечается 1 октября, аферисты запустили новую циничную схему обмана. Теперь они играют на доверии старшего поколения, обещая несуществующие праздничные выплаты. Если вашим родителям, бабушкам или дедушкам звонят из «соцзащиты» с радостными новостями, велика вероятность, что на другом конце провода – преступники. О новой волне телефонного мошенничества предупредили эксперты платформы «Мошеловка» (проект Народного фронта), ИА «БСТ» со ссылкой на РИА Новости...",
+            "sourceId": "599aa25d57906a8ab6553398",
+            "shareLink": "https://dzen.ru/a/aqs8sx3cWgqrMAzT",
+            "allCommentsLink": "https://dzen.ru/a/aqs8sx3cWgqrMAzT?feed_exp=ordinary_feed&from=channel&rid=3689788995.1646.1789800485723.40496&integration=site_desktop&place=more&secdata=COjNh%2BeKNCABUA9qAQGQAQA%3D&referrer_clid=1400&#comments_data=p_root",
+            "link": "https://dzen.ru/a/aqs8sx3cWgqrMAzT?feed_exp=ordinary_feed&from=channel&integration=site_desktop&place=more&secdata=COjNh%2BeKNCABUA9qAQGQAQA%3D&rid=3689788995.1646.1789800485723.40496&referrer_clid=1400&",
+            "isPromoPublication": false,
+            "views": 10,
+            "timeToReadSeconds": 81,
+            "repostUrl": "https://dzen.ru/media/zen/login?repostId=6aab3cb31ddc5a0aab300cd3&briefEditorPublicationId=draft",
+            "publicationDate": "1789606881",
+            "source": {
+                "id": "599aa25d57906a8ab6553398",
+                "itemId": "4036240292142625435",
+                "type": "publisher",
+                "title": "Братская студия телевидения",
+                "description": "Из жизни Братска",
+                "link": "https://dzen.ru/bst24bratsk?lang=ru&country_code=ru&parent_rid=3689788995.1646.1789800485723.40496&from_parent_id=-8234705867308413461&from_parent_type=native&from_page=other_page",
+                "shareLink": "https://dzen.ru/bst24bratsk",
+                "isVerified": false,
+                "image": {
+                    "logo": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/xxh",
+                    "framedLogo": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed_3x",
+                    "logoSizes": {
+                        "framed_100x128_1x": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed_100x128_1x",
+                        "framed_132x176_1x": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed",
+                        "framed_212x280_1x": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed_212x280_1x",
+                        "framed_202x260_1x": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed_202x260_1x",
+                        "smart_crop_160": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/smart_crop_160"
+                    },
+                    "logoBackgroundColor": "#F8F8F8",
+                    "titleBackgroundColor": "#C7C7C7",
+                    "titleColor": "#000000",
+                    "headerBackgroundColor": "#B2B2B2",
+                    "redesignLogos": {},
+                    "isStubLogo": false
+                },
+                "metricaId": 45934887,
+                "subscribers": 6310,
+                "status": "not_subscribed",
+                "telegramBotSubscriptionUrl": "https://t.me/dzenpushbot?start=CF_599aa25d57906a8ab6553398_466370828",
+                "isMyChannel": true,
+                "isPremiumAuthor": false,
+                "isDonationEnabled": false,
+                "isBirthday": false
+            },
+            "recommendationsInfo": {},
+            "promoLabel": {
+                "text": "6,3K подписчиков",
+                "text_color": "#FFFFFF",
+                "channel_info_subscribed": "6,3K подписчиков",
+                "channel_info_unsubscribed": "6,3K подписчиков"
+            },
+            "image": {
+                "urlTemplate": "https://avatars.dzeninfra.ru/get-{namespace}/271828/pub_6aab3cb31ddc5a0aab300cd3_6aab3cb364f6880874a16a4d/{size}",
+                "id": "pub_6aab3cb31ddc5a0aab300cd3_6aab3cb364f6880874a16a4d",
+                "namespace": "zen_doc",
+                "originalSize": {
+                    "width": 1200,
+                    "height": 720
+                },
+                "wasRotated": false,
+                "meta": {
+                    "mainColor": "#080820"
+                },
+                "width": 1200,
+                "height": 720,
+                "sizeName": "scale_1200"
+            },
+            "bulkData": {
+                "url": "https://dzen.ru/a/aqs8sx3cWgqrMAzT",
+                "url_type": "plain",
+                "rec_secdata": "COjNh+eKNCABUA9qAQGQAQA=",
+                "origin_id": "4036240292142625435",
+                "origin_type": "publisher",
+                "place": "more",
+                "isStellaBoosted": false,
+                "isCoolNews": false,
+                "isCuratedArticle": false
+            },
+            "socialInfo": {
+                "commentsEnabled": true,
+                "likesCount": 1,
+                "commentCount": 0,
+                "avatarUrls": []
+            },
+            "version": "newApi",
+            "isPremium": false,
+            "isNativeAds": false,
+            "isArchive": false,
+            "isArchiveBoughtByStella": false,
+            "feedSpecificData": {
+                "isSavedToBookmarks": false,
+                "suites": [],
+                "isFreshFromSubscriptions": false
+            },
+            "allAdSettings": {},
+            "viewsTillEnd": 3
+        },
+        {
+            "id": "-4259974545135965915",
+            "item_type": "channel_block_videos",
+            "type": "channel_long_video_floor",
+            "pos": 5,
+            "title": "Видео",
+            "items": [
+                {
+                    "id": "6aaa96707586b9279e33a6ce",
+                    "type": "gif",
+                    "itemId": "8361783954406684778",
+                    "itemType": "gif",
+                    "title": "Ремонт в срок, тепло в дома – ангарские ТЭЦ прошли проверку перед зимой",
+                    "text": "",
+                    "sourceId": "599aa25d57906a8ab6553398",
+                    "shareLink": "https://dzen.ru/video/watch/6aaa96707586b9279e33a6ce",
+                    "allCommentsLink": "https://dzen.ru/video/watch/6aaa96707586b9279e33a6ce?rid=3689788995.1646.1789800485723.40496&comment-request=1&referrer_clid=1400&#comments_data=p_root",
+                    "link": "https://dzen.ru/video/watch/6aaa96707586b9279e33a6ce?rid=3689788995.1646.1789800485723.40496&referrer_clid=1400&",
+                    "isPromoPublication": false,
+                    "views": 8,
+                    "repostUrl": "https://dzen.ru/media/zen/login?repostId=6aaa96707586b9279e33a6ce&briefEditorPublicationId=draft",
+                    "publicationDate": "1789564665",
+                    "source": {
+                        "id": "599aa25d57906a8ab6553398",
+                        "itemId": "4036240292142625435",
+                        "type": "publisher",
+                        "title": "Братская студия телевидения",
+                        "description": "Из жизни Братска",
+                        "link": "https://dzen.ru/bst24bratsk?lang=ru&country_code=ru&parent_rid=3689788995.1646.1789800485723.40496&from_parent_id=8361783954406684778&from_parent_type=gif&from_page=other_page",
+                        "shareLink": "https://dzen.ru/bst24bratsk",
+                        "isVerified": false,
+                        "image": {
+                            "logo": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/xxh",
+                            "framedLogo": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed_3x",
+                            "logoSizes": {
+                                "framed_100x128_1x": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed_100x128_1x",
+                                "framed_132x176_1x": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed",
+                                "framed_212x280_1x": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed_212x280_1x",
+                                "framed_202x260_1x": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed_202x260_1x",
+                                "smart_crop_160": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/smart_crop_160"
+                            },
+                            "logoBackgroundColor": "#F8F8F8",
+                            "titleBackgroundColor": "#C7C7C7",
+                            "titleColor": "#000000",
+                            "headerBackgroundColor": "#B2B2B2",
+                            "redesignLogos": {},
+                            "isStubLogo": false
+                        },
+                        "metricaId": 45934887,
+                        "subscribers": 6310,
+                        "status": "not_subscribed",
+                        "telegramBotSubscriptionUrl": "https://t.me/dzenpushbot?start=CF_599aa25d57906a8ab6553398_466370828",
+                        "isMyChannel": true,
+                        "isPremiumAuthor": false,
+                        "isDonationEnabled": false,
+                        "isBirthday": false
+                    },
+                    "recommendationsInfo": {},
+                    "promoLabel": {
+                        "text": "6,3K подписчиков",
+                        "text_color": "#FFFFFF",
+                        "channel_info_subscribed": "6,3K подписчиков",
+                        "channel_info_unsubscribed": "6,3K подписчиков"
+                    },
+                    "image": {
+                        "urlTemplate": "https://avatars.dzeninfra.ru/get-{namespace}/271828/pub_6aaa96707586b9279e33a6ce_6aaa96f4b0ba50276791043d/{size}",
+                        "id": "pub_6aaa96707586b9279e33a6ce_6aaa96f4b0ba50276791043d",
+                        "namespace": "zen_doc",
+                        "originalSize": {
+                            "width": 1920,
+                            "height": 1080
+                        },
+                        "wasRotated": false,
+                        "meta": {
+                            "mainColor": "#181818"
+                        },
+                        "width": 1200,
+                        "height": 675,
+                        "sizeName": "scale_1200"
+                    },
+                    "bulkData": {
+                        "url": "https://dzen.ru/video/watch/6aaa96707586b9279e33a6ce",
+                        "parent_id": "-4259974545135965915",
+                        "parent_type": "channel_block_videos",
+                        "url_type": "plain",
+                        "rec_secdata": "CL349tKKNCABUA9qAQGQAQA=",
+                        "video_pool_type": "unknown",
+                        "origin_id": "4036240292142625435",
+                        "origin_type": "publisher",
+                        "place": "more"
+                    },
+                    "socialInfo": {
+                        "commentsEnabled": true,
+                        "likesCount": 1,
+                        "commentCount": 0,
+                        "avatarUrls": []
+                    },
+                    "version": "newApi",
+                    "isPremium": false,
+                    "isNativeAds": false,
+                    "isArchive": false,
+                    "isArchiveBoughtByStella": false,
+                    "isAdult": false,
+                    "badSeoLinks": [],
+                    "feedSpecificData": {
+                        "isSavedToBookmarks": false,
+                        "suites": [],
+                        "isFreshFromSubscriptions": false,
+                        "hasDescription": true,
+                        "doc2docConfig": {
+                            "activeTabId": "RELATED",
+                            "tabs": [
+                                {
+                                    "title": "Похожие",
+                                    "url": "https://dzen.ru/api/web/v1/video-related?short_video_feed=false&item_type=gif&item_id=8361783954406684778&source_id=4036240292142625435&source_type=publisher&country_code=ru&lang=ru&_csrf=5c732b7012e3e4faa0022f5cac083ed923e86d9e-1789800485740-466370828-8187184411787747591%3A0&clid=1400",
+                                    "id": "RELATED"
+                                },
+                                {
+                                    "title": "Эксклюзивы",
+                                    "url": "https://dzen.ru/api/web/v1/video-related-original?short_video_feed=false&item_type=gif&item_id=8361783954406684778&source_id=4036240292142625435&source_type=publisher&country_code=ru&lang=ru&_csrf=5c732b7012e3e4faa0022f5cac083ed923e86d9e-1789800485740-466370828-8187184411787747591%3A0&clid=1400",
+                                    "id": "ORIGINAL_CONTENT"
+                                },
+                                {
+                                    "title": "Лента автора",
+                                    "url": "https://dzen.ru/api/web/v1/channel?content_type=long_video&feed_type=video&country_code=ru&lang=ru&_csrf=5c732b7012e3e4faa0022f5cac083ed923e86d9e-1789800485740-466370828-8187184411787747591%3A0&clid=1400&channel_name=bst24bratsk",
+                                    "id": "PUBLISHER_FEED"
+                                },
+                                {
+                                    "title": "История просмотров",
+                                    "url": "https://dzen.ru/api/web/v1/history-export?item_type=gif&item_id=8361783954406684778&country_code=ru&lang=ru&_csrf=5c732b7012e3e4faa0022f5cac083ed923e86d9e-1789800485740-466370828-8187184411787747591%3A0&clid=1400",
+                                    "id": "VIEW_HISTORY"
+                                }
+                            ]
+                        },
+                        "mentions": []
+                    },
+                    "video": {
+                        "id": "https://vd469.okcdn.ru/video.m3u8?cmd=videoPlayerCdn&expires=1790059686312&srcIp=90.188.250.136&pr=70&srcAg=CHROME_MAC&ch=-1208623256&ms=176.112.172.104&mid=16944088434182&type=2&subId=18432728566282&sig=KqYFCJjAxpY&ct=8&du=105339&urls=95.163.35.35&clientType=33&asubs=y&zs=111%3B120%3B69&id=18432728566282&scl=5",
+                        "autoplay": true,
+                        "duration": 105,
+                        "hasSound": true,
+                        "hasSubtitles": true,
+                        "additionalParams": {
+                            "from": "zen",
+                            "ppi": "site_desktop:dzen:site_desktop",
+                            "fromBlock": "zen_feed",
+                            "puid": "466370828",
+                            "videoContentId": "oBkZfGmkPAAA",
+                            "oneVideoId": "16944088434182",
+                            "strongestId": "466370828",
+                            "itemId": "8361783954406684778",
+                            "rid": "3689788995.1646.1789800485723.40496",
+                            "streamBlock": "more:channel",
+                            "duration": 105
+                        },
+                        "firstFrames": [
+                            {
+                                "width": 0,
+                                "height": 0,
+                                "url": "https://iv.okcdn.ru/videoPreview?id=18432728566282&type=32&idx=0&tkn=YOfkhuPa8vXX3ghk8BU1xHETr_M",
+                                "bitrate": 0
+                            }
+                        ],
+                        "longPreviews": {},
+                        "viewedTime": 12,
+                        "viewedTimeView": 11,
+                        "videoContentId": "oBkZfGmkPAAA",
+                        "resolutions": [
+                            {
+                                "width": 256,
+                                "height": 144
+                            },
+                            {
+                                "width": 426,
+                                "height": 240,
+                                "sizeInBytes": 4278128,
+                                "label": "Низкое",
+                                "allowDownload": true
+                            },
+                            {
+                                "width": 852,
+                                "height": 480,
+                                "sizeInBytes": 10015930,
+                                "label": "Среднее",
+                                "allowDownload": true
+                            },
+                            {
+                                "width": 640,
+                                "height": 360
+                            },
+                            {
+                                "width": 1280,
+                                "height": 720,
+                                "sizeInBytes": 17961733,
+                                "label": "Высокое",
+                                "allowDownload": true
+                            },
+                            {
+                                "width": 1920,
+                                "height": 1080
+                            }
+                        ],
+                        "oneVideoStreams": [
+                            {
+                                "url": "https://vd469.okcdn.ru/video.m3u8?cmd=videoPlayerCdn&expires=1790059686312&srcIp=90.188.250.136&pr=70&srcAg=CHROME_MAC&ch=-1208623256&ms=176.112.172.104&mid=16944088434182&type=2&subId=18432728566282&sig=KqYFCJjAxpY&ct=8&du=105339&urls=95.163.35.35&clientType=33&asubs=y&zs=111%3B120%3B69&id=18432728566282&scl=5",
+                                "type": "hls"
+                            },
+                            {
+                                "url": "https://vd469.okcdn.ru/?expires=1790059686312&srcIp=90.188.250.136&pr=70&srcAg=CHROME_MAC&ch=1554472743&ms=176.112.172.104&mid=16944088434182&type=1&subId=18432728566282&sig=D70S9X5_spo&ct=6&urls=95.163.35.35&clientType=33&asubs=y&zs=111%3B120%3B69&id=18432728566282&scl=5",
+                                "type": "dash"
+                            },
+                            {
+                                "url": "https://vd469.okcdn.ru/?expires=1790059686312&srcIp=90.188.250.136&pr=70&srcAg=CHROME_MAC&ms=176.112.172.104&type=4&subId=18432728566282&sig=hpAsdE3BtrA&ct=0&urls=95.163.35.35&clientType=33&zs=111%3B120%3B69&id=18432728566282&scl=5",
+                                "type": "tiny"
+                            },
+                            {
+                                "url": "https://vd469.okcdn.ru/?expires=1790059686312&srcIp=90.188.250.136&pr=70&srcAg=CHROME_MAC&ms=176.112.172.104&type=0&subId=18432728566282&sig=RZ_FttdN184&ct=0&urls=95.163.35.35&clientType=33&zs=111%3B120%3B69&id=18432728566282&scl=5",
+                                "type": "lowest"
+                            },
+                            {
+                                "url": "https://vd469.okcdn.ru/?expires=1790059686312&srcIp=90.188.250.136&pr=70&srcAg=CHROME_MAC&ms=176.112.172.104&type=1&subId=18432728566282&sig=9mJUCqLE0sk&ct=0&urls=95.163.35.35&clientType=33&zs=111%3B120%3B69&id=18432728566282&scl=5",
+                                "type": "low"
+                            },
+                            {
+                                "url": "https://vd469.okcdn.ru/?expires=1790059686312&srcIp=90.188.250.136&pr=70&srcAg=CHROME_MAC&ms=176.112.172.104&type=2&subId=18432728566282&sig=j4ztAkUyiYw&ct=0&urls=95.163.35.35&clientType=33&zs=111%3B120%3B69&id=18432728566282&scl=5",
+                                "type": "medium"
+                            },
+                            {
+                                "url": "https://vd469.okcdn.ru/?expires=1790059686312&srcIp=90.188.250.136&pr=70&srcAg=CHROME_MAC&ms=176.112.172.104&type=3&subId=18432728566282&sig=lu8jARS3FcY&ct=0&urls=95.163.35.35&clientType=33&zs=111%3B120%3B69&id=18432728566282&scl=5",
+                                "type": "high"
+                            },
+                            {
+                                "url": "https://vd469.okcdn.ru/?expires=1790059686312&srcIp=90.188.250.136&pr=70&srcAg=CHROME_MAC&ms=176.112.172.104&type=5&subId=18432728566282&sig=zqDXlSsLgJ4&ct=0&urls=95.163.35.35&clientType=33&zs=111%3B120%3B69&id=18432728566282&scl=5",
+                                "type": "fullhd"
+                            }
+                        ],
+                        "timelinePreviews": [
+                            {
+                                "countPerImage": 120,
+                                "countPerRow": 40,
+                                "countTotal": 106,
+                                "frameHeight": 44,
+                                "frameWidth": 80,
+                                "urls": [
+                                    "https://iv.okcdn.ru/videoPreview?id=18432728566282&type=36&idx=0&tkn=ibZQjmoZZirNyD9FR8NE4EhJrqo"
+                                ]
+                            },
+                            {
+                                "countPerImage": 100,
+                                "countPerRow": 10,
+                                "countTotal": 106,
+                                "frameHeight": 44,
+                                "frameWidth": 80,
+                                "urls": [
+                                    "https://iv.okcdn.ru/videoPreview?id=18432728566282&type=40&tkn=QL0SZ1aDwMWc10UY9zCpUBJtSJI&uidx=0",
+                                    "https://iv.okcdn.ru/videoPreview?id=18432728566282&type=40&tkn=QL0SZ1aDwMWc10UY9zCpUBJtSJI&uidx=1"
+                                ]
+                            },
+                            {
+                                "countPerImage": 25,
+                                "countPerRow": 5,
+                                "countTotal": 106,
+                                "frameHeight": 90,
+                                "frameWidth": 160,
+                                "urls": [
+                                    "https://iv.okcdn.ru/videoPreview?id=18432728566282&type=41&tkn=L2oTGIzFFha6KyF7uFZyCgnpovU&uidx=0",
+                                    "https://iv.okcdn.ru/videoPreview?id=18432728566282&type=41&tkn=L2oTGIzFFha6KyF7uFZyCgnpovU&uidx=1",
+                                    "https://iv.okcdn.ru/videoPreview?id=18432728566282&type=41&tkn=L2oTGIzFFha6KyF7uFZyCgnpovU&uidx=2",
+                                    "https://iv.okcdn.ru/videoPreview?id=18432728566282&type=41&tkn=L2oTGIzFFha6KyF7uFZyCgnpovU&uidx=3",
+                                    "https://iv.okcdn.ru/videoPreview?id=18432728566282&type=41&tkn=L2oTGIzFFha6KyF7uFZyCgnpovU&uidx=4"
+                                ]
+                            },
+                            {
+                                "countPerImage": 9,
+                                "countPerRow": 3,
+                                "countTotal": 106,
+                                "frameHeight": 180,
+                                "frameWidth": 320,
+                                "urls": [
+                                    "https://iv.okcdn.ru/videoPreview?id=18432728566282&type=42&tkn=ubwi05LJoipJWwmVCYFJmTOaL6s&uidx=0",
+                                    "https://iv.okcdn.ru/videoPreview?id=18432728566282&type=42&tkn=ubwi05LJoipJWwmVCYFJmTOaL6s&uidx=1",
+                                    "https://iv.okcdn.ru/videoPreview?id=18432728566282&type=42&tkn=ubwi05LJoipJWwmVCYFJmTOaL6s&uidx=2",
+                                    "https://iv.okcdn.ru/videoPreview?id=18432728566282&type=42&tkn=ubwi05LJoipJWwmVCYFJmTOaL6s&uidx=3",
+                                    "https://iv.okcdn.ru/videoPreview?id=18432728566282&type=42&tkn=ubwi05LJoipJWwmVCYFJmTOaL6s&uidx=4",
+                                    "https://iv.okcdn.ru/videoPreview?id=18432728566282&type=42&tkn=ubwi05LJoipJWwmVCYFJmTOaL6s&uidx=5",
+                                    "https://iv.okcdn.ru/videoPreview?id=18432728566282&type=42&tkn=ubwi05LJoipJWwmVCYFJmTOaL6s&uidx=6",
+                                    "https://iv.okcdn.ru/videoPreview?id=18432728566282&type=42&tkn=ubwi05LJoipJWwmVCYFJmTOaL6s&uidx=7",
+                                    "https://iv.okcdn.ru/videoPreview?id=18432728566282&type=42&tkn=ubwi05LJoipJWwmVCYFJmTOaL6s&uidx=8",
+                                    "https://iv.okcdn.ru/videoPreview?id=18432728566282&type=42&tkn=ubwi05LJoipJWwmVCYFJmTOaL6s&uidx=9",
+                                    "https://iv.okcdn.ru/videoPreview?id=18432728566282&type=42&tkn=ubwi05LJoipJWwmVCYFJmTOaL6s&uidx=10",
+                                    "https://iv.okcdn.ru/videoPreview?id=18432728566282&type=42&tkn=ubwi05LJoipJWwmVCYFJmTOaL6s&uidx=11"
+                                ]
+                            }
+                        ],
+                        "failoverHost": "vd758.okcdn.ru",
+                        "streams": [
+                            "https://vd469.okcdn.ru/video.m3u8?cmd=videoPlayerCdn&expires=1790059686312&srcIp=90.188.250.136&pr=70&srcAg=CHROME_MAC&ch=-1208623256&ms=176.112.172.104&mid=16944088434182&type=2&subId=18432728566282&sig=KqYFCJjAxpY&ct=8&du=105339&urls=95.163.35.35&clientType=33&asubs=y&zs=111%3B120%3B69&id=18432728566282&scl=5",
+                            "https://vd469.okcdn.ru/?expires=1790059686312&srcIp=90.188.250.136&pr=70&srcAg=CHROME_MAC&ch=1554472743&ms=176.112.172.104&mid=16944088434182&type=1&subId=18432728566282&sig=D70S9X5_spo&ct=6&urls=95.163.35.35&clientType=33&asubs=y&zs=111%3B120%3B69&id=18432728566282&scl=5",
+                            "https://vd469.okcdn.ru/?expires=1790059686312&srcIp=90.188.250.136&pr=70&srcAg=CHROME_MAC&ms=176.112.172.104&type=4&subId=18432728566282&sig=hpAsdE3BtrA&ct=0&urls=95.163.35.35&clientType=33&zs=111%3B120%3B69&id=18432728566282&scl=5&dzen_dash=.mp4",
+                            "https://vd469.okcdn.ru/?expires=1790059686312&srcIp=90.188.250.136&pr=70&srcAg=CHROME_MAC&ms=176.112.172.104&type=0&subId=18432728566282&sig=RZ_FttdN184&ct=0&urls=95.163.35.35&clientType=33&zs=111%3B120%3B69&id=18432728566282&scl=5&dzen_dash=.mp4",
+                            "https://vd469.okcdn.ru/?expires=1790059686312&srcIp=90.188.250.136&pr=70&srcAg=CHROME_MAC&ms=176.112.172.104&type=1&subId=18432728566282&sig=9mJUCqLE0sk&ct=0&urls=95.163.35.35&clientType=33&zs=111%3B120%3B69&id=18432728566282&scl=5&dzen_dash=.mp4",
+                            "https://vd469.okcdn.ru/?expires=1790059686312&srcIp=90.188.250.136&pr=70&srcAg=CHROME_MAC&ms=176.112.172.104&type=2&subId=18432728566282&sig=j4ztAkUyiYw&ct=0&urls=95.163.35.35&clientType=33&zs=111%3B120%3B69&id=18432728566282&scl=5&dzen_dash=.mp4",
+                            "https://vd469.okcdn.ru/?expires=1790059686312&srcIp=90.188.250.136&pr=70&srcAg=CHROME_MAC&ms=176.112.172.104&type=3&subId=18432728566282&sig=lu8jARS3FcY&ct=0&urls=95.163.35.35&clientType=33&zs=111%3B120%3B69&id=18432728566282&scl=5&dzen_dash=.mp4",
+                            "https://vd469.okcdn.ru/?expires=1790059686312&srcIp=90.188.250.136&pr=70&srcAg=CHROME_MAC&ms=176.112.172.104&type=5&subId=18432728566282&sig=zqDXlSsLgJ4&ct=0&urls=95.163.35.35&clientType=33&zs=111%3B120%3B69&id=18432728566282&scl=5&dzen_dash=.mp4"
+                        ],
+                        "width": 1920,
+                        "height": 1080,
+                        "previews": {
+                            "1920": "https://vd469.okcdn.ru/?expires=1790059686312&srcIp=90.188.250.136&srcAg=CHROME_MAC&ms=176.112.172.104&type=5&subId=18432728566282&sig=bHEhCieIlhg&ct=19&urls=95.163.35.35&clientType=33&zs=111%3B120%3B69&id=18432728566282&scl=5",
+                            "640": "https://vd469.okcdn.ru/?expires=1790059686312&srcIp=90.188.250.136&srcAg=CHROME_MAC&ms=176.112.172.104&type=1&subId=18432728566282&sig=f-UY1AHNSA0&ct=19&urls=95.163.35.35&clientType=33&zs=111%3B120%3B69&id=18432728566282&scl=5",
+                            "256": "https://vd469.okcdn.ru/?expires=1790059686312&srcIp=90.188.250.136&srcAg=CHROME_MAC&ms=176.112.172.104&type=4&subId=18432728566282&sig=6gH6bjN1fcQ&ct=19&urls=95.163.35.35&clientType=33&zs=111%3B120%3B69&id=18432728566282&scl=5",
+                            "852": "https://vd469.okcdn.ru/?expires=1790059686312&srcIp=90.188.250.136&srcAg=CHROME_MAC&ms=176.112.172.104&type=2&subId=18432728566282&sig=4AFfOZvofIM&ct=19&urls=95.163.35.35&clientType=33&zs=111%3B120%3B69&id=18432728566282&scl=5",
+                            "426": "https://vd469.okcdn.ru/?expires=1790059686312&srcIp=90.188.250.136&srcAg=CHROME_MAC&ms=176.112.172.104&type=0&subId=18432728566282&sig=H3LxDytFBlo&ct=19&urls=95.163.35.35&clientType=33&zs=111%3B120%3B69&id=18432728566282&scl=5",
+                            "1280": "https://vd469.okcdn.ru/?expires=1790059686312&srcIp=90.188.250.136&srcAg=CHROME_MAC&ms=176.112.172.104&type=3&subId=18432728566282&sig=aqBD9Mk_VVk&ct=19&urls=95.163.35.35&clientType=33&zs=111%3B120%3B69&id=18432728566282&scl=5"
+                        }
+                    },
+                    "allAdSettings": {},
+                    "thematicBanners": []
+                },
+                {
+                    "id": "6aaa9681db08b02630d5e1f2",
+                    "type": "gif",
+                    "itemId": "-5105087118140812740",
+                    "itemType": "gif",
+                    "title": "Флорист Юлия Леонтьева рассказала о любви к цветам в эфире «Утра бодрого режима»",
+                    "text": "",
+                    "sourceId": "599aa25d57906a8ab6553398",
+                    "shareLink": "https://dzen.ru/video/watch/6aaa9681db08b02630d5e1f2",
+                    "allCommentsLink": "https://dzen.ru/video/watch/6aaa9681db08b02630d5e1f2?rid=3689788995.1646.1789800485723.40496&comment-request=1&referrer_clid=1400&#comments_data=p_root",
+                    "link": "https://dzen.ru/video/watch/6aaa9681db08b02630d5e1f2?rid=3689788995.1646.1789800485723.40496&referrer_clid=1400&",
+                    "isPromoPublication": false,
+                    "views": 6,
+                    "repostUrl": "https://dzen.ru/media/zen/login?repostId=6aaa9681db08b02630d5e1f2&briefEditorPublicationId=draft",
+                    "publicationDate": "1789564648",
+                    "source": {
+                        "id": "599aa25d57906a8ab6553398",
+                        "itemId": "4036240292142625435",
+                        "type": "publisher",
+                        "title": "Братская студия телевидения",
+                        "description": "Из жизни Братска",
+                        "link": "https://dzen.ru/bst24bratsk?lang=ru&country_code=ru&parent_rid=3689788995.1646.1789800485723.40496&from_parent_id=-5105087118140812740&from_parent_type=gif&from_page=other_page",
+                        "shareLink": "https://dzen.ru/bst24bratsk",
+                        "isVerified": false,
+                        "image": {
+                            "logo": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/xxh",
+                            "framedLogo": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed_3x",
+                            "logoSizes": {
+                                "framed_100x128_1x": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed_100x128_1x",
+                                "framed_132x176_1x": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed",
+                                "framed_212x280_1x": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed_212x280_1x",
+                                "framed_202x260_1x": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed_202x260_1x",
+                                "smart_crop_160": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/smart_crop_160"
+                            },
+                            "logoBackgroundColor": "#F8F8F8",
+                            "titleBackgroundColor": "#C7C7C7",
+                            "titleColor": "#000000",
+                            "headerBackgroundColor": "#B2B2B2",
+                            "redesignLogos": {},
+                            "isStubLogo": false
+                        },
+                        "metricaId": 45934887,
+                        "subscribers": 6310,
+                        "status": "not_subscribed",
+                        "telegramBotSubscriptionUrl": "https://t.me/dzenpushbot?start=CF_599aa25d57906a8ab6553398_466370828",
+                        "isMyChannel": true,
+                        "isPremiumAuthor": false,
+                        "isDonationEnabled": false,
+                        "isBirthday": false
+                    },
+                    "recommendationsInfo": {},
+                    "promoLabel": {
+                        "text": "6,3K подписчиков",
+                        "text_color": "#FFFFFF",
+                        "channel_info_subscribed": "6,3K подписчиков",
+                        "channel_info_unsubscribed": "6,3K подписчиков"
+                    },
+                    "image": {
+                        "urlTemplate": "https://avatars.dzeninfra.ru/get-{namespace}/271828/pub_6aaa9681db08b02630d5e1f2_6aaa96e1fff8b146742cf8fd/{size}",
+                        "id": "pub_6aaa9681db08b02630d5e1f2_6aaa96e1fff8b146742cf8fd",
+                        "namespace": "zen_doc",
+                        "originalSize": {
+                            "width": 1920,
+                            "height": 1080
+                        },
+                        "wasRotated": false,
+                        "meta": {
+                            "mainColor": "#101020"
+                        },
+                        "width": 1200,
+                        "height": 675,
+                        "sizeName": "scale_1200"
+                    },
+                    "bulkData": {
+                        "url": "https://dzen.ru/video/watch/6aaa9681db08b02630d5e1f2",
+                        "parent_id": "-4259974545135965915",
+                        "parent_type": "channel_block_videos",
+                        "url_type": "plain",
+                        "rec_secdata": "CK3y9dKKNCABUA9qAQGQAQA=",
+                        "video_pool_type": "unknown",
+                        "origin_id": "4036240292142625435",
+                        "origin_type": "publisher",
+                        "place": "more"
+                    },
+                    "socialInfo": {
+                        "commentsEnabled": true,
+                        "commentCount": 0,
+                        "avatarUrls": []
+                    },
+                    "version": "newApi",
+                    "isPremium": false,
+                    "isNativeAds": false,
+                    "isArchive": false,
+                    "isArchiveBoughtByStella": false,
+                    "isAdult": false,
+                    "badSeoLinks": [],
+                    "feedSpecificData": {
+                        "isSavedToBookmarks": false,
+                        "suites": [],
+                        "isFreshFromSubscriptions": false,
+                        "hasDescription": true,
+                        "doc2docConfig": {
+                            "activeTabId": "RELATED",
+                            "tabs": [
+                                {
+                                    "title": "Похожие",
+                                    "url": "https://dzen.ru/api/web/v1/video-related?short_video_feed=false&item_type=gif&item_id=-5105087118140812740&source_id=4036240292142625435&source_type=publisher&country_code=ru&lang=ru&_csrf=5c732b7012e3e4faa0022f5cac083ed923e86d9e-1789800485740-466370828-8187184411787747591%3A0&clid=1400",
+                                    "id": "RELATED"
+                                },
+                                {
+                                    "title": "Эксклюзивы",
+                                    "url": "https://dzen.ru/api/web/v1/video-related-original?short_video_feed=false&item_type=gif&item_id=-5105087118140812740&source_id=4036240292142625435&source_type=publisher&country_code=ru&lang=ru&_csrf=5c732b7012e3e4faa0022f5cac083ed923e86d9e-1789800485740-466370828-8187184411787747591%3A0&clid=1400",
+                                    "id": "ORIGINAL_CONTENT"
+                                },
+                                {
+                                    "title": "Лента автора",
+                                    "url": "https://dzen.ru/api/web/v1/channel?content_type=long_video&feed_type=video&country_code=ru&lang=ru&_csrf=5c732b7012e3e4faa0022f5cac083ed923e86d9e-1789800485740-466370828-8187184411787747591%3A0&clid=1400&channel_name=bst24bratsk",
+                                    "id": "PUBLISHER_FEED"
+                                },
+                                {
+                                    "title": "История просмотров",
+                                    "url": "https://dzen.ru/api/web/v1/history-export?item_type=gif&item_id=-5105087118140812740&country_code=ru&lang=ru&_csrf=5c732b7012e3e4faa0022f5cac083ed923e86d9e-1789800485740-466370828-8187184411787747591%3A0&clid=1400",
+                                    "id": "VIEW_HISTORY"
+                                }
+                            ]
+                        },
+                        "mentions": []
+                    },
+                    "video": {
+                        "id": "https://vd760.okcdn.ru/video.m3u8?srcIp=90.188.250.136&pr=70&expires=1790259686308&srcAg=CHROME_MAC&fromCache=1&ch=565180188&ms=95.163.35.37&mid=16944092169734&type=2&subId=18079095523885&sig=9qgBZVpCHQk&ct=8&du=142109&urls=178.237.23.56&clientType=33&asubs=y&zs=111%3B120%3B69&cmd=videoPlayerCdn&id=18079095523885&scl=5",
+                        "autoplay": true,
+                        "duration": 142,
+                        "hasSound": true,
+                        "hasSubtitles": true,
+                        "additionalParams": {
+                            "from": "zen",
+                            "ppi": "site_desktop:dzen:site_desktop",
+                            "fromBlock": "zen_feed",
+                            "puid": "466370828",
+                            "videoContentId": "oBkaYGmkPAAA",
+                            "oneVideoId": "16944092169734",
+                            "strongestId": "466370828",
+                            "itemId": "-5105087118140812740",
+                            "rid": "3689788995.1646.1789800485723.40496",
+                            "streamBlock": "more:channel",
+                            "duration": 142
+                        },
+                        "firstFrames": [
+                            {
+                                "width": 0,
+                                "height": 0,
+                                "url": "https://iv.okcdn.ru/videoPreview?id=18079095523885&type=32&idx=1&tkn=_XVQWPmyrPfpbgdAM_GBQMYFcVM",
+                                "bitrate": 0
+                            }
+                        ],
+                        "longPreviews": {},
+                        "videoContentId": "oBkaYGmkPAAA",
+                        "resolutions": [
+                            {
+                                "width": 256,
+                                "height": 144
+                            },
+                            {
+                                "width": 640,
+                                "height": 360
+                            },
+                            {
+                                "width": 426,
+                                "height": 240,
+                                "sizeInBytes": 5275062,
+                                "label": "Низкое",
+                                "allowDownload": true
+                            },
+                            {
+                                "width": 1280,
+                                "height": 720,
+                                "sizeInBytes": 19973472,
+                                "label": "Высокое",
+                                "allowDownload": true
+                            },
+                            {
+                                "width": 852,
+                                "height": 480,
+                                "sizeInBytes": 10424099,
+                                "label": "Среднее",
+                                "allowDownload": true
+                            },
+                            {
+                                "width": 1920,
+                                "height": 1080
+                            }
+                        ],
+                        "oneVideoStreams": [
+                            {
+                                "url": "https://vd760.okcdn.ru/video.m3u8?srcIp=90.188.250.136&pr=70&expires=1790259686308&srcAg=CHROME_MAC&fromCache=1&ch=565180188&ms=95.163.35.37&mid=16944092169734&type=2&subId=18079095523885&sig=9qgBZVpCHQk&ct=8&du=142109&urls=178.237.23.56&clientType=33&asubs=y&zs=111%3B120%3B69&cmd=videoPlayerCdn&id=18079095523885&scl=5",
+                                "type": "hls"
+                            },
+                            {
+                                "url": "https://vd760.okcdn.ru/?srcIp=90.188.250.136&pr=70&expires=1790259686308&srcAg=CHROME_MAC&fromCache=1&ch=871088282&ms=95.163.35.37&mid=16944092169734&type=1&subId=18079095523885&sig=NIJOfyAYpJI&ct=6&urls=178.237.23.56&clientType=33&asubs=y&zs=111%3B120%3B69&id=18079095523885&scl=5",
+                                "type": "dash"
+                            },
+                            {
+                                "url": "https://vd760.okcdn.ru/?srcIp=90.188.250.136&pr=70&expires=1790259686308&srcAg=CHROME_MAC&fromCache=1&ms=95.163.35.37&type=4&subId=18079095523885&sig=GxLe88tnTm8&ct=0&urls=178.237.23.56&clientType=33&zs=111%3B120%3B69&id=18079095523885&scl=5",
+                                "type": "tiny"
+                            },
+                            {
+                                "url": "https://vd760.okcdn.ru/?srcIp=90.188.250.136&pr=70&expires=1790259686308&srcAg=CHROME_MAC&fromCache=1&ms=95.163.35.37&type=0&subId=18079095523885&sig=_hAT_P79_lQ&ct=0&urls=178.237.23.56&clientType=33&zs=111%3B120%3B69&id=18079095523885&scl=5",
+                                "type": "lowest"
+                            },
+                            {
+                                "url": "https://vd760.okcdn.ru/?srcIp=90.188.250.136&pr=70&expires=1790259686308&srcAg=CHROME_MAC&fromCache=1&ms=95.163.35.37&type=1&subId=18079095523885&sig=xHwAjRERUA4&ct=0&urls=178.237.23.56&clientType=33&zs=111%3B120%3B69&id=18079095523885&scl=5",
+                                "type": "low"
+                            },
+                            {
+                                "url": "https://vd760.okcdn.ru/?srcIp=90.188.250.136&pr=70&expires=1790259686308&srcAg=CHROME_MAC&fromCache=1&ms=95.163.35.37&type=2&subId=18079095523885&sig=STrDxWH3Q1c&ct=0&urls=178.237.23.56&clientType=33&zs=111%3B120%3B69&id=18079095523885&scl=5",
+                                "type": "medium"
+                            },
+                            {
+                                "url": "https://vd760.okcdn.ru/?srcIp=90.188.250.136&pr=70&expires=1790259686308&srcAg=CHROME_MAC&fromCache=1&ms=95.163.35.37&type=3&subId=18079095523885&sig=hMAsBSdE2tQ&ct=0&urls=178.237.23.56&clientType=33&zs=111%3B120%3B69&id=18079095523885&scl=5",
+                                "type": "high"
+                            },
+                            {
+                                "url": "https://vd760.okcdn.ru/?srcIp=90.188.250.136&pr=70&expires=1790259686308&srcAg=CHROME_MAC&fromCache=1&ms=95.163.35.37&type=5&subId=18079095523885&sig=-jHbtxiyfZ8&ct=0&urls=178.237.23.56&clientType=33&zs=111%3B120%3B69&id=18079095523885&scl=5",
+                                "type": "fullhd"
+                            }
+                        ],
+                        "timelinePreviews": [
+                            {
+                                "countPerImage": 80,
+                                "countPerRow": 40,
+                                "countTotal": 71,
+                                "frameHeight": 44,
+                                "frameWidth": 80,
+                                "urls": [
+                                    "https://iv.okcdn.ru/videoPreview?id=18079095523885&type=36&idx=0&tkn=6JlHh4mDHdvASA3pEyynmEBNebo"
+                                ]
+                            },
+                            {
+                                "countPerImage": 80,
+                                "countPerRow": 10,
+                                "countTotal": 71,
+                                "frameHeight": 44,
+                                "frameWidth": 80,
+                                "urls": [
+                                    "https://iv.okcdn.ru/videoPreview?id=18079095523885&type=40&tkn=Vl1FXDazGvqoss8ljLz_OPOFJBU&uidx=0"
+                                ]
+                            },
+                            {
+                                "countPerImage": 25,
+                                "countPerRow": 5,
+                                "countTotal": 71,
+                                "frameHeight": 90,
+                                "frameWidth": 160,
+                                "urls": [
+                                    "https://iv.okcdn.ru/videoPreview?id=18079095523885&type=41&tkn=pDGk-KFJI_0gASJGNjwadaRrEhE&uidx=0",
+                                    "https://iv.okcdn.ru/videoPreview?id=18079095523885&type=41&tkn=pDGk-KFJI_0gASJGNjwadaRrEhE&uidx=1",
+                                    "https://iv.okcdn.ru/videoPreview?id=18079095523885&type=41&tkn=pDGk-KFJI_0gASJGNjwadaRrEhE&uidx=2"
+                                ]
+                            },
+                            {
+                                "countPerImage": 9,
+                                "countPerRow": 3,
+                                "countTotal": 71,
+                                "frameHeight": 180,
+                                "frameWidth": 320,
+                                "urls": [
+                                    "https://iv.okcdn.ru/videoPreview?id=18079095523885&type=42&tkn=aW6zW6jxxpZX0HfB1XC0M8ieijU&uidx=0",
+                                    "https://iv.okcdn.ru/videoPreview?id=18079095523885&type=42&tkn=aW6zW6jxxpZX0HfB1XC0M8ieijU&uidx=1",
+                                    "https://iv.okcdn.ru/videoPreview?id=18079095523885&type=42&tkn=aW6zW6jxxpZX0HfB1XC0M8ieijU&uidx=2",
+                                    "https://iv.okcdn.ru/videoPreview?id=18079095523885&type=42&tkn=aW6zW6jxxpZX0HfB1XC0M8ieijU&uidx=3",
+                                    "https://iv.okcdn.ru/videoPreview?id=18079095523885&type=42&tkn=aW6zW6jxxpZX0HfB1XC0M8ieijU&uidx=4",
+                                    "https://iv.okcdn.ru/videoPreview?id=18079095523885&type=42&tkn=aW6zW6jxxpZX0HfB1XC0M8ieijU&uidx=5",
+                                    "https://iv.okcdn.ru/videoPreview?id=18079095523885&type=42&tkn=aW6zW6jxxpZX0HfB1XC0M8ieijU&uidx=6",
+                                    "https://iv.okcdn.ru/videoPreview?id=18079095523885&type=42&tkn=aW6zW6jxxpZX0HfB1XC0M8ieijU&uidx=7"
+                                ]
+                            }
+                        ],
+                        "failoverHost": "vd436.okcdn.ru",
+                        "streams": [
+                            "https://vd760.okcdn.ru/video.m3u8?srcIp=90.188.250.136&pr=70&expires=1790259686308&srcAg=CHROME_MAC&fromCache=1&ch=565180188&ms=95.163.35.37&mid=16944092169734&type=2&subId=18079095523885&sig=9qgBZVpCHQk&ct=8&du=142109&urls=178.237.23.56&clientType=33&asubs=y&zs=111%3B120%3B69&cmd=videoPlayerCdn&id=18079095523885&scl=5",
+                            "https://vd760.okcdn.ru/?srcIp=90.188.250.136&pr=70&expires=1790259686308&srcAg=CHROME_MAC&fromCache=1&ch=871088282&ms=95.163.35.37&mid=16944092169734&type=1&subId=18079095523885&sig=NIJOfyAYpJI&ct=6&urls=178.237.23.56&clientType=33&asubs=y&zs=111%3B120%3B69&id=18079095523885&scl=5",
+                            "https://vd760.okcdn.ru/?srcIp=90.188.250.136&pr=70&expires=1790259686308&srcAg=CHROME_MAC&fromCache=1&ms=95.163.35.37&type=4&subId=18079095523885&sig=GxLe88tnTm8&ct=0&urls=178.237.23.56&clientType=33&zs=111%3B120%3B69&id=18079095523885&scl=5&dzen_dash=.mp4",
+                            "https://vd760.okcdn.ru/?srcIp=90.188.250.136&pr=70&expires=1790259686308&srcAg=CHROME_MAC&fromCache=1&ms=95.163.35.37&type=0&subId=18079095523885&sig=_hAT_P79_lQ&ct=0&urls=178.237.23.56&clientType=33&zs=111%3B120%3B69&id=18079095523885&scl=5&dzen_dash=.mp4",
+                            "https://vd760.okcdn.ru/?srcIp=90.188.250.136&pr=70&expires=1790259686308&srcAg=CHROME_MAC&fromCache=1&ms=95.163.35.37&type=1&subId=18079095523885&sig=xHwAjRERUA4&ct=0&urls=178.237.23.56&clientType=33&zs=111%3B120%3B69&id=18079095523885&scl=5&dzen_dash=.mp4",
+                            "https://vd760.okcdn.ru/?srcIp=90.188.250.136&pr=70&expires=1790259686308&srcAg=CHROME_MAC&fromCache=1&ms=95.163.35.37&type=2&subId=18079095523885&sig=STrDxWH3Q1c&ct=0&urls=178.237.23.56&clientType=33&zs=111%3B120%3B69&id=18079095523885&scl=5&dzen_dash=.mp4",
+                            "https://vd760.okcdn.ru/?srcIp=90.188.250.136&pr=70&expires=1790259686308&srcAg=CHROME_MAC&fromCache=1&ms=95.163.35.37&type=3&subId=18079095523885&sig=hMAsBSdE2tQ&ct=0&urls=178.237.23.56&clientType=33&zs=111%3B120%3B69&id=18079095523885&scl=5&dzen_dash=.mp4",
+                            "https://vd760.okcdn.ru/?srcIp=90.188.250.136&pr=70&expires=1790259686308&srcAg=CHROME_MAC&fromCache=1&ms=95.163.35.37&type=5&subId=18079095523885&sig=-jHbtxiyfZ8&ct=0&urls=178.237.23.56&clientType=33&zs=111%3B120%3B69&id=18079095523885&scl=5&dzen_dash=.mp4"
+                        ],
+                        "width": 1920,
+                        "height": 1080,
+                        "previews": {
+                            "1920": "https://vd760.okcdn.ru/?srcIp=90.188.250.136&expires=1790259686308&srcAg=CHROME_MAC&fromCache=1&ms=95.163.35.37&type=5&subId=18079095523885&sig=xVu7wc5jf_c&ct=19&urls=178.237.23.56&clientType=33&zs=111%3B120%3B69&id=18079095523885&scl=5",
+                            "640": "https://vd760.okcdn.ru/?srcIp=90.188.250.136&expires=1790259686308&srcAg=CHROME_MAC&fromCache=1&ms=95.163.35.37&type=1&subId=18079095523885&sig=BAA4s45oRWo&ct=19&urls=178.237.23.56&clientType=33&zs=111%3B120%3B69&id=18079095523885&scl=5",
+                            "256": "https://vd760.okcdn.ru/?srcIp=90.188.250.136&expires=1790259686308&srcAg=CHROME_MAC&fromCache=1&ms=95.163.35.37&type=4&subId=18079095523885&sig=D7579SDeOV4&ct=19&urls=178.237.23.56&clientType=33&zs=111%3B120%3B69&id=18079095523885&scl=5",
+                            "852": "https://vd760.okcdn.ru/?srcIp=90.188.250.136&expires=1790259686308&srcAg=CHROME_MAC&fromCache=1&ms=95.163.35.37&type=2&subId=18079095523885&sig=drLULUp1MZw&ct=19&urls=178.237.23.56&clientType=33&zs=111%3B120%3B69&id=18079095523885&scl=5",
+                            "426": "https://vd760.okcdn.ru/?srcIp=90.188.250.136&expires=1790259686308&srcAg=CHROME_MAC&fromCache=1&ms=95.163.35.37&type=0&subId=18079095523885&sig=NnWFkrPjvi4&ct=19&urls=178.237.23.56&clientType=33&zs=111%3B120%3B69&id=18079095523885&scl=5",
+                            "1280": "https://vd760.okcdn.ru/?srcIp=90.188.250.136&expires=1790259686308&srcAg=CHROME_MAC&fromCache=1&ms=95.163.35.37&type=3&subId=18079095523885&sig=fXxDa-LQTFw&ct=19&urls=178.237.23.56&clientType=33&zs=111%3B120%3B69&id=18079095523885&scl=5"
+                        }
+                    },
+                    "allAdSettings": {},
+                    "thematicBanners": []
+                },
+                {
+                    "id": "6aaa964eb7a50554e21b7578",
+                    "type": "gif",
+                    "itemId": "-7516671381401837953",
+                    "itemType": "gif",
+                    "title": "«Хороший повод»: как перестать бороться с природой и полюбить свои волосы",
+                    "text": "",
+                    "sourceId": "599aa25d57906a8ab6553398",
+                    "shareLink": "https://dzen.ru/video/watch/6aaa964eb7a50554e21b7578",
+                    "allCommentsLink": "https://dzen.ru/video/watch/6aaa964eb7a50554e21b7578?rid=3689788995.1646.1789800485723.40496&comment-request=1&referrer_clid=1400&#comments_data=p_root",
+                    "link": "https://dzen.ru/video/watch/6aaa964eb7a50554e21b7578?rid=3689788995.1646.1789800485723.40496&referrer_clid=1400&",
+                    "isPromoPublication": false,
+                    "views": 22,
+                    "repostUrl": "https://dzen.ru/media/zen/login?repostId=6aaa964eb7a50554e21b7578&briefEditorPublicationId=draft",
+                    "publicationDate": "1789564613",
+                    "source": {
+                        "id": "599aa25d57906a8ab6553398",
+                        "itemId": "4036240292142625435",
+                        "type": "publisher",
+                        "title": "Братская студия телевидения",
+                        "description": "Из жизни Братска",
+                        "link": "https://dzen.ru/bst24bratsk?lang=ru&country_code=ru&parent_rid=3689788995.1646.1789800485723.40496&from_parent_id=-7516671381401837953&from_parent_type=gif&from_page=other_page",
+                        "shareLink": "https://dzen.ru/bst24bratsk",
+                        "isVerified": false,
+                        "image": {
+                            "logo": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/xxh",
+                            "framedLogo": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed_3x",
+                            "logoSizes": {
+                                "framed_100x128_1x": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed_100x128_1x",
+                                "framed_132x176_1x": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed",
+                                "framed_212x280_1x": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed_212x280_1x",
+                                "framed_202x260_1x": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed_202x260_1x",
+                                "smart_crop_160": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/smart_crop_160"
+                            },
+                            "logoBackgroundColor": "#F8F8F8",
+                            "titleBackgroundColor": "#C7C7C7",
+                            "titleColor": "#000000",
+                            "headerBackgroundColor": "#B2B2B2",
+                            "redesignLogos": {},
+                            "isStubLogo": false
+                        },
+                        "metricaId": 45934887,
+                        "subscribers": 6310,
+                        "status": "not_subscribed",
+                        "telegramBotSubscriptionUrl": "https://t.me/dzenpushbot?start=CF_599aa25d57906a8ab6553398_466370828",
+                        "isMyChannel": true,
+                        "isPremiumAuthor": false,
+                        "isDonationEnabled": false,
+                        "isBirthday": false
+                    },
+                    "recommendationsInfo": {},
+                    "promoLabel": {
+                        "text": "6,3K подписчиков",
+                        "text_color": "#FFFFFF",
+                        "channel_info_subscribed": "6,3K подписчиков",
+                        "channel_info_unsubscribed": "6,3K подписчиков"
+                    },
+                    "image": {
+                        "urlTemplate": "https://avatars.dzeninfra.ru/get-{namespace}/271828/pub_6aaa964eb7a50554e21b7578_6aaa96c1dd3bf90828730a69/{size}",
+                        "id": "pub_6aaa964eb7a50554e21b7578_6aaa96c1dd3bf90828730a69",
+                        "namespace": "zen_doc",
+                        "originalSize": {
+                            "width": 1920,
+                            "height": 1080
+                        },
+                        "wasRotated": false,
+                        "meta": {
+                            "mainColor": "#505040"
+                        },
+                        "width": 1200,
+                        "height": 675,
+                        "sizeName": "scale_1200"
+                    },
+                    "bulkData": {
+                        "url": "https://dzen.ru/video/watch/6aaa964eb7a50554e21b7578",
+                        "parent_id": "-4259974545135965915",
+                        "parent_type": "channel_block_videos",
+                        "url_type": "plain",
+                        "rec_secdata": "CJXj89KKNCABUA9qAQGQAQA=",
+                        "video_pool_type": "unknown",
+                        "origin_id": "4036240292142625435",
+                        "origin_type": "publisher",
+                        "place": "more"
+                    },
+                    "socialInfo": {
+                        "commentsEnabled": true,
+                        "commentCount": 0,
+                        "avatarUrls": []
+                    },
+                    "version": "newApi",
+                    "isPremium": false,
+                    "isNativeAds": false,
+                    "isArchive": false,
+                    "isArchiveBoughtByStella": false,
+                    "isAdult": false,
+                    "badSeoLinks": [],
+                    "feedSpecificData": {
+                        "isSavedToBookmarks": false,
+                        "suites": [],
+                        "isFreshFromSubscriptions": false,
+                        "hasDescription": true,
+                        "doc2docConfig": {
+                            "activeTabId": "RELATED",
+                            "tabs": [
+                                {
+                                    "title": "Похожие",
+                                    "url": "https://dzen.ru/api/web/v1/video-related?short_video_feed=false&item_type=gif&item_id=-7516671381401837953&source_id=4036240292142625435&source_type=publisher&country_code=ru&lang=ru&_csrf=5c732b7012e3e4faa0022f5cac083ed923e86d9e-1789800485740-466370828-8187184411787747591%3A0&clid=1400",
+                                    "id": "RELATED"
+                                },
+                                {
+                                    "title": "Эксклюзивы",
+                                    "url": "https://dzen.ru/api/web/v1/video-related-original?short_video_feed=false&item_type=gif&item_id=-7516671381401837953&source_id=4036240292142625435&source_type=publisher&country_code=ru&lang=ru&_csrf=5c732b7012e3e4faa0022f5cac083ed923e86d9e-1789800485740-466370828-8187184411787747591%3A0&clid=1400",
+                                    "id": "ORIGINAL_CONTENT"
+                                },
+                                {
+                                    "title": "Лента автора",
+                                    "url": "https://dzen.ru/api/web/v1/channel?content_type=long_video&feed_type=video&country_code=ru&lang=ru&_csrf=5c732b7012e3e4faa0022f5cac083ed923e86d9e-1789800485740-466370828-8187184411787747591%3A0&clid=1400&channel_name=bst24bratsk",
+                                    "id": "PUBLISHER_FEED"
+                                },
+                                {
+                                    "title": "История просмотров",
+                                    "url": "https://dzen.ru/api/web/v1/history-export?item_type=gif&item_id=-7516671381401837953&country_code=ru&lang=ru&_csrf=5c732b7012e3e4faa0022f5cac083ed923e86d9e-1789800485740-466370828-8187184411787747591%3A0&clid=1400",
+                                    "id": "VIEW_HISTORY"
+                                }
+                            ]
+                        },
+                        "mentions": []
+                    },
+                    "video": {
+                        "id": "https://vd401.okcdn.ru/video.m3u8?cmd=videoPlayerCdn&expires=1790059686314&srcIp=90.188.250.136&pr=70&srcAg=CHROME_MAC&ch=1825936006&ms=176.112.172.120&mid=16944080963078&type=2&subId=18888586365528&sig=gxhQNPqs3Gw&ct=8&du=197064&urls=178.237.23.110&clientType=33&asubs=y&zs=111%3B120%3B69&id=18888586365528&scl=5",
+                        "autoplay": true,
+                        "duration": 197,
+                        "hasSound": true,
+                        "hasSubtitles": true,
+                        "additionalParams": {
+                            "from": "zen",
+                            "ppi": "site_desktop:dzen:site_desktop",
+                            "fromBlock": "zen_feed",
+                            "puid": "466370828",
+                            "videoContentId": "oBkbtGWkPAAA",
+                            "oneVideoId": "16944080963078",
+                            "strongestId": "466370828",
+                            "itemId": "-7516671381401837953",
+                            "rid": "3689788995.1646.1789800485723.40496",
+                            "streamBlock": "more:channel",
+                            "duration": 197
+                        },
+                        "firstFrames": [
+                            {
+                                "width": 0,
+                                "height": 0,
+                                "url": "https://iv.okcdn.ru/videoPreview?id=18888586365528&type=32&idx=2&tkn=pslvStCPmPwzChiAICLwfcZrr8Q",
+                                "bitrate": 0
+                            }
+                        ],
+                        "longPreviews": {},
+                        "videoContentId": "oBkbtGWkPAAA",
+                        "resolutions": [
+                            {
+                                "width": 256,
+                                "height": 144
+                            },
+                            {
+                                "width": 426,
+                                "height": 240,
+                                "sizeInBytes": 6803048,
+                                "label": "Низкое",
+                                "allowDownload": true
+                            },
+                            {
+                                "width": 640,
+                                "height": 360
+                            },
+                            {
+                                "width": 852,
+                                "height": 480,
+                                "sizeInBytes": 13679469,
+                                "label": "Среднее",
+                                "allowDownload": true
+                            },
+                            {
+                                "width": 1280,
+                                "height": 720,
+                                "sizeInBytes": 25012543,
+                                "label": "Высокое",
+                                "allowDownload": true
+                            },
+                            {
+                                "width": 1920,
+                                "height": 1080
+                            }
+                        ],
+                        "oneVideoStreams": [
+                            {
+                                "url": "https://vd401.okcdn.ru/video.m3u8?cmd=videoPlayerCdn&expires=1790059686314&srcIp=90.188.250.136&pr=70&srcAg=CHROME_MAC&ch=1825936006&ms=176.112.172.120&mid=16944080963078&type=2&subId=18888586365528&sig=gxhQNPqs3Gw&ct=8&du=197064&urls=178.237.23.110&clientType=33&asubs=y&zs=111%3B120%3B69&id=18888586365528&scl=5",
+                                "type": "hls"
+                            },
+                            {
+                                "url": "https://vd401.okcdn.ru/?expires=1790059686314&srcIp=90.188.250.136&pr=70&srcAg=CHROME_MAC&ch=-645939350&ms=176.112.172.120&mid=16944080963078&type=1&subId=18888586365528&sig=niQTBYjq1OY&ct=6&urls=178.237.23.110&clientType=33&asubs=y&zs=111%3B120%3B69&id=18888586365528&scl=5",
+                                "type": "dash"
+                            },
+                            {
+                                "url": "https://vd401.okcdn.ru/?expires=1790059686314&srcIp=90.188.250.136&pr=70&srcAg=CHROME_MAC&ms=176.112.172.120&type=4&subId=18888586365528&sig=YpJFkXcLFms&ct=0&urls=178.237.23.110&clientType=33&zs=111%3B120%3B69&id=18888586365528&scl=5",
+                                "type": "tiny"
+                            },
+                            {
+                                "url": "https://vd401.okcdn.ru/?expires=1790059686314&srcIp=90.188.250.136&pr=70&srcAg=CHROME_MAC&ms=176.112.172.120&type=0&subId=18888586365528&sig=Zzvd1b2c4BE&ct=0&urls=178.237.23.110&clientType=33&zs=111%3B120%3B69&id=18888586365528&scl=5",
+                                "type": "lowest"
+                            },
+                            {
+                                "url": "https://vd401.okcdn.ru/?expires=1790059686314&srcIp=90.188.250.136&pr=70&srcAg=CHROME_MAC&ms=176.112.172.120&type=1&subId=18888586365528&sig=2nSVsfTi6ss&ct=0&urls=178.237.23.110&clientType=33&zs=111%3B120%3B69&id=18888586365528&scl=5",
+                                "type": "low"
+                            },
+                            {
+                                "url": "https://vd401.okcdn.ru/?expires=1790059686314&srcIp=90.188.250.136&pr=70&srcAg=CHROME_MAC&ms=176.112.172.120&type=2&subId=18888586365528&sig=8oNNbnZxsoQ&ct=0&urls=178.237.23.110&clientType=33&zs=111%3B120%3B69&id=18888586365528&scl=5",
+                                "type": "medium"
+                            },
+                            {
+                                "url": "https://vd401.okcdn.ru/?expires=1790059686314&srcIp=90.188.250.136&pr=70&srcAg=CHROME_MAC&ms=176.112.172.120&type=3&subId=18888586365528&sig=h0jm7pnxWK0&ct=0&urls=178.237.23.110&clientType=33&zs=111%3B120%3B69&id=18888586365528&scl=5",
+                                "type": "high"
+                            },
+                            {
+                                "url": "https://vd401.okcdn.ru/?expires=1790059686314&srcIp=90.188.250.136&pr=70&srcAg=CHROME_MAC&ms=176.112.172.120&type=5&subId=18888586365528&sig=YaTB0Jd8ej4&ct=0&urls=178.237.23.110&clientType=33&zs=111%3B120%3B69&id=18888586365528&scl=5",
+                                "type": "fullhd"
+                            }
+                        ],
+                        "timelinePreviews": [
+                            {
+                                "countPerImage": 120,
+                                "countPerRow": 40,
+                                "countTotal": 99,
+                                "frameHeight": 44,
+                                "frameWidth": 80,
+                                "urls": [
+                                    "https://iv.okcdn.ru/videoPreview?id=18888586365528&type=36&idx=0&tkn=xjpae5KH5L_keGTm9DqvQKVG-1Q"
+                                ]
+                            },
+                            {
+                                "countPerImage": 100,
+                                "countPerRow": 10,
+                                "countTotal": 99,
+                                "frameHeight": 44,
+                                "frameWidth": 80,
+                                "urls": [
+                                    "https://iv.okcdn.ru/videoPreview?id=18888586365528&type=40&tkn=_QePL7u9bagrl9v1iTLt7pRqypQ&uidx=0"
+                                ]
+                            },
+                            {
+                                "countPerImage": 25,
+                                "countPerRow": 5,
+                                "countTotal": 99,
+                                "frameHeight": 90,
+                                "frameWidth": 160,
+                                "urls": [
+                                    "https://iv.okcdn.ru/videoPreview?id=18888586365528&type=41&tkn=0978SzuQzyu5UgIsoMGcvspk_4A&uidx=0",
+                                    "https://iv.okcdn.ru/videoPreview?id=18888586365528&type=41&tkn=0978SzuQzyu5UgIsoMGcvspk_4A&uidx=1",
+                                    "https://iv.okcdn.ru/videoPreview?id=18888586365528&type=41&tkn=0978SzuQzyu5UgIsoMGcvspk_4A&uidx=2",
+                                    "https://iv.okcdn.ru/videoPreview?id=18888586365528&type=41&tkn=0978SzuQzyu5UgIsoMGcvspk_4A&uidx=3"
+                                ]
+                            },
+                            {
+                                "countPerImage": 9,
+                                "countPerRow": 3,
+                                "countTotal": 99,
+                                "frameHeight": 180,
+                                "frameWidth": 320,
+                                "urls": [
+                                    "https://iv.okcdn.ru/videoPreview?id=18888586365528&type=42&tkn=Qqc_0wbwNgCfVL-G39RjiONs_Hc&uidx=0",
+                                    "https://iv.okcdn.ru/videoPreview?id=18888586365528&type=42&tkn=Qqc_0wbwNgCfVL-G39RjiONs_Hc&uidx=1",
+                                    "https://iv.okcdn.ru/videoPreview?id=18888586365528&type=42&tkn=Qqc_0wbwNgCfVL-G39RjiONs_Hc&uidx=2",
+                                    "https://iv.okcdn.ru/videoPreview?id=18888586365528&type=42&tkn=Qqc_0wbwNgCfVL-G39RjiONs_Hc&uidx=3",
+                                    "https://iv.okcdn.ru/videoPreview?id=18888586365528&type=42&tkn=Qqc_0wbwNgCfVL-G39RjiONs_Hc&uidx=4",
+                                    "https://iv.okcdn.ru/videoPreview?id=18888586365528&type=42&tkn=Qqc_0wbwNgCfVL-G39RjiONs_Hc&uidx=5",
+                                    "https://iv.okcdn.ru/videoPreview?id=18888586365528&type=42&tkn=Qqc_0wbwNgCfVL-G39RjiONs_Hc&uidx=6",
+                                    "https://iv.okcdn.ru/videoPreview?id=18888586365528&type=42&tkn=Qqc_0wbwNgCfVL-G39RjiONs_Hc&uidx=7",
+                                    "https://iv.okcdn.ru/videoPreview?id=18888586365528&type=42&tkn=Qqc_0wbwNgCfVL-G39RjiONs_Hc&uidx=8",
+                                    "https://iv.okcdn.ru/videoPreview?id=18888586365528&type=42&tkn=Qqc_0wbwNgCfVL-G39RjiONs_Hc&uidx=9",
+                                    "https://iv.okcdn.ru/videoPreview?id=18888586365528&type=42&tkn=Qqc_0wbwNgCfVL-G39RjiONs_Hc&uidx=10",
+                                    "https://iv.okcdn.ru/videoPreview?id=18888586365528&type=42&tkn=Qqc_0wbwNgCfVL-G39RjiONs_Hc&uidx=11"
+                                ]
+                            }
+                        ],
+                        "failoverHost": "vd253.okcdn.ru",
+                        "streams": [
+                            "https://vd401.okcdn.ru/video.m3u8?cmd=videoPlayerCdn&expires=1790059686314&srcIp=90.188.250.136&pr=70&srcAg=CHROME_MAC&ch=1825936006&ms=176.112.172.120&mid=16944080963078&type=2&subId=18888586365528&sig=gxhQNPqs3Gw&ct=8&du=197064&urls=178.237.23.110&clientType=33&asubs=y&zs=111%3B120%3B69&id=18888586365528&scl=5",
+                            "https://vd401.okcdn.ru/?expires=1790059686314&srcIp=90.188.250.136&pr=70&srcAg=CHROME_MAC&ch=-645939350&ms=176.112.172.120&mid=16944080963078&type=1&subId=18888586365528&sig=niQTBYjq1OY&ct=6&urls=178.237.23.110&clientType=33&asubs=y&zs=111%3B120%3B69&id=18888586365528&scl=5",
+                            "https://vd401.okcdn.ru/?expires=1790059686314&srcIp=90.188.250.136&pr=70&srcAg=CHROME_MAC&ms=176.112.172.120&type=4&subId=18888586365528&sig=YpJFkXcLFms&ct=0&urls=178.237.23.110&clientType=33&zs=111%3B120%3B69&id=18888586365528&scl=5&dzen_dash=.mp4",
+                            "https://vd401.okcdn.ru/?expires=1790059686314&srcIp=90.188.250.136&pr=70&srcAg=CHROME_MAC&ms=176.112.172.120&type=0&subId=18888586365528&sig=Zzvd1b2c4BE&ct=0&urls=178.237.23.110&clientType=33&zs=111%3B120%3B69&id=18888586365528&scl=5&dzen_dash=.mp4",
+                            "https://vd401.okcdn.ru/?expires=1790059686314&srcIp=90.188.250.136&pr=70&srcAg=CHROME_MAC&ms=176.112.172.120&type=1&subId=18888586365528&sig=2nSVsfTi6ss&ct=0&urls=178.237.23.110&clientType=33&zs=111%3B120%3B69&id=18888586365528&scl=5&dzen_dash=.mp4",
+                            "https://vd401.okcdn.ru/?expires=1790059686314&srcIp=90.188.250.136&pr=70&srcAg=CHROME_MAC&ms=176.112.172.120&type=2&subId=18888586365528&sig=8oNNbnZxsoQ&ct=0&urls=178.237.23.110&clientType=33&zs=111%3B120%3B69&id=18888586365528&scl=5&dzen_dash=.mp4",
+                            "https://vd401.okcdn.ru/?expires=1790059686314&srcIp=90.188.250.136&pr=70&srcAg=CHROME_MAC&ms=176.112.172.120&type=3&subId=18888586365528&sig=h0jm7pnxWK0&ct=0&urls=178.237.23.110&clientType=33&zs=111%3B120%3B69&id=18888586365528&scl=5&dzen_dash=.mp4",
+                            "https://vd401.okcdn.ru/?expires=1790059686314&srcIp=90.188.250.136&pr=70&srcAg=CHROME_MAC&ms=176.112.172.120&type=5&subId=18888586365528&sig=YaTB0Jd8ej4&ct=0&urls=178.237.23.110&clientType=33&zs=111%3B120%3B69&id=18888586365528&scl=5&dzen_dash=.mp4"
+                        ],
+                        "width": 1920,
+                        "height": 1080,
+                        "previews": {
+                            "1920": "https://vd401.okcdn.ru/?expires=1790059686314&srcIp=90.188.250.136&srcAg=CHROME_MAC&ms=176.112.172.120&type=5&subId=18888586365528&sig=DumRfWvtFeg&ct=19&urls=178.237.23.110&clientType=33&zs=111%3B120%3B69&id=18888586365528&scl=5",
+                            "640": "https://vd401.okcdn.ru/?expires=1790059686314&srcIp=90.188.250.136&srcAg=CHROME_MAC&ms=176.112.172.120&type=1&subId=18888586365528&sig=75Bk-1I6E5I&ct=19&urls=178.237.23.110&clientType=33&zs=111%3B120%3B69&id=18888586365528&scl=5",
+                            "256": "https://vd401.okcdn.ru/?expires=1790059686314&srcIp=90.188.250.136&srcAg=CHROME_MAC&ms=176.112.172.120&type=4&subId=18888586365528&sig=Q5i-KNjGieM&ct=19&urls=178.237.23.110&clientType=33&zs=111%3B120%3B69&id=18888586365528&scl=5",
+                            "852": "https://vd401.okcdn.ru/?expires=1790059686314&srcIp=90.188.250.136&srcAg=CHROME_MAC&ms=176.112.172.120&type=2&subId=18888586365528&sig=nUEy7olSCkg&ct=19&urls=178.237.23.110&clientType=33&zs=111%3B120%3B69&id=18888586365528&scl=5",
+                            "426": "https://vd401.okcdn.ru/?expires=1790059686314&srcIp=90.188.250.136&srcAg=CHROME_MAC&ms=176.112.172.120&type=0&subId=18888586365528&sig=P0Ce4yfUtwk&ct=19&urls=178.237.23.110&clientType=33&zs=111%3B120%3B69&id=18888586365528&scl=5",
+                            "1280": "https://vd401.okcdn.ru/?expires=1790059686314&srcIp=90.188.250.136&srcAg=CHROME_MAC&ms=176.112.172.120&type=3&subId=18888586365528&sig=0ZC3yWVd3zs&ct=19&urls=178.237.23.110&clientType=33&zs=111%3B120%3B69&id=18888586365528&scl=5"
+                        }
+                    },
+                    "allAdSettings": {},
+                    "thematicBanners": []
+                }
+            ],
+            "has_more": true,
+            "tab": "longs",
+            "sort_type": "regular",
+            "bulk_data": {
+                "bulk_type": "feed",
+                "item_id": "-4259974545135965915",
+                "rid": "3689788995.1646.1789800485723.40496",
+                "sf": "recc",
+                "item_type": "channel_block_videos",
+                "dst": "site_desktop",
+                "page_type": "channel",
+                "place": "layout",
+                "card_type": "zen",
+                "group_ids": [
+                    1639282,
+                    1642518
+                ],
+                "is_favourite_source": false,
+                "pos": 5,
+                "us": "H4sIAAAAAAAA_yXMQQqAIBAAwL_sOWNdNGzf0amLRGlIUZFGRPT3Cu_D3ODDHpPt59BPwEBISmAtJDVYMUpWqpQGWyggdqf1zg1Z6V9R3aBhTSxNqTGrtK_L6L4yXZv77BEGeF4UbYO_ZwAAAA",
+                "source_id": "4036240292142625435",
+                "source_type": "publisher"
+            }
+        },
+        {
+            "id": "6aaa94f04e4f861a8fdb14ef",
+            "type": "article",
+            "itemId": "8333153325071480922",
+            "itemType": "native",
+            "title": "Гороскоп на 17 сентября: кто насладится спокойствием",
+            "text": "♈️ Овны, встречи, назначенные на этот день, пройдут особенно удачно. ♉️ Тельцы, поезд вашего хорошего настроения снова встанет на рельсы. ♊️ Близнецы, в четверг будет именно так, как вам хотелось бы, и даже лучше. ♋️ Раки, хватит пережевывать прошлое - пора вкусить настоящее. ♌️ Львы, не робейте на работе, а предлагайте свои идеи. ♍️ Девы, если кажется, что пора что-то менять в жизни, то вам не кажется. ♎️ Весы, насколько скучно вам будет в первой половине дня, настолько весело будет во второй...",
+            "sourceId": "599aa25d57906a8ab6553398",
+            "shareLink": "https://dzen.ru/a/aqqU8E5PhhqP2xTv",
+            "allCommentsLink": "https://dzen.ru/a/aqqU8E5PhhqP2xTv?feed_exp=ordinary_feed&from=channel&rid=3689788995.1646.1789800485723.40496&integration=site_desktop&place=more&secdata=CLiQttKKNCABUA9qAQGQAQA%3D&referrer_clid=1400&#comments_data=p_root",
+            "link": "https://dzen.ru/a/aqqU8E5PhhqP2xTv?feed_exp=ordinary_feed&from=channel&integration=site_desktop&place=more&secdata=CLiQttKKNCABUA9qAQGQAQA%3D&rid=3689788995.1646.1789800485723.40496&referrer_clid=1400&",
+            "isPromoPublication": false,
+            "views": 145,
+            "timeToReadSeconds": 40,
+            "repostUrl": "https://dzen.ru/media/zen/login?repostId=6aaa94f04e4f861a8fdb14ef&briefEditorPublicationId=draft",
+            "publicationDate": "1789563603",
+            "source": {
+                "id": "599aa25d57906a8ab6553398",
+                "itemId": "4036240292142625435",
+                "type": "publisher",
+                "title": "Братская студия телевидения",
+                "description": "Из жизни Братска",
+                "link": "https://dzen.ru/bst24bratsk?lang=ru&country_code=ru&parent_rid=3689788995.1646.1789800485723.40496&from_parent_id=8333153325071480922&from_parent_type=native&from_page=other_page",
+                "shareLink": "https://dzen.ru/bst24bratsk",
+                "isVerified": false,
+                "image": {
+                    "logo": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/xxh",
+                    "framedLogo": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed_3x",
+                    "logoSizes": {
+                        "framed_100x128_1x": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed_100x128_1x",
+                        "framed_132x176_1x": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed",
+                        "framed_212x280_1x": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed_212x280_1x",
+                        "framed_202x260_1x": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed_202x260_1x",
+                        "smart_crop_160": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/smart_crop_160"
+                    },
+                    "logoBackgroundColor": "#F8F8F8",
+                    "titleBackgroundColor": "#C7C7C7",
+                    "titleColor": "#000000",
+                    "headerBackgroundColor": "#B2B2B2",
+                    "redesignLogos": {},
+                    "isStubLogo": false
+                },
+                "metricaId": 45934887,
+                "subscribers": 6310,
+                "status": "not_subscribed",
+                "telegramBotSubscriptionUrl": "https://t.me/dzenpushbot?start=CF_599aa25d57906a8ab6553398_466370828",
+                "isMyChannel": true,
+                "isPremiumAuthor": false,
+                "isDonationEnabled": false,
+                "isBirthday": false
+            },
+            "recommendationsInfo": {},
+            "promoLabel": {
+                "text": "6,3K подписчиков",
+                "text_color": "#FFFFFF",
+                "channel_info_subscribed": "6,3K подписчиков",
+                "channel_info_unsubscribed": "6,3K подписчиков"
+            },
+            "image": {
+                "urlTemplate": "https://avatars.dzeninfra.ru/get-{namespace}/271828/pub_6aaa94f04e4f861a8fdb14ef_6aaa94f1d6e86b7872ef8b4a/{size}",
+                "id": "pub_6aaa94f04e4f861a8fdb14ef_6aaa94f1d6e86b7872ef8b4a",
+                "namespace": "zen_doc",
+                "originalSize": {
+                    "width": 1200,
+                    "height": 720
+                },
+                "wasRotated": false,
+                "meta": {
+                    "mainColor": "#080808"
+                },
+                "width": 1200,
+                "height": 720,
+                "sizeName": "scale_1200"
+            },
+            "bulkData": {
+                "url": "https://dzen.ru/a/aqqU8E5PhhqP2xTv",
+                "url_type": "plain",
+                "rec_secdata": "CLiQttKKNCABUA9qAQGQAQA=",
+                "origin_id": "4036240292142625435",
+                "origin_type": "publisher",
+                "place": "more",
+                "isStellaBoosted": false,
+                "isCoolNews": false,
+                "isCuratedArticle": false
+            },
+            "socialInfo": {
+                "commentsEnabled": true,
+                "likesCount": 22,
+                "commentCount": 2,
+                "avatarUrls": []
+            },
+            "version": "newApi",
+            "isPremium": false,
+            "isNativeAds": false,
+            "isArchive": false,
+            "isArchiveBoughtByStella": false,
+            "feedSpecificData": {
+                "isSavedToBookmarks": false,
+                "suites": [],
+                "isFreshFromSubscriptions": false
+            },
+            "allAdSettings": {},
+            "viewsTillEnd": 16
+        },
+        {
+            "id": "6aaa884948d4813e6387601e",
+            "type": "article",
+            "itemId": "-166969829252059240",
+            "itemType": "native",
+            "title": "Мнение Елены Яковлевой",
+            "text": "Здравствуйте! Меня зовут Елена Яковлева. Я не телезвезда, не космонавт и не чиновник. Я – практикующий юрист с многолетним опытом. Живу в Братске с рождения. Каждый день ко мне приходят люди: пенсионеры, сироты, матери. У всех одна беда – их проблемы никому не нужны. А многим кандидатам – тем более. У них дела «поважнее»: баннеры, лозунги и партийные реверансы. В очередной раз нам предлагают приезжих кандидатов, которые вспомнили о существовании Севера Иркутской области только перед выборами. Наш округ – это не только Братск...",
+            "sourceId": "599aa25d57906a8ab6553398",
+            "shareLink": "https://dzen.ru/a/aqqISUjUgT5jh2Ae",
+            "allCommentsLink": "https://dzen.ru/a/aqqISUjUgT5jh2Ae?feed_exp=ordinary_feed&from=channel&rid=3689788995.1646.1789800485723.40496&integration=site_desktop&place=more&secdata=CIOVm9GKNCABUA9qAQGQAQA%3D&referrer_clid=1400&#comments_data=p_root",
+            "link": "https://dzen.ru/a/aqqISUjUgT5jh2Ae?feed_exp=ordinary_feed&from=channel&integration=site_desktop&place=more&secdata=CIOVm9GKNCABUA9qAQGQAQA%3D&rid=3689788995.1646.1789800485723.40496&referrer_clid=1400&",
+            "isPromoPublication": false,
+            "views": 5,
+            "timeToReadSeconds": 128,
+            "repostUrl": "https://dzen.ru/media/zen/login?repostId=6aaa884948d4813e6387601e&briefEditorPublicationId=draft",
+            "publicationDate": "1789561064",
+            "source": {
+                "id": "599aa25d57906a8ab6553398",
+                "itemId": "4036240292142625435",
+                "type": "publisher",
+                "title": "Братская студия телевидения",
+                "description": "Из жизни Братска",
+                "link": "https://dzen.ru/bst24bratsk?lang=ru&country_code=ru&parent_rid=3689788995.1646.1789800485723.40496&from_parent_id=-166969829252059240&from_parent_type=native&from_page=other_page",
+                "shareLink": "https://dzen.ru/bst24bratsk",
+                "isVerified": false,
+                "image": {
+                    "logo": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/xxh",
+                    "framedLogo": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed_3x",
+                    "logoSizes": {
+                        "framed_100x128_1x": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed_100x128_1x",
+                        "framed_132x176_1x": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed",
+                        "framed_212x280_1x": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed_212x280_1x",
+                        "framed_202x260_1x": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed_202x260_1x",
+                        "smart_crop_160": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/smart_crop_160"
+                    },
+                    "logoBackgroundColor": "#F8F8F8",
+                    "titleBackgroundColor": "#C7C7C7",
+                    "titleColor": "#000000",
+                    "headerBackgroundColor": "#B2B2B2",
+                    "redesignLogos": {},
+                    "isStubLogo": false
+                },
+                "metricaId": 45934887,
+                "subscribers": 6310,
+                "status": "not_subscribed",
+                "telegramBotSubscriptionUrl": "https://t.me/dzenpushbot?start=CF_599aa25d57906a8ab6553398_466370828",
+                "isMyChannel": true,
+                "isPremiumAuthor": false,
+                "isDonationEnabled": false,
+                "isBirthday": false
+            },
+            "recommendationsInfo": {},
+            "promoLabel": {
+                "text": "6,3K подписчиков",
+                "text_color": "#FFFFFF",
+                "channel_info_subscribed": "6,3K подписчиков",
+                "channel_info_unsubscribed": "6,3K подписчиков"
+            },
+            "image": {
+                "urlTemplate": "https://avatars.dzeninfra.ru/get-{namespace}/271828/pub_6aaa884948d4813e6387601e_6aaa88496ede255e142db34e/{size}",
+                "id": "pub_6aaa884948d4813e6387601e_6aaa88496ede255e142db34e",
+                "namespace": "zen_doc",
+                "originalSize": {
+                    "width": 1200,
+                    "height": 720
+                },
+                "wasRotated": false,
+                "meta": {
+                    "mainColor": "#081008"
+                },
+                "width": 1200,
+                "height": 720,
+                "sizeName": "scale_1200"
+            },
+            "bulkData": {
+                "url": "https://dzen.ru/a/aqqISUjUgT5jh2Ae",
+                "url_type": "plain",
+                "rec_secdata": "CIOVm9GKNCABUA9qAQGQAQA=",
+                "origin_id": "4036240292142625435",
+                "origin_type": "publisher",
+                "place": "more",
+                "isStellaBoosted": false,
+                "isCoolNews": false,
+                "isCuratedArticle": false
+            },
+            "socialInfo": {
+                "commentsEnabled": true,
+                "commentCount": 0,
+                "avatarUrls": []
+            },
+            "version": "newApi",
+            "isPremium": false,
+            "isNativeAds": false,
+            "isArchive": false,
+            "isArchiveBoughtByStella": false,
+            "feedSpecificData": {
+                "isSavedToBookmarks": false,
+                "suites": [],
+                "isFreshFromSubscriptions": false
+            },
+            "allAdSettings": {},
+            "viewsTillEnd": 3
+        },
+        {
+            "id": "6aaa85f0df212e0df99519c8",
+            "type": "article",
+            "itemId": "8825746094096892195",
+            "itemType": "native",
+            "title": "«Хороший повод»: как перестать бороться с природой и полюбить свои волосы",
+            "text": "Дарья ОГИЕНКО, корреспондент БСТ: «Сегодня отмечают неформальный праздник в честь естественной красоты вьющихся волос – он про принятие своей текстуры и радости от „непослушных“ завитков. Мои волосы именно такие. Как же их воспринимали в разные исторические эпохи?». Кудри не всегда были просто про красоту. В античности и Древнем Риме завиток был маркером статуса: чем сложнее укладка, тем выше положение. Богатые женщины носили парики и делали завивку с помощью нагретых металлических стержней. В эпоху барокко и рококо кудри стали синонимом роскоши...",
+            "sourceId": "599aa25d57906a8ab6553398",
+            "shareLink": "https://dzen.ru/a/aqqF8N8hLg35lRnI",
+            "allCommentsLink": "https://dzen.ru/a/aqqF8N8hLg35lRnI?feed_exp=ordinary_feed&from=channel&rid=3689788995.1646.1789800485723.40496&integration=site_desktop&place=more&secdata=CIi93NCKNCABUA9qAQGQAQA%3D&referrer_clid=1400&#comments_data=p_root",
+            "link": "https://dzen.ru/a/aqqF8N8hLg35lRnI?feed_exp=ordinary_feed&from=channel&integration=site_desktop&place=more&secdata=CIi93NCKNCABUA9qAQGQAQA%3D&rid=3689788995.1646.1789800485723.40496&referrer_clid=1400&",
+            "isPromoPublication": false,
+            "views": 6,
+            "timeToReadSeconds": 113,
+            "repostUrl": "https://dzen.ru/media/zen/login?repostId=6aaa85f0df212e0df99519c8&briefEditorPublicationId=draft",
+            "publicationDate": "1789560037",
+            "source": {
+                "id": "599aa25d57906a8ab6553398",
+                "itemId": "4036240292142625435",
+                "type": "publisher",
+                "title": "Братская студия телевидения",
+                "description": "Из жизни Братска",
+                "link": "https://dzen.ru/bst24bratsk?lang=ru&country_code=ru&parent_rid=3689788995.1646.1789800485723.40496&from_parent_id=8825746094096892195&from_parent_type=native&from_page=other_page",
+                "shareLink": "https://dzen.ru/bst24bratsk",
+                "isVerified": false,
+                "image": {
+                    "logo": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/xxh",
+                    "framedLogo": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed_3x",
+                    "logoSizes": {
+                        "framed_100x128_1x": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed_100x128_1x",
+                        "framed_132x176_1x": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed",
+                        "framed_212x280_1x": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed_212x280_1x",
+                        "framed_202x260_1x": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed_202x260_1x",
+                        "smart_crop_160": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/smart_crop_160"
+                    },
+                    "logoBackgroundColor": "#F8F8F8",
+                    "titleBackgroundColor": "#C7C7C7",
+                    "titleColor": "#000000",
+                    "headerBackgroundColor": "#B2B2B2",
+                    "redesignLogos": {},
+                    "isStubLogo": false
+                },
+                "metricaId": 45934887,
+                "subscribers": 6310,
+                "status": "not_subscribed",
+                "telegramBotSubscriptionUrl": "https://t.me/dzenpushbot?start=CF_599aa25d57906a8ab6553398_466370828",
+                "isMyChannel": true,
+                "isPremiumAuthor": false,
+                "isDonationEnabled": false,
+                "isBirthday": false
+            },
+            "recommendationsInfo": {},
+            "promoLabel": {
+                "text": "6,3K подписчиков",
+                "text_color": "#FFFFFF",
+                "channel_info_subscribed": "6,3K подписчиков",
+                "channel_info_unsubscribed": "6,3K подписчиков"
+            },
+            "image": {
+                "urlTemplate": "https://avatars.dzeninfra.ru/get-{namespace}/271828/pub_6aaa85f0df212e0df99519c8_6aaa85f074e02e652d419a20/{size}",
+                "id": "pub_6aaa85f0df212e0df99519c8_6aaa85f074e02e652d419a20",
+                "namespace": "zen_doc",
+                "originalSize": {
+                    "width": 1200,
+                    "height": 720
+                },
+                "wasRotated": false,
+                "meta": {
+                    "mainColor": "#304020"
+                },
+                "width": 1200,
+                "height": 720,
+                "sizeName": "scale_1200"
+            },
+            "bulkData": {
+                "url": "https://dzen.ru/a/aqqF8N8hLg35lRnI",
+                "url_type": "plain",
+                "rec_secdata": "CIi93NCKNCABUA9qAQGQAQA=",
+                "origin_id": "4036240292142625435",
+                "origin_type": "publisher",
+                "place": "more",
+                "isStellaBoosted": false,
+                "isCoolNews": false,
+                "isCuratedArticle": false
+            },
+            "socialInfo": {
+                "commentsEnabled": true,
+                "commentCount": 0,
+                "avatarUrls": []
+            },
+            "version": "newApi",
+            "isPremium": false,
+            "isNativeAds": false,
+            "isArchive": false,
+            "isArchiveBoughtByStella": false,
+            "feedSpecificData": {
+                "isSavedToBookmarks": false,
+                "suites": [],
+                "isFreshFromSubscriptions": false
+            },
+            "allAdSettings": {},
+            "viewsTillEnd": 2
+        },
+        {
+            "id": "6aaa78c0df212e0df994ba10",
+            "type": "article",
+            "itemId": "1134345088025481246",
+            "itemType": "native",
+            "title": "Флорист Юлия Леонтьева рассказала о любви к цветам в эфире «Утра бодрого режима»",
+            "text": "Цветочная история Юлии Леонтьевой началась почти 10 лет назад. Изначально она была бухгалтером, но в декрете поняла, что можно направить силы в другое русло. На тот момент работа с дарами флоры показалась перспективной нишей. И спустя годы она не разочаровала. Юлия ЛЕОНТЬЕВА, флорист, основатель цветочной студии: «Иногда цветы – это очень необычные и интересные поводы. Получать вот эти эмоции, когда ты их собираешь. В первую очередь, это радость человеку, которую ты везёшь, доставляешь. Иногда это...",
+            "sourceId": "599aa25d57906a8ab6553398",
+            "shareLink": "https://dzen.ru/a/aqp4wN8hLg35lLoQ",
+            "allCommentsLink": "https://dzen.ru/a/aqp4wN8hLg35lLoQ?feed_exp=ordinary_feed&from=channel&rid=3689788995.1646.1789800485723.40496&integration=site_desktop&place=more&secdata=CMDBks%2BKNCABUA9qAQGQAQA%3D&referrer_clid=1400&#comments_data=p_root",
+            "link": "https://dzen.ru/a/aqp4wN8hLg35lLoQ?feed_exp=ordinary_feed&from=channel&integration=site_desktop&place=more&secdata=CMDBks%2BKNCABUA9qAQGQAQA%3D&rid=3689788995.1646.1789800485723.40496&referrer_clid=1400&",
+            "isPromoPublication": false,
+            "views": 0,
+            "timeToReadSeconds": 86,
+            "repostUrl": "https://dzen.ru/media/zen/login?repostId=6aaa78c0df212e0df994ba10&briefEditorPublicationId=draft",
+            "publicationDate": "1789556728",
+            "source": {
+                "id": "599aa25d57906a8ab6553398",
+                "itemId": "4036240292142625435",
+                "type": "publisher",
+                "title": "Братская студия телевидения",
+                "description": "Из жизни Братска",
+                "link": "https://dzen.ru/bst24bratsk?lang=ru&country_code=ru&parent_rid=3689788995.1646.1789800485723.40496&from_parent_id=1134345088025481246&from_parent_type=native&from_page=other_page",
+                "shareLink": "https://dzen.ru/bst24bratsk",
+                "isVerified": false,
+                "image": {
+                    "logo": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/xxh",
+                    "framedLogo": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed_3x",
+                    "logoSizes": {
+                        "framed_100x128_1x": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed_100x128_1x",
+                        "framed_132x176_1x": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed",
+                        "framed_212x280_1x": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed_212x280_1x",
+                        "framed_202x260_1x": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed_202x260_1x",
+                        "smart_crop_160": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/smart_crop_160"
+                    },
+                    "logoBackgroundColor": "#F8F8F8",
+                    "titleBackgroundColor": "#C7C7C7",
+                    "titleColor": "#000000",
+                    "headerBackgroundColor": "#B2B2B2",
+                    "redesignLogos": {},
+                    "isStubLogo": false
+                },
+                "metricaId": 45934887,
+                "subscribers": 6310,
+                "status": "not_subscribed",
+                "telegramBotSubscriptionUrl": "https://t.me/dzenpushbot?start=CF_599aa25d57906a8ab6553398_466370828",
+                "isMyChannel": true,
+                "isPremiumAuthor": false,
+                "isDonationEnabled": false,
+                "isBirthday": false
+            },
+            "recommendationsInfo": {},
+            "promoLabel": {
+                "text": "6,3K подписчиков",
+                "text_color": "#FFFFFF",
+                "channel_info_subscribed": "6,3K подписчиков",
+                "channel_info_unsubscribed": "6,3K подписчиков"
+            },
+            "image": {
+                "urlTemplate": "https://avatars.dzeninfra.ru/get-{namespace}/271828/pub_6aaa78c0df212e0df994ba10_6aaa7931872f355aaeec1732/{size}",
+                "id": "pub_6aaa78c0df212e0df994ba10_6aaa7931872f355aaeec1732",
+                "namespace": "zen_doc",
+                "originalSize": {
+                    "width": 1200,
+                    "height": 720
+                },
+                "wasRotated": false,
+                "meta": {
+                    "mainColor": "#000000"
+                },
+                "width": 1200,
+                "height": 720,
+                "sizeName": "scale_1200"
+            },
+            "bulkData": {
+                "url": "https://dzen.ru/a/aqp4wN8hLg35lLoQ",
+                "url_type": "plain",
+                "rec_secdata": "CMDBks+KNCABUA9qAQGQAQA=",
+                "origin_id": "4036240292142625435",
+                "origin_type": "publisher",
+                "place": "more",
+                "isStellaBoosted": false,
+                "isCoolNews": false,
+                "isCuratedArticle": false
+            },
+            "socialInfo": {
+                "commentsEnabled": true,
+                "commentCount": 0,
+                "avatarUrls": []
+            },
+            "version": "newApi",
+            "isPremium": false,
+            "isNativeAds": false,
+            "isArchive": false,
+            "isArchiveBoughtByStella": false,
+            "feedSpecificData": {
+                "isSavedToBookmarks": false,
+                "suites": [],
+                "isFreshFromSubscriptions": false
+            },
+            "allAdSettings": {},
+            "viewsTillEnd": 0
+        },
+        {
+            "id": "6aaa79321ddc5a0aab2dcd51",
+            "type": "article",
+            "itemId": "-4311805774779462126",
+            "itemType": "native",
+            "title": "Праздники и народные приметы 17 сентября",
+            "text": "Неопалимая Купина. Праздник острых вил. В этот день отмечается праздник иконы Божьей Матери «Неопалимая Купина». Согласно преданию, Бог явился Моисею в виде горящего, но несгорающего тернового куста, призывая его вывести народ Израиля из Египта. В христианстве Неопалимая Купина стала прообразом Богоматери, символизирующей непорочное зачатие Девы Марии. Православные почитают чудотворную икону с изображением Марии с младенцем, оформленную в восьмиконечную звезду, образованную зелёными и красными четырехугольниками, символизирующими цвет Купины и пламени соответственно...",
+            "sourceId": "599aa25d57906a8ab6553398",
+            "shareLink": "https://dzen.ru/a/aqp5Mh3cWgqrLc1R",
+            "allCommentsLink": "https://dzen.ru/a/aqp5Mh3cWgqrLc1R?feed_exp=ordinary_feed&from=channel&rid=3689788995.1646.1789800485723.40496&integration=site_desktop&place=more&secdata=CIjggM%2BKNCABUA9qAQGQAQA%3D&referrer_clid=1400&#comments_data=p_root",
+            "link": "https://dzen.ru/a/aqp5Mh3cWgqrLc1R?feed_exp=ordinary_feed&from=channel&integration=site_desktop&place=more&secdata=CIjggM%2BKNCABUA9qAQGQAQA%3D&rid=3689788995.1646.1789800485723.40496&referrer_clid=1400&",
+            "isPromoPublication": false,
+            "views": 9,
+            "timeToReadSeconds": 115,
+            "repostUrl": "https://dzen.ru/media/zen/login?repostId=6aaa79321ddc5a0aab2dcd51&briefEditorPublicationId=draft",
+            "publicationDate": "1789556437",
+            "source": {
+                "id": "599aa25d57906a8ab6553398",
+                "itemId": "4036240292142625435",
+                "type": "publisher",
+                "title": "Братская студия телевидения",
+                "description": "Из жизни Братска",
+                "link": "https://dzen.ru/bst24bratsk?lang=ru&country_code=ru&parent_rid=3689788995.1646.1789800485723.40496&from_parent_id=-4311805774779462126&from_parent_type=native&from_page=other_page",
+                "shareLink": "https://dzen.ru/bst24bratsk",
+                "isVerified": false,
+                "image": {
+                    "logo": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/xxh",
+                    "framedLogo": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed_3x",
+                    "logoSizes": {
+                        "framed_100x128_1x": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed_100x128_1x",
+                        "framed_132x176_1x": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed",
+                        "framed_212x280_1x": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed_212x280_1x",
+                        "framed_202x260_1x": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed_202x260_1x",
+                        "smart_crop_160": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/smart_crop_160"
+                    },
+                    "logoBackgroundColor": "#F8F8F8",
+                    "titleBackgroundColor": "#C7C7C7",
+                    "titleColor": "#000000",
+                    "headerBackgroundColor": "#B2B2B2",
+                    "redesignLogos": {},
+                    "isStubLogo": false
+                },
+                "metricaId": 45934887,
+                "subscribers": 6310,
+                "status": "not_subscribed",
+                "telegramBotSubscriptionUrl": "https://t.me/dzenpushbot?start=CF_599aa25d57906a8ab6553398_466370828",
+                "isMyChannel": true,
+                "isPremiumAuthor": false,
+                "isDonationEnabled": false,
+                "isBirthday": false
+            },
+            "recommendationsInfo": {},
+            "promoLabel": {
+                "text": "6,3K подписчиков",
+                "text_color": "#000000",
+                "channel_info_subscribed": "6,3K подписчиков",
+                "channel_info_unsubscribed": "6,3K подписчиков"
+            },
+            "image": {
+                "urlTemplate": "https://avatars.dzeninfra.ru/get-{namespace}/271828/pub_6aaa79321ddc5a0aab2dcd51_6aaa793274e02e652d4196bb/{size}",
+                "id": "pub_6aaa79321ddc5a0aab2dcd51_6aaa793274e02e652d4196bb",
+                "namespace": "zen_doc",
+                "originalSize": {
+                    "width": 1200,
+                    "height": 720
+                },
+                "wasRotated": false,
+                "meta": {
+                    "mainColor": "#F8F8F8"
+                },
+                "width": 1200,
+                "height": 720,
+                "sizeName": "scale_1200"
+            },
+            "bulkData": {
+                "url": "https://dzen.ru/a/aqp5Mh3cWgqrLc1R",
+                "url_type": "plain",
+                "rec_secdata": "CIjggM+KNCABUA9qAQGQAQA=",
+                "origin_id": "4036240292142625435",
+                "origin_type": "publisher",
+                "place": "more",
+                "isStellaBoosted": false,
+                "isCoolNews": false,
+                "isCuratedArticle": false
+            },
+            "socialInfo": {
+                "commentsEnabled": true,
+                "likesCount": 1,
+                "commentCount": 0,
+                "avatarUrls": []
+            },
+            "version": "newApi",
+            "isPremium": false,
+            "isNativeAds": false,
+            "isArchive": false,
+            "isArchiveBoughtByStella": false,
+            "feedSpecificData": {
+                "isSavedToBookmarks": false,
+                "suites": [],
+                "isFreshFromSubscriptions": false
+            },
+            "allAdSettings": {},
+            "viewsTillEnd": 4
+        },
+        {
+            "id": "6aaa769548d4813e6386e519",
+            "type": "article",
+            "itemId": "2127602072539030201",
+            "itemType": "native",
+            "title": "Ремонт в срок, тепло в дома – ангарские ТЭЦ прошли проверку перед зимой",
+            "text": "Отопительный сезон в Ангарске начался 14 сентября. Перед его стартом на ТЭЦ-9 и ТЭЦ-10 прошла масштабная модернизация. На «десятке» заменили изношенные нагревательные элементы и воздухоподогреватели на семи котлах, а на «девятке» обновили элементы трех котлоагрегатов, от состояния которых зависит надежность основного оборудования станции, заменили насосы для транспортировки золошлаковых материалов и приборы теплового контроля турбины. Такая комплексная реновация позволит значительно снизить риск аварий...",
+            "sourceId": "599aa25d57906a8ab6553398",
+            "shareLink": "https://dzen.ru/a/aqp2lUjUgT5jhuUZ",
+            "allCommentsLink": "https://dzen.ru/a/aqp2lUjUgT5jhuUZ?feed_exp=ordinary_feed&from=channel&rid=3689788995.1646.1789800485723.40496&integration=site_desktop&place=more&secdata=CKi77c6KNCABUA9qAQGQAQA%3D&referrer_clid=1400&#comments_data=p_root",
+            "link": "https://dzen.ru/a/aqp2lUjUgT5jhuUZ?feed_exp=ordinary_feed&from=channel&integration=site_desktop&place=more&secdata=CKi77c6KNCABUA9qAQGQAQA%3D&rid=3689788995.1646.1789800485723.40496&referrer_clid=1400&",
+            "isPromoPublication": false,
+            "views": 1,
+            "timeToReadSeconds": 70,
+            "repostUrl": "https://dzen.ru/media/zen/login?repostId=6aaa769548d4813e6386e519&briefEditorPublicationId=draft",
+            "publicationDate": "1789556121",
+            "source": {
+                "id": "599aa25d57906a8ab6553398",
+                "itemId": "4036240292142625435",
+                "type": "publisher",
+                "title": "Братская студия телевидения",
+                "description": "Из жизни Братска",
+                "link": "https://dzen.ru/bst24bratsk?lang=ru&country_code=ru&parent_rid=3689788995.1646.1789800485723.40496&from_parent_id=2127602072539030201&from_parent_type=native&from_page=other_page",
+                "shareLink": "https://dzen.ru/bst24bratsk",
+                "isVerified": false,
+                "image": {
+                    "logo": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/xxh",
+                    "framedLogo": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed_3x",
+                    "logoSizes": {
+                        "framed_100x128_1x": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed_100x128_1x",
+                        "framed_132x176_1x": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed",
+                        "framed_212x280_1x": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed_212x280_1x",
+                        "framed_202x260_1x": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed_202x260_1x",
+                        "smart_crop_160": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/smart_crop_160"
+                    },
+                    "logoBackgroundColor": "#F8F8F8",
+                    "titleBackgroundColor": "#C7C7C7",
+                    "titleColor": "#000000",
+                    "headerBackgroundColor": "#B2B2B2",
+                    "redesignLogos": {},
+                    "isStubLogo": false
+                },
+                "metricaId": 45934887,
+                "subscribers": 6310,
+                "status": "not_subscribed",
+                "telegramBotSubscriptionUrl": "https://t.me/dzenpushbot?start=CF_599aa25d57906a8ab6553398_466370828",
+                "isMyChannel": true,
+                "isPremiumAuthor": false,
+                "isDonationEnabled": false,
+                "isBirthday": false
+            },
+            "recommendationsInfo": {},
+            "promoLabel": {
+                "text": "6,3K подписчиков",
+                "text_color": "#FFFFFF",
+                "channel_info_subscribed": "6,3K подписчиков",
+                "channel_info_unsubscribed": "6,3K подписчиков"
+            },
+            "image": {
+                "urlTemplate": "https://avatars.dzeninfra.ru/get-{namespace}/271828/pub_6aaa769548d4813e6386e519_6aaa769d4c55ed26ff5162f1/{size}",
+                "id": "pub_6aaa769548d4813e6386e519_6aaa769d4c55ed26ff5162f1",
+                "namespace": "zen_doc",
+                "originalSize": {
+                    "width": 1200,
+                    "height": 720
+                },
+                "wasRotated": false,
+                "meta": {
+                    "mainColor": "#080808"
+                },
+                "width": 1200,
+                "height": 720,
+                "sizeName": "scale_1200"
+            },
+            "bulkData": {
+                "url": "https://dzen.ru/a/aqp2lUjUgT5jhuUZ",
+                "url_type": "plain",
+                "rec_secdata": "CKi77c6KNCABUA9qAQGQAQA=",
+                "origin_id": "4036240292142625435",
+                "origin_type": "publisher",
+                "place": "more",
+                "isStellaBoosted": false,
+                "isCoolNews": false,
+                "isCuratedArticle": false
+            },
+            "socialInfo": {
+                "commentsEnabled": true,
+                "commentCount": 0,
+                "avatarUrls": []
+            },
+            "version": "newApi",
+            "isPremium": false,
+            "isNativeAds": false,
+            "isArchive": false,
+            "isArchiveBoughtByStella": false,
+            "feedSpecificData": {
+                "isSavedToBookmarks": false,
+                "suites": [],
+                "isFreshFromSubscriptions": false
+            },
+            "allAdSettings": {},
+            "viewsTillEnd": 0
+        },
+        {
+            "id": "6aaa75dd48d4813e6386e15e",
+            "type": "article",
+            "itemId": "-6688299841774566727",
+            "itemType": "native",
+            "title": "Инспекторы ГАИ застрелили медведя в одном из садоводств Приангарья",
+            "text": "Утро 15 сентября для дачников садоводства «Лесники» в Усть-Илимском районе началось с тревоги. Прямо по улицам поселка разгуливал медведь. Напуганные люди немедленно вызвали полицию, сообщает Братская студия телевидения со ссылкой на ГУ МВД по Иркутской области. На помощь приехал ближайший патруль Госавтоинспекции. Оценив угрозу для местных жителей, один из инспекторов застрелил хищника из табельного оружия. К счастью, никто из дачников не пострадал. В тот же день тревожные новости пришли из соседнего, Нижнеилимского района...",
+            "sourceId": "599aa25d57906a8ab6553398",
+            "shareLink": "https://dzen.ru/a/aqp13UjUgT5jhuFe",
+            "allCommentsLink": "https://dzen.ru/a/aqp13UjUgT5jhuFe?feed_exp=ordinary_feed&from=channel&rid=3689788995.1646.1789800485723.40496&integration=site_desktop&place=more&secdata=CKD9ys6KNCABUA9qAQGQAQA%3D&referrer_clid=1400&#comments_data=p_root",
+            "link": "https://dzen.ru/a/aqp13UjUgT5jhuFe?feed_exp=ordinary_feed&from=channel&integration=site_desktop&place=more&secdata=CKD9ys6KNCABUA9qAQGQAQA%3D&rid=3689788995.1646.1789800485723.40496&referrer_clid=1400&",
+            "isPromoPublication": false,
+            "views": 10,
+            "timeToReadSeconds": 59,
+            "repostUrl": "https://dzen.ru/media/zen/login?repostId=6aaa75dd48d4813e6386e15e&briefEditorPublicationId=draft",
+            "publicationDate": "1789555556",
+            "source": {
+                "id": "599aa25d57906a8ab6553398",
+                "itemId": "4036240292142625435",
+                "type": "publisher",
+                "title": "Братская студия телевидения",
+                "description": "Из жизни Братска",
+                "link": "https://dzen.ru/bst24bratsk?lang=ru&country_code=ru&parent_rid=3689788995.1646.1789800485723.40496&from_parent_id=-6688299841774566727&from_parent_type=native&from_page=other_page",
+                "shareLink": "https://dzen.ru/bst24bratsk",
+                "isVerified": false,
+                "image": {
+                    "logo": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/xxh",
+                    "framedLogo": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed_3x",
+                    "logoSizes": {
+                        "framed_100x128_1x": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed_100x128_1x",
+                        "framed_132x176_1x": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed",
+                        "framed_212x280_1x": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed_212x280_1x",
+                        "framed_202x260_1x": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed_202x260_1x",
+                        "smart_crop_160": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/smart_crop_160"
+                    },
+                    "logoBackgroundColor": "#F8F8F8",
+                    "titleBackgroundColor": "#C7C7C7",
+                    "titleColor": "#000000",
+                    "headerBackgroundColor": "#B2B2B2",
+                    "redesignLogos": {},
+                    "isStubLogo": false
+                },
+                "metricaId": 45934887,
+                "subscribers": 6310,
+                "status": "not_subscribed",
+                "telegramBotSubscriptionUrl": "https://t.me/dzenpushbot?start=CF_599aa25d57906a8ab6553398_466370828",
+                "isMyChannel": true,
+                "isPremiumAuthor": false,
+                "isDonationEnabled": false,
+                "isBirthday": false
+            },
+            "recommendationsInfo": {},
+            "promoLabel": {
+                "text": "6,3K подписчиков",
+                "text_color": "#FFFFFF",
+                "channel_info_subscribed": "6,3K подписчиков",
+                "channel_info_unsubscribed": "6,3K подписчиков"
+            },
+            "image": {
+                "urlTemplate": "https://avatars.dzeninfra.ru/get-{namespace}/271828/pub_6aaa75dd48d4813e6386e15e_6aaa769d4c55ed26ff5162f0/{size}",
+                "id": "pub_6aaa75dd48d4813e6386e15e_6aaa769d4c55ed26ff5162f0",
+                "namespace": "zen_doc",
+                "originalSize": {
+                    "width": 1200,
+                    "height": 720
+                },
+                "wasRotated": false,
+                "meta": {
+                    "mainColor": "#202010"
+                },
+                "width": 1200,
+                "height": 720,
+                "sizeName": "scale_1200"
+            },
+            "bulkData": {
+                "url": "https://dzen.ru/a/aqp13UjUgT5jhuFe",
+                "url_type": "plain",
+                "rec_secdata": "CKD9ys6KNCABUA9qAQGQAQA=",
+                "origin_id": "4036240292142625435",
+                "origin_type": "publisher",
+                "place": "more",
+                "isStellaBoosted": false,
+                "isCoolNews": false,
+                "isCuratedArticle": false
+            },
+            "socialInfo": {
+                "commentsEnabled": true,
+                "commentCount": 0,
+                "avatarUrls": []
+            },
+            "version": "newApi",
+            "isPremium": false,
+            "isNativeAds": false,
+            "isArchive": false,
+            "isArchiveBoughtByStella": false,
+            "feedSpecificData": {
+                "isSavedToBookmarks": false,
+                "suites": [],
+                "isFreshFromSubscriptions": false
+            },
+            "allAdSettings": {},
+            "viewsTillEnd": 3
+        },
+        {
+            "id": "6aaa702f1ddc5a0aab2db09f",
+            "type": "article",
+            "itemId": "-6942972238798517945",
+            "itemType": "native",
+            "title": "Перед выбором: последние приготовления Братска",
+            "text": "Уже в эту пятницу, 18 сентября, Братск вместе со всей страной начнет выбирать депутатов Государственной Думы девятого созыва. Голосование продлится три дня – до вечера воскресенья. На избирательном участке каждый житель города получит два бланка. В первом нужно поставить галочку за конкретного человека – кандидата по 98-му одномандатному округу. Именно он будет представлять интересы севера Приангарья в Москве. Во втором бюллетене предстоит отметить одну из десяти политических партий. Подготовка на местах уже выходит на финишную прямую...",
+            "sourceId": "599aa25d57906a8ab6553398",
+            "shareLink": "https://dzen.ru/a/aqpwLx3cWgqrLbCf",
+            "allCommentsLink": "https://dzen.ru/a/aqpwLx3cWgqrLbCf?feed_exp=ordinary_feed&from=channel&rid=3689788995.1646.1789800485723.40496&integration=site_desktop&place=more&secdata=CMDKks6KNCABUA9qAQGQAQA%3D&referrer_clid=1400&#comments_data=p_root",
+            "link": "https://dzen.ru/a/aqpwLx3cWgqrLbCf?feed_exp=ordinary_feed&from=channel&integration=site_desktop&place=more&secdata=CMDKks6KNCABUA9qAQGQAQA%3D&rid=3689788995.1646.1789800485723.40496&referrer_clid=1400&",
+            "isPromoPublication": false,
+            "views": 2,
+            "timeToReadSeconds": 91,
+            "repostUrl": "https://dzen.ru/media/zen/login?repostId=6aaa702f1ddc5a0aab2db09f&briefEditorPublicationId=draft",
+            "publicationDate": "1789554632",
+            "source": {
+                "id": "599aa25d57906a8ab6553398",
+                "itemId": "4036240292142625435",
+                "type": "publisher",
+                "title": "Братская студия телевидения",
+                "description": "Из жизни Братска",
+                "link": "https://dzen.ru/bst24bratsk?lang=ru&country_code=ru&parent_rid=3689788995.1646.1789800485723.40496&from_parent_id=-6942972238798517945&from_parent_type=native&from_page=other_page",
+                "shareLink": "https://dzen.ru/bst24bratsk",
+                "isVerified": false,
+                "image": {
+                    "logo": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/xxh",
+                    "framedLogo": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed_3x",
+                    "logoSizes": {
+                        "framed_100x128_1x": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed_100x128_1x",
+                        "framed_132x176_1x": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed",
+                        "framed_212x280_1x": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed_212x280_1x",
+                        "framed_202x260_1x": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed_202x260_1x",
+                        "smart_crop_160": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/smart_crop_160"
+                    },
+                    "logoBackgroundColor": "#F8F8F8",
+                    "titleBackgroundColor": "#C7C7C7",
+                    "titleColor": "#000000",
+                    "headerBackgroundColor": "#B2B2B2",
+                    "redesignLogos": {},
+                    "isStubLogo": false
+                },
+                "metricaId": 45934887,
+                "subscribers": 6310,
+                "status": "not_subscribed",
+                "telegramBotSubscriptionUrl": "https://t.me/dzenpushbot?start=CF_599aa25d57906a8ab6553398_466370828",
+                "isMyChannel": true,
+                "isPremiumAuthor": false,
+                "isDonationEnabled": false,
+                "isBirthday": false
+            },
+            "recommendationsInfo": {},
+            "promoLabel": {
+                "text": "6,3K подписчиков",
+                "text_color": "#FFFFFF",
+                "channel_info_subscribed": "6,3K подписчиков",
+                "channel_info_unsubscribed": "6,3K подписчиков"
+            },
+            "image": {
+                "urlTemplate": "https://avatars.dzeninfra.ru/get-{namespace}/271828/pub_6aaa702f1ddc5a0aab2db09f_6aaa702f64f6880874a1541c/{size}",
+                "id": "pub_6aaa702f1ddc5a0aab2db09f_6aaa702f64f6880874a1541c",
+                "namespace": "zen_doc",
+                "originalSize": {
+                    "width": 1200,
+                    "height": 720
+                },
+                "wasRotated": false,
+                "meta": {
+                    "mainColor": "#104020"
+                },
+                "width": 1200,
+                "height": 720,
+                "sizeName": "scale_1200"
+            },
+            "bulkData": {
+                "url": "https://dzen.ru/a/aqpwLx3cWgqrLbCf",
+                "url_type": "plain",
+                "rec_secdata": "CMDKks6KNCABUA9qAQGQAQA=",
+                "origin_id": "4036240292142625435",
+                "origin_type": "publisher",
+                "place": "more",
+                "isStellaBoosted": false,
+                "isCoolNews": false,
+                "isCuratedArticle": false
+            },
+            "socialInfo": {
+                "commentsEnabled": true,
+                "commentCount": 0,
+                "avatarUrls": []
+            },
+            "version": "newApi",
+            "isPremium": false,
+            "isNativeAds": false,
+            "isArchive": false,
+            "isArchiveBoughtByStella": false,
+            "feedSpecificData": {
+                "isSavedToBookmarks": false,
+                "suites": [],
+                "isFreshFromSubscriptions": false
+            },
+            "allAdSettings": {},
+            "viewsTillEnd": 1
+        },
+        {
+            "id": "6aaa60fadf212e0df994120c",
+            "type": "article",
+            "itemId": "-8785553147474089196",
+            "itemType": "native",
+            "title": "4 км дороги к селу Тангуй в Братском районе отремонтировали в рамках нацпроекта",
+            "text": "В Братском районе завершён ремонт 4‑километрового участка автодороги на подъезде к селу Тангуй – трасса проходит через село Зарбь. Ремонт выполнен в рамках национального проекта «Инфраструктура для жизни» по поручению губернатора региона Игоря Кобзева. На реализацию проекта из областного бюджета выделено порядка 133 млн рублей. В ходе работ специалисты устранили ключевые проблемы дорожного полотна: заменили пучины и слабый грунт, который деформировался из‑за осадков и сезонного таяния снега. Кроме...",
+            "sourceId": "599aa25d57906a8ab6553398",
+            "shareLink": "https://dzen.ru/a/aqpg-t8hLg35lBIM",
+            "allCommentsLink": "https://dzen.ru/a/aqpg-t8hLg35lBIM?feed_exp=ordinary_feed&from=channel&rid=3689788995.1646.1789800485723.40496&integration=site_desktop&place=more&secdata=CNiQ%2F8uKNCABUA9qAQGQAQA%3D&referrer_clid=1400&#comments_data=p_root",
+            "link": "https://dzen.ru/a/aqpg-t8hLg35lBIM?feed_exp=ordinary_feed&from=channel&integration=site_desktop&place=more&secdata=CNiQ%2F8uKNCABUA9qAQGQAQA%3D&rid=3689788995.1646.1789800485723.40496&referrer_clid=1400&",
+            "isPromoPublication": false,
+            "timeToReadSeconds": 50,
+            "repostUrl": "https://dzen.ru/media/zen/login?repostId=6aaa60fadf212e0df994120c&briefEditorPublicationId=draft",
+            "publicationDate": "1789550119",
+            "source": {
+                "id": "599aa25d57906a8ab6553398",
+                "itemId": "4036240292142625435",
+                "type": "publisher",
+                "title": "Братская студия телевидения",
+                "description": "Из жизни Братска",
+                "link": "https://dzen.ru/bst24bratsk?lang=ru&country_code=ru&parent_rid=3689788995.1646.1789800485723.40496&from_parent_id=-8785553147474089196&from_parent_type=native&from_page=other_page",
+                "shareLink": "https://dzen.ru/bst24bratsk",
+                "isVerified": false,
+                "image": {
+                    "logo": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/xxh",
+                    "framedLogo": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed_3x",
+                    "logoSizes": {
+                        "framed_100x128_1x": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed_100x128_1x",
+                        "framed_132x176_1x": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed",
+                        "framed_212x280_1x": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed_212x280_1x",
+                        "framed_202x260_1x": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed_202x260_1x",
+                        "smart_crop_160": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/smart_crop_160"
+                    },
+                    "logoBackgroundColor": "#F8F8F8",
+                    "titleBackgroundColor": "#C7C7C7",
+                    "titleColor": "#000000",
+                    "headerBackgroundColor": "#B2B2B2",
+                    "redesignLogos": {},
+                    "isStubLogo": false
+                },
+                "metricaId": 45934887,
+                "subscribers": 6310,
+                "status": "not_subscribed",
+                "telegramBotSubscriptionUrl": "https://t.me/dzenpushbot?start=CF_599aa25d57906a8ab6553398_466370828",
+                "isMyChannel": true,
+                "isPremiumAuthor": false,
+                "isDonationEnabled": false,
+                "isBirthday": false
+            },
+            "recommendationsInfo": {},
+            "promoLabel": {
+                "text": "6,3K подписчиков",
+                "text_color": "#000000",
+                "channel_info_subscribed": "6,3K подписчиков",
+                "channel_info_unsubscribed": "6,3K подписчиков"
+            },
+            "image": {
+                "urlTemplate": "https://avatars.dzeninfra.ru/get-{namespace}/271828/pub_6aaa60fadf212e0df994120c_6aaa60fa74e02e652d4190e6/{size}",
+                "id": "pub_6aaa60fadf212e0df994120c_6aaa60fa74e02e652d4190e6",
+                "namespace": "zen_doc",
+                "originalSize": {
+                    "width": 1200,
+                    "height": 720
+                },
+                "wasRotated": false,
+                "meta": {
+                    "mainColor": "#A0A0A0"
+                },
+                "width": 1200,
+                "height": 720,
+                "sizeName": "scale_1200"
+            },
+            "bulkData": {
+                "url": "https://dzen.ru/a/aqpg-t8hLg35lBIM",
+                "url_type": "plain",
+                "rec_secdata": "CNiQ/8uKNCABUA9qAQGQAQA=",
+                "origin_id": "4036240292142625435",
+                "origin_type": "publisher",
+                "place": "more",
+                "isStellaBoosted": false,
+                "isCoolNews": false,
+                "isCuratedArticle": false
+            },
+            "socialInfo": {
+                "commentsEnabled": true,
+                "commentCount": 0,
+                "avatarUrls": []
+            },
+            "version": "newApi",
+            "isPremium": false,
+            "isNativeAds": false,
+            "isArchive": false,
+            "isArchiveBoughtByStella": false,
+            "feedSpecificData": {
+                "isSavedToBookmarks": false,
+                "suites": [],
+                "isFreshFromSubscriptions": false
+            },
+            "allAdSettings": {}
+        },
+        {
+            "id": "6aaa55a5df212e0df993c31c",
+            "type": "article",
+            "itemId": "4184951528884116948",
+            "itemType": "native",
+            "title": "Новогодний подарок от соцзащиты Братского района: условия, сроки и порядок подачи заявления",
+            "text": "В Управлении социальной защиты и социального обслуживания населения по Братскому району начали принимать заявления на новогодние подарки для детей. Рассчитывать на новогодний сюрприз могут ребята от 3 до 14 лет, которым особенно нужна поддержка государства: дети-сироты, дети, оставшиеся без попечения родителей, а также дети с инвалидностью и ВИЧ-инфекцией. Ольга ПРОШКИНА, начальник отдела организационной работы Управления социальной защиты и социального обслуживания населения по Братскому району: «На одного ребёнка предоставляется только один новогодний подарок...",
+            "sourceId": "599aa25d57906a8ab6553398",
+            "shareLink": "https://dzen.ru/a/aqpVpd8hLg35k8Mc",
+            "allCommentsLink": "https://dzen.ru/a/aqpVpd8hLg35k8Mc?feed_exp=ordinary_feed&from=channel&rid=3689788995.1646.1789800485723.40496&integration=site_desktop&place=more&secdata=CIi97sqKNCABUA9qAQGQAQA%3D&referrer_clid=1400&#comments_data=p_root",
+            "link": "https://dzen.ru/a/aqpVpd8hLg35k8Mc?feed_exp=ordinary_feed&from=channel&integration=site_desktop&place=more&secdata=CIi97sqKNCABUA9qAQGQAQA%3D&rid=3689788995.1646.1789800485723.40496&referrer_clid=1400&",
+            "isPromoPublication": false,
+            "views": 3,
+            "timeToReadSeconds": 82,
+            "repostUrl": "https://dzen.ru/media/zen/login?repostId=6aaa55a5df212e0df993c31c&briefEditorPublicationId=draft",
+            "publicationDate": "1789547749",
+            "source": {
+                "id": "599aa25d57906a8ab6553398",
+                "itemId": "4036240292142625435",
+                "type": "publisher",
+                "title": "Братская студия телевидения",
+                "description": "Из жизни Братска",
+                "link": "https://dzen.ru/bst24bratsk?lang=ru&country_code=ru&parent_rid=3689788995.1646.1789800485723.40496&from_parent_id=4184951528884116948&from_parent_type=native&from_page=other_page",
+                "shareLink": "https://dzen.ru/bst24bratsk",
+                "isVerified": false,
+                "image": {
+                    "logo": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/xxh",
+                    "framedLogo": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed_3x",
+                    "logoSizes": {
+                        "framed_100x128_1x": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed_100x128_1x",
+                        "framed_132x176_1x": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed",
+                        "framed_212x280_1x": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed_212x280_1x",
+                        "framed_202x260_1x": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed_202x260_1x",
+                        "smart_crop_160": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/smart_crop_160"
+                    },
+                    "logoBackgroundColor": "#F8F8F8",
+                    "titleBackgroundColor": "#C7C7C7",
+                    "titleColor": "#000000",
+                    "headerBackgroundColor": "#B2B2B2",
+                    "redesignLogos": {},
+                    "isStubLogo": false
+                },
+                "metricaId": 45934887,
+                "subscribers": 6310,
+                "status": "not_subscribed",
+                "telegramBotSubscriptionUrl": "https://t.me/dzenpushbot?start=CF_599aa25d57906a8ab6553398_466370828",
+                "isMyChannel": true,
+                "isPremiumAuthor": false,
+                "isDonationEnabled": false,
+                "isBirthday": false
+            },
+            "recommendationsInfo": {},
+            "promoLabel": {
+                "text": "6,3K подписчиков",
+                "text_color": "#FFFFFF",
+                "channel_info_subscribed": "6,3K подписчиков",
+                "channel_info_unsubscribed": "6,3K подписчиков"
+            },
+            "image": {
+                "urlTemplate": "https://avatars.dzeninfra.ru/get-{namespace}/271828/pub_6aaa55a5df212e0df993c31c_6aaa570d74e02e652d418e8a/{size}",
+                "id": "pub_6aaa55a5df212e0df993c31c_6aaa570d74e02e652d418e8a",
+                "namespace": "zen_doc",
+                "originalSize": {
+                    "width": 1200,
+                    "height": 720
+                },
+                "wasRotated": false,
+                "meta": {
+                    "mainColor": "#000000"
+                },
+                "width": 1200,
+                "height": 720,
+                "sizeName": "scale_1200"
+            },
+            "bulkData": {
+                "url": "https://dzen.ru/a/aqpVpd8hLg35k8Mc",
+                "url_type": "plain",
+                "rec_secdata": "CIi97sqKNCABUA9qAQGQAQA=",
+                "origin_id": "4036240292142625435",
+                "origin_type": "publisher",
+                "place": "more",
+                "isStellaBoosted": false,
+                "isCoolNews": false,
+                "isCuratedArticle": false
+            },
+            "socialInfo": {
+                "commentsEnabled": true,
+                "commentCount": 0,
+                "avatarUrls": []
+            },
+            "version": "newApi",
+            "isPremium": false,
+            "isNativeAds": false,
+            "isArchive": false,
+            "isArchiveBoughtByStella": false,
+            "feedSpecificData": {
+                "isSavedToBookmarks": false,
+                "suites": [],
+                "isFreshFromSubscriptions": false
+            },
+            "allAdSettings": {},
+            "viewsTillEnd": 2
+        },
+        {
+            "id": "6aaa513d4e4f861a8fda270b",
+            "type": "article",
+            "itemId": "5209232812088222978",
+            "itemType": "native",
+            "title": "Пьяная женщина убила сожителя в Центральном районе Братска",
+            "text": "В Центральном районе Братска обычная бытовая ссора закончилась смертью. Жительница улицы Малышева убила своего сожителя. Трагедия произошла на прошлой неделе. Как рассказали корреспонденту Братской студии телевидения в городском Следственном отделе, женщина находилась под градусом. Сергей ЯНЧЕНКО, следователь Следственного отдела по Братску, старший лейтенант юстиций: «В ходе бытового конфликта нанесла удар ножом своему сожителю. Смерть потерпевшего наступила в городской больнице Братска, куда он был доставлен для оказания медицинской помощи»...",
+            "sourceId": "599aa25d57906a8ab6553398",
+            "shareLink": "https://dzen.ru/a/aqpRPU5PhhqP2icL",
+            "allCommentsLink": "https://dzen.ru/a/aqpRPU5PhhqP2icL?feed_exp=ordinary_feed&from=channel&rid=3689788995.1646.1789800485723.40496&integration=site_desktop&place=more&secdata=CPOVvMqKNCABUA9qAQGQAQA%3D&referrer_clid=1400&#comments_data=p_root",
+            "link": "https://dzen.ru/a/aqpRPU5PhhqP2icL?feed_exp=ordinary_feed&from=channel&integration=site_desktop&place=more&secdata=CPOVvMqKNCABUA9qAQGQAQA%3D&rid=3689788995.1646.1789800485723.40496&referrer_clid=1400&",
+            "isPromoPublication": false,
+            "views": 7,
+            "timeToReadSeconds": 45,
+            "repostUrl": "https://dzen.ru/media/zen/login?repostId=6aaa513d4e4f861a8fda270b&briefEditorPublicationId=draft",
+            "publicationDate": "1789546925",
+            "source": {
+                "id": "599aa25d57906a8ab6553398",
+                "itemId": "4036240292142625435",
+                "type": "publisher",
+                "title": "Братская студия телевидения",
+                "description": "Из жизни Братска",
+                "link": "https://dzen.ru/bst24bratsk?lang=ru&country_code=ru&parent_rid=3689788995.1646.1789800485723.40496&from_parent_id=5209232812088222978&from_parent_type=native&from_page=other_page",
+                "shareLink": "https://dzen.ru/bst24bratsk",
+                "isVerified": false,
+                "image": {
+                    "logo": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/xxh",
+                    "framedLogo": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed_3x",
+                    "logoSizes": {
+                        "framed_100x128_1x": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed_100x128_1x",
+                        "framed_132x176_1x": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed",
+                        "framed_212x280_1x": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed_212x280_1x",
+                        "framed_202x260_1x": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed_202x260_1x",
+                        "smart_crop_160": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/smart_crop_160"
+                    },
+                    "logoBackgroundColor": "#F8F8F8",
+                    "titleBackgroundColor": "#C7C7C7",
+                    "titleColor": "#000000",
+                    "headerBackgroundColor": "#B2B2B2",
+                    "redesignLogos": {},
+                    "isStubLogo": false
+                },
+                "metricaId": 45934887,
+                "subscribers": 6310,
+                "status": "not_subscribed",
+                "telegramBotSubscriptionUrl": "https://t.me/dzenpushbot?start=CF_599aa25d57906a8ab6553398_466370828",
+                "isMyChannel": true,
+                "isPremiumAuthor": false,
+                "isDonationEnabled": false,
+                "isBirthday": false
+            },
+            "recommendationsInfo": {},
+            "promoLabel": {
+                "text": "6,3K подписчиков",
+                "text_color": "#000000",
+                "channel_info_subscribed": "6,3K подписчиков",
+                "channel_info_unsubscribed": "6,3K подписчиков"
+            },
+            "image": {
+                "urlTemplate": "https://avatars.dzeninfra.ru/get-{namespace}/271828/pub_6aaa513d4e4f861a8fda270b_6aaa513d6ede255e142da57a/{size}",
+                "id": "pub_6aaa513d4e4f861a8fda270b_6aaa513d6ede255e142da57a",
+                "namespace": "zen_doc",
+                "originalSize": {
+                    "width": 1200,
+                    "height": 720
+                },
+                "wasRotated": false,
+                "meta": {
+                    "mainColor": "#C0B078"
+                },
+                "width": 1200,
+                "height": 720,
+                "sizeName": "scale_1200"
+            },
+            "bulkData": {
+                "url": "https://dzen.ru/a/aqpRPU5PhhqP2icL",
+                "url_type": "plain",
+                "rec_secdata": "CPOVvMqKNCABUA9qAQGQAQA=",
+                "origin_id": "4036240292142625435",
+                "origin_type": "publisher",
+                "place": "more",
+                "isStellaBoosted": false,
+                "isCoolNews": false,
+                "isCuratedArticle": false
+            },
+            "socialInfo": {
+                "commentsEnabled": true,
+                "commentCount": 0,
+                "avatarUrls": []
+            },
+            "version": "newApi",
+            "isPremium": false,
+            "isNativeAds": false,
+            "isArchive": false,
+            "isArchiveBoughtByStella": false,
+            "feedSpecificData": {
+                "isSavedToBookmarks": false,
+                "suites": [],
+                "isFreshFromSubscriptions": false
+            },
+            "allAdSettings": {},
+            "viewsTillEnd": 1
+        },
+        {
+            "id": "6aaa4bf21ddc5a0aab2d32b8",
+            "type": "article",
+            "itemId": "-6613072788514876152",
+            "itemType": "native",
+            "title": "Отопительный сезон начинается в Братском районе",
+            "text": "В Братском районе с 17 сентября официально начинается отопительный сезон – соответствующее постановление подписал мэр муниципального образования Николай Дружинин. Решение принято в связи с понижением среднесуточных температур. Об этом сообщает Братская студия телевидения со ссылкой на пресс-службу администрации Братского района. Первыми тепло получат объекты социальной сферы – школы, детские сады и больницы, затем отопление начнут подавать в жилые дома...",
+            "sourceId": "599aa25d57906a8ab6553398",
+            "shareLink": "https://dzen.ru/a/aqpL8h3cWgqrLTK4",
+            "allCommentsLink": "https://dzen.ru/a/aqpL8h3cWgqrLTK4?feed_exp=ordinary_feed&from=channel&rid=3689788995.1646.1789800485723.40496&integration=site_desktop&place=more&secdata=CLDO2cmKNCABUA9qAQGQAQA%3D&referrer_clid=1400&#comments_data=p_root",
+            "link": "https://dzen.ru/a/aqpL8h3cWgqrLTK4?feed_exp=ordinary_feed&from=channel&integration=site_desktop&place=more&secdata=CLDO2cmKNCABUA9qAQGQAQA%3D&rid=3689788995.1646.1789800485723.40496&referrer_clid=1400&",
+            "isPromoPublication": false,
+            "views": 3,
+            "timeToReadSeconds": 39,
+            "repostUrl": "https://dzen.ru/media/zen/login?repostId=6aaa4bf21ddc5a0aab2d32b8&briefEditorPublicationId=draft",
+            "publicationDate": "1789545310",
+            "source": {
+                "id": "599aa25d57906a8ab6553398",
+                "itemId": "4036240292142625435",
+                "type": "publisher",
+                "title": "Братская студия телевидения",
+                "description": "Из жизни Братска",
+                "link": "https://dzen.ru/bst24bratsk?lang=ru&country_code=ru&parent_rid=3689788995.1646.1789800485723.40496&from_parent_id=-6613072788514876152&from_parent_type=native&from_page=other_page",
+                "shareLink": "https://dzen.ru/bst24bratsk",
+                "isVerified": false,
+                "image": {
+                    "logo": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/xxh",
+                    "framedLogo": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed_3x",
+                    "logoSizes": {
+                        "framed_100x128_1x": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed_100x128_1x",
+                        "framed_132x176_1x": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed",
+                        "framed_212x280_1x": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed_212x280_1x",
+                        "framed_202x260_1x": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed_202x260_1x",
+                        "smart_crop_160": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/smart_crop_160"
+                    },
+                    "logoBackgroundColor": "#F8F8F8",
+                    "titleBackgroundColor": "#C7C7C7",
+                    "titleColor": "#000000",
+                    "headerBackgroundColor": "#B2B2B2",
+                    "redesignLogos": {},
+                    "isStubLogo": false
+                },
+                "metricaId": 45934887,
+                "subscribers": 6310,
+                "status": "not_subscribed",
+                "telegramBotSubscriptionUrl": "https://t.me/dzenpushbot?start=CF_599aa25d57906a8ab6553398_466370828",
+                "isMyChannel": true,
+                "isPremiumAuthor": false,
+                "isDonationEnabled": false,
+                "isBirthday": false
+            },
+            "recommendationsInfo": {},
+            "promoLabel": {
+                "text": "6,3K подписчиков",
+                "text_color": "#FFFFFF",
+                "channel_info_subscribed": "6,3K подписчиков",
+                "channel_info_unsubscribed": "6,3K подписчиков"
+            },
+            "image": {
+                "urlTemplate": "https://avatars.dzeninfra.ru/get-{namespace}/271828/pub_6aaa4bf21ddc5a0aab2d32b8_6aaa4bf24c55ed26ff5158be/{size}",
+                "id": "pub_6aaa4bf21ddc5a0aab2d32b8_6aaa4bf24c55ed26ff5158be",
+                "namespace": "zen_doc",
+                "originalSize": {
+                    "width": 1200,
+                    "height": 720
+                },
+                "wasRotated": false,
+                "meta": {
+                    "mainColor": "#4870B0"
+                },
+                "width": 1200,
+                "height": 720,
+                "sizeName": "scale_1200"
+            },
+            "bulkData": {
+                "url": "https://dzen.ru/a/aqpL8h3cWgqrLTK4",
+                "url_type": "plain",
+                "rec_secdata": "CLDO2cmKNCABUA9qAQGQAQA=",
+                "origin_id": "4036240292142625435",
+                "origin_type": "publisher",
+                "place": "more",
+                "isStellaBoosted": false,
+                "isCoolNews": false,
+                "isCuratedArticle": false
+            },
+            "socialInfo": {
+                "commentsEnabled": true,
+                "commentCount": 0,
+                "avatarUrls": []
+            },
+            "version": "newApi",
+            "isPremium": false,
+            "isNativeAds": false,
+            "isArchive": false,
+            "isArchiveBoughtByStella": false,
+            "feedSpecificData": {
+                "isSavedToBookmarks": false,
+                "suites": [],
+                "isFreshFromSubscriptions": false
+            },
+            "allAdSettings": {},
+            "viewsTillEnd": 0
+        },
+        {
+            "id": "6aaa4726df212e0df9935e71",
+            "type": "article",
+            "itemId": "-6222974044411375233",
+            "itemType": "native",
+            "title": "Автор проекта «БабрБук» Дмитрий Мироманов проведёт встречу в Братске",
+            "text": "Автор проекта «БабрБук» и комиксов о Байкале и Иркутске Дмитрий Мироманов проведёт встречу с братчанами [0+]. Дмитрий родился в Братске, жил в Энергетике, но сейчас работает в столице региона. Светлана МИРОШИНА, заместитель заведующего отдела молодёжной политики: «Он ещё и классный спикер по темам нейросетей, СММ, рекламы, всего, что связано с креативными индустриями, всё к Дмитрию. Дмитрий оказался в Братске, мы решили не упускать эту возможность и пригласили его на встречу с молодёжью, где можно будет, в том числе поинтересоваться его историей успеха, его историей пути...",
+            "sourceId": "599aa25d57906a8ab6553398",
+            "shareLink": "https://dzen.ru/a/aqpHJt8hLg35k15x",
+            "allCommentsLink": "https://dzen.ru/a/aqpHJt8hLg35k15x?feed_exp=ordinary_feed&from=channel&rid=3689788995.1646.1789800485723.40496&integration=site_desktop&place=more&secdata=CND%2BgMmKNCABUA9qAQGQAQA%3D&referrer_clid=1400&#comments_data=p_root",
+            "link": "https://dzen.ru/a/aqpHJt8hLg35k15x?feed_exp=ordinary_feed&from=channel&integration=site_desktop&place=more&secdata=CND%2BgMmKNCABUA9qAQGQAQA%3D&rid=3689788995.1646.1789800485723.40496&referrer_clid=1400&",
+            "isPromoPublication": false,
+            "views": 1,
+            "timeToReadSeconds": 92,
+            "repostUrl": "https://dzen.ru/media/zen/login?repostId=6aaa4726df212e0df9935e71&briefEditorPublicationId=draft",
+            "publicationDate": "1789543858",
+            "source": {
+                "id": "599aa25d57906a8ab6553398",
+                "itemId": "4036240292142625435",
+                "type": "publisher",
+                "title": "Братская студия телевидения",
+                "description": "Из жизни Братска",
+                "link": "https://dzen.ru/bst24bratsk?lang=ru&country_code=ru&parent_rid=3689788995.1646.1789800485723.40496&from_parent_id=-6222974044411375233&from_parent_type=native&from_page=other_page",
+                "shareLink": "https://dzen.ru/bst24bratsk",
+                "isVerified": false,
+                "image": {
+                    "logo": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/xxh",
+                    "framedLogo": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed_3x",
+                    "logoSizes": {
+                        "framed_100x128_1x": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed_100x128_1x",
+                        "framed_132x176_1x": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed",
+                        "framed_212x280_1x": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed_212x280_1x",
+                        "framed_202x260_1x": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed_202x260_1x",
+                        "smart_crop_160": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/smart_crop_160"
+                    },
+                    "logoBackgroundColor": "#F8F8F8",
+                    "titleBackgroundColor": "#C7C7C7",
+                    "titleColor": "#000000",
+                    "headerBackgroundColor": "#B2B2B2",
+                    "redesignLogos": {},
+                    "isStubLogo": false
+                },
+                "metricaId": 45934887,
+                "subscribers": 6310,
+                "status": "not_subscribed",
+                "telegramBotSubscriptionUrl": "https://t.me/dzenpushbot?start=CF_599aa25d57906a8ab6553398_466370828",
+                "isMyChannel": true,
+                "isPremiumAuthor": false,
+                "isDonationEnabled": false,
+                "isBirthday": false
+            },
+            "recommendationsInfo": {},
+            "promoLabel": {
+                "text": "6,3K подписчиков",
+                "text_color": "#FFFFFF",
+                "channel_info_subscribed": "6,3K подписчиков",
+                "channel_info_unsubscribed": "6,3K подписчиков"
+            },
+            "image": {
+                "urlTemplate": "https://avatars.dzeninfra.ru/get-{namespace}/271828/pub_6aaa4726df212e0df9935e71_6aaa491a70e6fd5e7337fead/{size}",
+                "id": "pub_6aaa4726df212e0df9935e71_6aaa491a70e6fd5e7337fead",
+                "namespace": "zen_doc",
+                "originalSize": {
+                    "width": 1200,
+                    "height": 720
+                },
+                "wasRotated": false,
+                "meta": {
+                    "mainColor": "#080808"
+                },
+                "width": 1200,
+                "height": 720,
+                "sizeName": "scale_1200"
+            },
+            "bulkData": {
+                "url": "https://dzen.ru/a/aqpHJt8hLg35k15x",
+                "url_type": "plain",
+                "rec_secdata": "CND+gMmKNCABUA9qAQGQAQA=",
+                "origin_id": "4036240292142625435",
+                "origin_type": "publisher",
+                "place": "more",
+                "isStellaBoosted": false,
+                "isCoolNews": false,
+                "isCuratedArticle": false
+            },
+            "socialInfo": {
+                "commentsEnabled": true,
+                "commentCount": 0,
+                "avatarUrls": []
+            },
+            "version": "newApi",
+            "isPremium": false,
+            "isNativeAds": false,
+            "isArchive": false,
+            "isArchiveBoughtByStella": false,
+            "feedSpecificData": {
+                "isSavedToBookmarks": false,
+                "suites": [],
+                "isFreshFromSubscriptions": false
+            },
+            "allAdSettings": {},
+            "viewsTillEnd": 1
+        },
+        {
+            "id": "6aaa29f8df212e0df992a495",
+            "type": "article",
+            "itemId": "-2788973970495966900",
+            "itemType": "native",
+            "title": "Фейковая доставка цветов и конфет лишила семью из Ангарска 2 млн рублей",
+            "text": "В Ангарске 16-летняя школьница отдала телефонным мошенникам более двух миллионов рублей из домашнего сейфа. Все началось с безобидного сообщения в мессенджере: неизвестные написали девочке, что на её имя оформлена доставка цветов и конфет. Чтобы получить сюрприз, нужно было лишь продиктовать код из СМС, сообщает ИА «БСТ» со ссылкой на ГУ по Иркутской области. Как только школьница назвала цифры, её телефон начали обрывать звонками. Неизвестные представлялись сотрудниками спецслужб и чиновниками. Они заявили, что мошенники взломали счета её родителей и теперь от их имени спонсируют террористов...",
+            "sourceId": "599aa25d57906a8ab6553398",
+            "shareLink": "https://dzen.ru/a/aqop-N8hLg35kqSV",
+            "allCommentsLink": "https://dzen.ru/a/aqop-N8hLg35kqSV?feed_exp=ordinary_feed&from=channel&rid=3689788995.1646.1789800485723.40496&integration=site_desktop&place=more&secdata=CJCGycWKNCABUA9qAQGQAQA%3D&referrer_clid=1400&#comments_data=p_root",
+            "link": "https://dzen.ru/a/aqop-N8hLg35kqSV?feed_exp=ordinary_feed&from=channel&integration=site_desktop&place=more&secdata=CJCGycWKNCABUA9qAQGQAQA%3D&rid=3689788995.1646.1789800485723.40496&referrer_clid=1400&",
+            "isPromoPublication": false,
+            "views": 3,
+            "timeToReadSeconds": 67,
+            "repostUrl": "https://dzen.ru/media/zen/login?repostId=6aaa29f8df212e0df992a495&briefEditorPublicationId=draft",
+            "publicationDate": "1789536650",
+            "source": {
+                "id": "599aa25d57906a8ab6553398",
+                "itemId": "4036240292142625435",
+                "type": "publisher",
+                "title": "Братская студия телевидения",
+                "description": "Из жизни Братска",
+                "link": "https://dzen.ru/bst24bratsk?lang=ru&country_code=ru&parent_rid=3689788995.1646.1789800485723.40496&from_parent_id=-2788973970495966900&from_parent_type=native&from_page=other_page",
+                "shareLink": "https://dzen.ru/bst24bratsk",
+                "isVerified": false,
+                "image": {
+                    "logo": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/xxh",
+                    "framedLogo": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed_3x",
+                    "logoSizes": {
+                        "framed_100x128_1x": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed_100x128_1x",
+                        "framed_132x176_1x": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed",
+                        "framed_212x280_1x": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed_212x280_1x",
+                        "framed_202x260_1x": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/framed_202x260_1x",
+                        "smart_crop_160": "https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_599aa25d57906a8ab6553398_6601715b2b4f330201c96bf7/smart_crop_160"
+                    },
+                    "logoBackgroundColor": "#F8F8F8",
+                    "titleBackgroundColor": "#C7C7C7",
+                    "titleColor": "#000000",
+                    "headerBackgroundColor": "#B2B2B2",
+                    "redesignLogos": {},
+                    "isStubLogo": false
+                },
+                "metricaId": 45934887,
+                "subscribers": 6310,
+                "status": "not_subscribed",
+                "telegramBotSubscriptionUrl": "https://t.me/dzenpushbot?start=CF_599aa25d57906a8ab6553398_466370828",
+                "isMyChannel": true,
+                "isPremiumAuthor": false,
+                "isDonationEnabled": false,
+                "isBirthday": false
+            },
+            "recommendationsInfo": {},
+            "promoLabel": {
+                "text": "6,3K подписчиков",
+                "text_color": "#FFFFFF",
+                "channel_info_subscribed": "6,3K подписчиков",
+                "channel_info_unsubscribed": "6,3K подписчиков"
+            },
+            "image": {
+                "urlTemplate": "https://avatars.dzeninfra.ru/get-{namespace}/271828/pub_6aaa29f8df212e0df992a495_6aaa29f91b37292df47018b5/{size}",
+                "id": "pub_6aaa29f8df212e0df992a495_6aaa29f91b37292df47018b5",
+                "namespace": "zen_doc",
+                "originalSize": {
+                    "width": 1200,
+                    "height": 720
+                },
+                "wasRotated": false,
+                "meta": {
+                    "mainColor": "#000000"
+                },
+                "width": 1200,
+                "height": 720,
+                "sizeName": "scale_1200"
+            },
+            "bulkData": {
+                "url": "https://dzen.ru/a/aqop-N8hLg35kqSV",
+                "url_type": "plain",
+                "rec_secdata": "CJCGycWKNCABUA9qAQGQAQA=",
+                "origin_id": "4036240292142625435",
+                "origin_type": "publisher",
+                "place": "more",
+                "isStellaBoosted": false,
+                "isCoolNews": false,
+                "isCuratedArticle": false
+            },
+            "socialInfo": {
+                "commentsEnabled": true,
+                "commentCount": 0,
+                "avatarUrls": []
+            },
+            "version": "newApi",
+            "isPremium": false,
+            "isNativeAds": false,
+            "isArchive": false,
+            "isArchiveBoughtByStella": false,
+            "feedSpecificData": {
+                "isSavedToBookmarks": false,
+                "suites": [],
+                "isFreshFromSubscriptions": false
+            },
+            "allAdSettings": {},
+            "viewsTillEnd": 1
+        }
+    ],
+    "more": {
+        "link": "https://dzen.ru/api/web/v1/channel-more?channel_name=bst24bratsk&sort_type=regular&country_code=ru&next_page_id=longs%2F-7516671381401837953%2F1789564613013%2Carticles%2F-2788973970495966900%2F1789536650000%2Cshorts%2F3%2F1789536650000&_csrf=5c732b7012e3e4faa0022f5cac083ed923e86d9e-1789800485740-466370828-8187184411787747591%3A0&clid=1400&lang=ru&channel_version=welcome_infinity"
+    },
+    "ad_items": [],
+    "buckets": {
+        "1639282": 97,
+        "1642518": 18
+    },
+    "bulkData": {
+        "clid": 1400,
+        "sf": "recc",
+        "bulk_type": "feed",
+        "us": "H4sIAAAAAAAA_yXMQQqAIBAAwL_sOWNdNGzf0amLRGlIUZFGRPT3Cu_D3ODDHpPt59BPwEBISmAtJDVYMUpWqpQGWyggdqf1zg1Z6V9R3aBhTSxNqTGrtK_L6L4yXZv77BEGeF4UbYO_ZwAAAA",
+        "dst": "site_desktop",
+        "data": {},
+        "place": "more",
+        "origin_id": "4036240292142625435",
+        "origin_type": "publisher",
+        "group_ids": [
+            1639282,
+            1642518
+        ],
+        "clid_v2": 1400,
+        "page_type_v2": "author_channel_feed",
+        "buckets": {}
+    },
+    "isNewApi": true
+}

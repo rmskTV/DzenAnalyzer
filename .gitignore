@@ -1,0 +1,12 @@
+# macOS / IDE
+.DS_Store
+.idea/
+.vscode/
+
+# Python-прототип
+.venv/
+__pycache__/
+*.pyc
+
+# Локальные данные
+Новая папка/
