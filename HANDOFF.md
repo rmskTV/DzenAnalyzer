@@ -17,14 +17,14 @@ docker-compose: nginx (порт **8090**), app (php-fpm 8.4, Laravel 13), queue,
 ### Сбор
 - `DzenApiClient` — оба режима (`channel_name` / `channel_id`+tab), без сессий и CSRF (GET не проверяет токены)
 - `DzenCrawler` — синтетический курсор «из будущего», floor-контейнеры (`channel_*_floor`), пауза 0.7 с
-- job `CrawlChannel` (queue), `dzen:collect [--days=2] [--sync]` → посты + ежедневные снапшоты views/comments
+- job `CrawlChannel` (queue), `dzen:collect [--days=21] [--sync]` → посты + ежедневные снапшоты views/comments (`post_snapshots`) и подписчиков каналов (`channel_snapshots`, из блока `items[].source`; `channels.subscribers` обновляется автоматически)
 - `dzen:ingest` — забор материалов у парсеров (settings-ключ `parsers`; формат `[{external_id,url,title,text,published_at}]`)
 
 ### Классификация
 - Реестр **rubrics** (10 системных + создаваемые LLM через `NEW`+`new_rubric` с дедупом по имени; созданы: **Здоровье** n=78, **Образование** n=48)
 - Реестр **formats** — 11, расширение только администратором; `is_evergreen` у Подборки/Listicle, Гайда/Инструкции, Народного календаря
 - Промпт: определения рубрик, правила коллизий, форматы строго из списка; галлюцинация имени → keyword-фолбэк (не null)
-- `dzen:classify [--days=3] [--force]` (батчи по 20, JSON-режим). Всё окно переклассифицировано: **0 постов без рубрики**
+- `dzen:classify [--days=21] [--force]` (батчи по 20, JSON-режим; окно = глубине сбора, чтобы посты «из глубины» не оставались без рубрики). Всё окно переклассифицировано: **0 постов без рубрики**
 
 ### Аналитика
 - `MetricsService` → `GET /api/competitive?own=<id>&days=21`: скоуп = own + его конкуренты; benchmark, `length`/`length_set` (интервалы времени чтения, без отбрасываний), `formats` (n + медиана просмотров по форматам), `publish_grid` (7×24 в таймзоне канала), `dynamics`. Охватная метрика — сырые просмотры созревших постов (прожили в паблике ≥ 16 ч, `Post::MATURITY_HOURS`); объёмные метрики — по всем постам
@@ -72,7 +72,7 @@ docker-compose: nginx (порт **8090**), app (php-fpm 8.4, Laravel 13), queue,
 ```bash
 cd bst-dzen && docker compose up -d
 # UI: http://localhost:8090 · API: /api/health
-docker compose exec app php artisan dzen:collect --sync --days=2   # ручной сбор
+docker compose exec app php artisan dzen:collect --sync --days=21   # ручной сбор
 docker compose exec app php artisan dzen:llm-test                  # проверка LLM
 docker compose exec app php artisan dzen:classify --days=3         # классификация новых
 ```

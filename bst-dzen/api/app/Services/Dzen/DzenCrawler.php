@@ -24,6 +24,9 @@ class DzenCrawler
 
     public function __construct(private readonly DzenApiClient $api) {}
 
+    /** Мета канала из блока source последнего обхода: [title, subscribers] */
+    public ?array $channelMeta = null;
+
     /**
      * Собрать публикации канала за последние $days дней (с дедупликацией по url).
      *
@@ -33,6 +36,8 @@ class DzenCrawler
      */
     public function crawl(Channel $channel, int $days, ?callable $onPage = null): array
     {
+        $this->channelMeta = null;
+
         $rows = $channel->dzen_mode === 'id'
             ? $this->crawlByIdMode($channel, $days, $onPage)
             : $this->crawlByNameMode($channel, $days, $onPage);
@@ -148,6 +153,8 @@ class DzenCrawler
                 continue;
             }
 
+            $this->captureMeta($item);
+
             $type = (string) data_get($item, 'type', '');
 
             // floor-контейнер: channel_long_video_floor / channel_short_video_floor
@@ -155,6 +162,7 @@ class DzenCrawler
                 $kind = self::TAB_TYPES[data_get($item, 'tab', '')] ?? $type;
                 foreach ((array) $item['items'] as $video) {
                     if (is_array($video)) {
+                        $this->captureMeta($video);
                         $this->pushRow($rows, $this->makeRow($video, $kind));
                     }
                 }
@@ -169,6 +177,22 @@ class DzenCrawler
         }
 
         return $rows;
+    }
+
+    /** Блок source item'а несёт актуальную мету канала (название, подписчики) */
+    private function captureMeta(array $item): void
+    {
+        if ($this->channelMeta !== null) {
+            return;
+        }
+
+        $subscribers = (int) (data_get($item, 'source.subscribers') ?? 0);
+        if ($subscribers > 0) {
+            $this->channelMeta = [
+                'title' => trim((string) data_get($item, 'source.title', '')),
+                'subscribers' => $subscribers,
+            ];
+        }
     }
 
     /** Promo/brief-карточки без заголовка — не публикации, отбрасываем */

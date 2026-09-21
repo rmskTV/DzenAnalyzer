@@ -103,7 +103,7 @@ class SystemStatusController extends Controller
     private function schedule(): array
     {
         return [
-            ['command' => 'dzen:collect', 'utc' => '22:00', 'irk' => '06:00', 'desc' => 'сбор постов каналов + снапшоты просмотров'],
+            ['command' => 'dzen:collect', 'utc' => '22:00', 'irk' => '06:00', 'desc' => 'сбор постов + снапшоты просмотров и подписчиков'],
             ['command' => 'dzen:ingest', 'utc' => '22:10', 'irk' => '06:10', 'desc' => 'забор материалов с внешних парсеров'],
             ['command' => 'dzen:classify', 'utc' => '22:15', 'irk' => '06:15', 'desc' => 'рубрики/форматы новым постам (LLM)'],
             ['command' => 'dzen:events', 'utc' => '22:18', 'irk' => '06:18', 'desc' => 'пересборка кластеров событий (дуэли, покрытие)'],

@@ -10,7 +10,7 @@ use Illuminate\Console\Command;
 class ClassifyPosts extends Command
 {
     protected $signature = 'dzen:classify
-        {--days=3 : окно классификации}
+        {--days=21 : окно классификации (совпадает с глубиной сбора)}
         {--force : сбросить рубрики/форматы окна и классифицировать заново}';
 
     protected $description = 'Классифицировать рубрики и форматы постов (LLM или эвристика)';
@@ -35,7 +35,7 @@ class ClassifyPosts extends Command
         }
 
         $n = app(RubricClassifier::class)->classifyPending($pending->values());
-        $this->info("Классифицировано: {$n} (режим: " . (app(LlmClient::class)->isConfigured() ? 'LLM' : 'эвристика') . ')');
+        $this->info("Классифицировано: {$n} (режим: ".(app(LlmClient::class)->isConfigured() ? 'LLM' : 'эвристика').')');
 
         $still = Post::where('published_at', '>=', now()->subDays((int) $this->option('days')))
             ->whereNull('rubric')->count();

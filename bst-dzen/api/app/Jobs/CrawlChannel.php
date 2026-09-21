@@ -3,6 +3,7 @@
 namespace App\Jobs;
 
 use App\Models\Channel;
+use App\Models\ChannelSnapshot;
 use App\Models\Post;
 use App\Models\PostSnapshot;
 use App\Services\Dzen\DzenApiException;
@@ -56,7 +57,19 @@ class CrawlChannel implements ShouldQueue
             );
         }
 
-        $channel->forceFill(['last_crawled_at' => now()])->save();
+        // мета канала из блока source: актуальные подписчики + ежедневный снапшот
+        $meta = $crawler->channelMeta;
+        $channel->forceFill([
+            'last_crawled_at' => now(),
+            ...($meta ? ['subscribers' => $meta['subscribers']] : []),
+        ])->save();
+
+        if ($meta) {
+            ChannelSnapshot::updateOrCreate(
+                ['channel_id' => $channel->id, 'snapshot_date' => $today],
+                ['subscribers' => $meta['subscribers']],
+            );
+        }
 
         logger()->info('dzen:collect канал', [
             'channel' => $channel->dzen_key,
