@@ -19,6 +19,12 @@ class AuthTest extends TestCase
         $this->getJson('/api/system-status')->assertUnauthorized();
     }
 
+    public function test_guest_without_json_accept_still_gets_401_not_500(): void
+    {
+        $this->get('/api/channels', ['Accept' => '*/*'])->assertUnauthorized();
+        $this->get('/api/competitive', ['Accept' => 'text/html'])->assertUnauthorized();
+    }
+
     public function test_health_stays_public(): void
     {
         $this->getJson('/api/health')->assertOk()->assertJsonPath('status', 'ok');

@@ -6,7 +6,11 @@ function csrfToken() {
 }
 
 async function request(path, options = {}) {
-  const headers = { 'Content-Type': 'application/json', ...(options.headers || {}) }
+  const headers = {
+    'Content-Type': 'application/json',
+    Accept: 'application/json',
+    ...(options.headers || {}),
+  }
   const token = csrfToken()
   if (token && options.method && options.method !== 'GET') {
     headers['X-XSRF-TOKEN'] = token
