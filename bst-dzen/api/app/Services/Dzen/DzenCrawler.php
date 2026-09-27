@@ -107,6 +107,7 @@ class DzenCrawler
                 array_filter($pageRows, fn (array $r) => $r['published_at']->getTimestamp() > 0),
             );
             $oldest = $dated ? min($dated) : 0;
+            $newest = $dated ? max($dated) : 0;
             // страницы без дат (promo/brief) не двигают условие остановки по возрасту —
             // считаем их и выходим, если идут подряд
             $undatedPages = $dated ? 0 : $undatedPages + 1;
@@ -118,7 +119,11 @@ class DzenCrawler
             usleep(700_000); // пауза между страницами, как в прототипе
 
             $next = $this->nextPageId($payload);
-            if ($pageRows === [] || ($oldest && $oldest < $cutoff) || $next === null || $undatedPages >= 2) {
+            // лента не строго хронологична: закреплённые/промо посты с датой из
+            // прошлого встречаются на ранних страницах. Останавливаемся, только
+            // когда страница ЦЕЛИКОМ ушла за окно (даже самый свежий её пост),
+            // иначе один старый выброс обрывал пагинацию с потерей хвоста окна
+            if ($pageRows === [] || ($newest && $newest < $cutoff) || $next === null || $undatedPages >= 2) {
                 break;
             }
             $cursor = $next;

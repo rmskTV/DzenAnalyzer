@@ -72,7 +72,7 @@ class IngestMaterials extends Command
                 )->wasRecentlyCreated ? 1 : 0;
             }
 
-            $this->info("[{$name}] получено: " . count($items) . ", новых: {$created}");
+            $this->info("[{$name}] получено: ".count($items).", новых: {$created}");
         }
 
         return self::SUCCESS;

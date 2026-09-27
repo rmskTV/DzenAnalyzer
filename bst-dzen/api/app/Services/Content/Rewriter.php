@@ -25,9 +25,7 @@ class Rewriter
         };
     }
 
-    public function __construct(private readonly LlmClient $llm)
-    {
-    }
+    public function __construct(private readonly LlmClient $llm) {}
 
     public function rulesContext(int $ownChannelId): string
     {
@@ -40,7 +38,7 @@ class Rewriter
         return $rules->isEmpty()
             ? ''
             : "\n\nДействующие правила рерайта (учитывай обязательно):\n"
-                . $rules->map(fn (RuleVersion $r) => "## {$r->title}\n{$r->content}")->implode("\n\n");
+                .$rules->map(fn (RuleVersion $r) => "## {$r->title}\n{$r->content}")->implode("\n\n");
     }
 
     /**
@@ -65,10 +63,10 @@ class Rewriter
         TXT;
 
         $user = 'Материал для рерайта:'
-            . "\nЗаголовок: {$material->title}"
-            . "\nСсылка: {$material->url}"
-            . "\nТекст:\n" . mb_substr((string) $material->body, 0, 12000)
-            . $this->rulesContext($ownChannelId);
+            ."\nЗаголовок: {$material->title}"
+            ."\nСсылка: {$material->url}"
+            ."\nТекст:\n".mb_substr((string) $material->body, 0, 12000)
+            .$this->rulesContext($ownChannelId);
 
         $result = $this->llm->chatJson('rewrite', [
             ['role' => 'system', 'content' => $system],

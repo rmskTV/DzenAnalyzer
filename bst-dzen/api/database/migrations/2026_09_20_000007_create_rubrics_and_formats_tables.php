@@ -22,7 +22,7 @@ return new class extends Migration
             'Экономика/выплаты', 'Природа/животные', 'Спорт', 'Культура/досуг',
             'Люди/общество', 'Развлечения/лайфстайл',
         ] as $name) {
-            \DB::table('rubrics')->insert(['name' => $name, 'created_by' => 'system', 'created_at' => now(), 'updated_at' => now()]);
+            DB::table('rubrics')->insert(['name' => $name, 'created_by' => 'system', 'created_at' => now(), 'updated_at' => now()]);
         }
 
         // Реестр форматов: расширяется только администратором.
@@ -48,7 +48,7 @@ return new class extends Migration
             ['Анонс/Афиша', false],
             ['Мнение/Аналитика', false],
         ] as [$name, $evergreen]) {
-            \DB::table('formats')->insert([
+            DB::table('formats')->insert([
                 'name' => $name, 'is_evergreen' => $evergreen,
                 'created_at' => now(), 'updated_at' => now(),
             ]);

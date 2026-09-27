@@ -2,6 +2,7 @@
 
 namespace App\Services\LLM;
 
+use App\Models\Setting;
 use Illuminate\Support\Facades\Http;
 use RuntimeException;
 
@@ -44,10 +45,10 @@ class LlmClient
         $response = Http::withToken((string) config('services.bothub.api_key'))
             ->timeout(180)
             ->retry(2, 5000, throw: false)
-            ->post(rtrim((string) config('services.bothub.base_url'), '/') . '/chat/completions', $options);
+            ->post(rtrim((string) config('services.bothub.base_url'), '/').'/chat/completions', $options);
 
         if ($response->failed()) {
-            throw new LlmException("LLM HTTP {$response->status()}: " . mb_substr($response->body(), 0, 300));
+            throw new LlmException("LLM HTTP {$response->status()}: ".mb_substr($response->body(), 0, 300));
         }
 
         $content = $response->json('choices.0.message.content');
@@ -66,7 +67,7 @@ class LlmClient
 
         $decoded = json_decode($raw, true);
         if (! is_array($decoded)) {
-            throw new LlmException('LLM вернул некорректный JSON: ' . mb_substr($raw, 0, 200));
+            throw new LlmException('LLM вернул некорректный JSON: '.mb_substr($raw, 0, 200));
         }
 
         return $decoded;
@@ -74,7 +75,7 @@ class LlmClient
 
     public function modelFor(string $operation): string
     {
-        $models = \App\Models\Setting::where('key', 'llm')->value('value')['models'] ?? [];
+        $models = Setting::where('key', 'llm')->value('value')['models'] ?? [];
 
         return $models[$operation]
             ?? $models['default']
@@ -82,6 +83,4 @@ class LlmClient
     }
 }
 
-class LlmException extends RuntimeException
-{
-}
+class LlmException extends RuntimeException {}

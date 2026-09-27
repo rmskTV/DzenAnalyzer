@@ -19,8 +19,8 @@ class EventClusterer
     public const WINDOW_SEC = 48 * 3600;
 
     private const STOP = 'в во и на из за по с со к у о об от до для что как это этот эта эти '
-        . 'был была были будет быть он она они мы вы я не ни же бы ли а но или '
-        . 'году года ещё еще уже там тогда который которая которые';
+        .'был была были будет быть он она они мы вы я не ни же бы ли а но или '
+        .'году года ещё еще уже там тогда который которая которые';
 
     /** @var array<int, string[]> */
     private array $tokensCache = [];
@@ -159,7 +159,7 @@ class EventClusterer
             return $this->tokensCache[$post->id];
         }
 
-        $text = mb_strtolower($post->title . ' ' . (string) $post->lead);
+        $text = mb_strtolower($post->title.' '.(string) $post->lead);
         $text = str_replace('ё', 'е', $text);
         preg_match_all('/[a-zа-я0-9]+/u', $text, $m);
         $stop = explode(' ', self::STOP);

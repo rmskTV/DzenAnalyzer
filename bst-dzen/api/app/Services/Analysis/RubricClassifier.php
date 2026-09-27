@@ -64,9 +64,7 @@ class RubricClassifier
         'Анонс/Афиша' => '/афиша|анонс|куда пойти|не пропустите/ui',
     ];
 
-    public function __construct(private readonly LlmClient $llm)
-    {
-    }
+    public function __construct(private readonly LlmClient $llm) {}
 
     /** @return string[] активные рубрики из реестра */
     public static function rubricNames(): array
@@ -146,11 +144,11 @@ class RubricClassifier
     {
         $rubrics = Rubric::where('is_active', true)->orderBy('id')->get();
         $rubricLines = $rubrics->map(
-            fn (Rubric $r) => '- ' . $r->name . ' — ' . (self::RUBRIC_HINTS[$r->name] ?? 'см. название'),
+            fn (Rubric $r) => '- '.$r->name.' — '.(self::RUBRIC_HINTS[$r->name] ?? 'см. название'),
         )->implode("\n");
 
         $formatLines = collect(self::formatNames())->map(
-            fn (string $f) => '- ' . $f . ' — ' . (self::FORMAT_HINTS[$f] ?? ''),
+            fn (string $f) => '- '.$f.' — '.(self::FORMAT_HINTS[$f] ?? ''),
         )->implode("\n");
 
         return <<<TXT
@@ -184,7 +182,7 @@ class RubricClassifier
             } elseif (is_string($rubric)) {
                 $known = Rubric::where('is_active', true)->whereRaw('LOWER(name) = ?', [mb_strtolower($rubric)])->value('name');
                 // галлюцинация имени -> keyword-фолбэк, а не null
-                $post->rubric = $known ?? $this->fallbackRubric($post->title . ' ' . $post->lead);
+                $post->rubric = $known ?? $this->fallbackRubric($post->title.' '.$post->lead);
             }
         }
 
@@ -205,7 +203,7 @@ class RubricClassifier
         if ($name === '') {
             return null;
         }
-        $name = mb_strtoupper(mb_substr($name, 0, 1)) . mb_substr($name, 1);
+        $name = mb_strtoupper(mb_substr($name, 0, 1)).mb_substr($name, 1);
 
         $existing = Rubric::whereRaw('LOWER(name) = ?', [mb_strtolower($name)])->first();
         if ($existing) {
@@ -219,7 +217,7 @@ class RubricClassifier
     private function applyFallback(Post $post): void
     {
         if ($post->rubric === null) {
-            $post->rubric = $this->fallbackRubric($post->title . ' ' . $post->lead);
+            $post->rubric = $this->fallbackRubric($post->title.' '.$post->lead);
         }
 
         if ($post->content_format === null) {

@@ -29,8 +29,7 @@ class GeneratePublication implements ShouldQueue
         public readonly int $ownChannelId,
         public readonly string $kind, // 'material' | 'evergreen'
         public readonly ?int $materialId = null,
-    ) {
-    }
+    ) {}
 
     public function handle(): void
     {

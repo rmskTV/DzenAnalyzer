@@ -24,20 +24,20 @@ class RssFeed
         $xml[] = '<?xml version="1.0" encoding="UTF-8"?>';
         $xml[] = '<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/">';
         $xml[] = '<channel>';
-        $xml[] = '  <title>' . $this->esc($own->title) . '</title>';
-        $xml[] = '  <link>https://dzen.ru/' . $this->esc($own->dzen_key) . '</link>';
-        $xml[] = '  <description>Автопубликация канала ' . $this->esc($own->title) . '</description>';
+        $xml[] = '  <title>'.$this->esc($own->title).'</title>';
+        $xml[] = '  <link>https://dzen.ru/'.$this->esc($own->dzen_key).'</link>';
+        $xml[] = '  <description>Автопубликация канала '.$this->esc($own->title).'</description>';
         $xml[] = '  <language>ru</language>';
 
         foreach ($items as $item) {
             $xml[] = '  <item>';
-            $xml[] = '    <title>' . $this->esc($item->title) . '</title>';
-            $xml[] = '    <guid isPermaLink="false">bst-dzen-' . $item->id . '</guid>';
-            $xml[] = '    <pubDate>' . ($item->scheduled_at ?? $item->created_at)->copy()->timezone('UTC')->toRfc2822String() . '</pubDate>';
+            $xml[] = '    <title>'.$this->esc($item->title).'</title>';
+            $xml[] = '    <guid isPermaLink="false">bst-dzen-'.$item->id.'</guid>';
+            $xml[] = '    <pubDate>'.($item->scheduled_at ?? $item->created_at)->copy()->timezone('UTC')->toRfc2822String().'</pubDate>';
             if ($item->source_url) {
-                $xml[] = '    <link>' . $this->esc($item->source_url) . '</link>';
+                $xml[] = '    <link>'.$this->esc($item->source_url).'</link>';
             }
-            $xml[] = '    <content:encoded><![CDATA[' . $this->cdataSafe($item->body) . ']]></content:encoded>';
+            $xml[] = '    <content:encoded><![CDATA['.$this->cdataSafe($item->body).']]></content:encoded>';
             $xml[] = '  </item>';
         }
 

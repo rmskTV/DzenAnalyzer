@@ -89,6 +89,45 @@
         </div>
       </div>
 
+      <div class="grid2">
+        <div class="card">
+          <div class="card-head">
+            <h3>Охваты по рубрикам: каналы × рубрики</h3>
+            <select v-model="rubricMetric" class="own-switch">
+              <option value="median">Медиана просмотров</option>
+              <option value="posts">Число постов</option>
+              <option value="share">Доля повестки, %</option>
+            </select>
+          </div>
+          <canvas ref="rubricHeatCanvas" class="heat"></canvas>
+          <p class="muted small">Медиана — по созревшим (16ч+) статьям (лог-шкала); доля — % постов канала в рубрике. В скобках n — постов за окно. Пустая ячейка — данных нет.</p>
+        </div>
+        <div class="card">
+          <h3>Профиль повестки: доля рубрик</h3>
+          <canvas ref="agendaChart"></canvas>
+          <p class="muted small">Топ-6 рубрик набора по сумме долей, остальное — «прочее».</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Белые пятна: рабочие рубрики конкурентов, где нас нет</h3>
+        <p v-if="!whiteSpots.length" class="muted">Белых пятен нет — либо мы покрываем все рабочие рубрики конкурентов.</p>
+        <table v-else>
+          <thead><tr><th>Рубрика</th><th>У нас</th><th>У конкурентов</th><th>Медиана у конкурентов</th><th>Лучший канал</th><th></th></tr></thead>
+          <tbody>
+            <tr v-for="s in whiteSpots" :key="s.rubric">
+              <td>{{ s.rubric }}</td>
+              <td>{{ s.own_n }} постов</td>
+              <td>{{ s.competitors_n }} постов</td>
+              <td>{{ fmtViews(s.competitors_median) }}</td>
+              <td>{{ s.best_channel?.title }} ({{ fmtViews(s.best_channel?.views_median) }}, n={{ s.best_channel?.n }})</td>
+              <td><button class="link" @click="openWhiteSpot(s)">Смотреть топ →</button></td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="muted small">Критерий: у нас ≤ 2 постов за окно, у конкурентов ≥ 10 и медиана просмотров выше нашей общей медианы.</p>
+      </div>
+
       <div class="card">
         <h3>Бенчмарк: наш канал против лучшего в наборе</h3>
         <table>
@@ -143,7 +182,7 @@
         </div>
       </div>
 
-      <div class="card">
+      <div ref="topPostsCard" class="card">
         <div class="card-head">
           <h3>Топ постов каналов набора (включая наш)</h3>
           <div class="filters">
@@ -203,21 +242,27 @@ const formatChart = ref(null)
 const engagementChart = ref(null)
 const lengthChart = ref(null)
 const heatCanvas = ref(null)
+const rubricHeatCanvas = ref(null)
+const agendaChart = ref(null)
+const topPostsCard = ref(null)
 const charts = []
 
 const formatSource = ref('set')
 const lengthSource = ref('set')
 const heatTarget = ref('set')
+const rubricMetric = ref('median')
 
 const selectedCompetitor = ref(null)
 const topPosts = ref([])
 const topFilters = ref({ rubrics: [], formats: [] })
 const topFormat = ref('')
 const topRubric = ref('')
+let pendingRubric = null
 
 const compChannels = computed(() => competitive.value?.channels ?? [])
 const compOwn = computed(() => compChannels.value.find((c) => c.is_own) ?? null)
 const scopeRows = computed(() => compChannels.value.filter((c) => !c.is_own))
+const whiteSpots = computed(() => competitive.value?.white_spots ?? [])
 const ownCoverage = computed(() => ev.value?.coverage.find((c) => c.is_own)?.share ?? 0)
 const winsRate = computed(() =>
   ev.value?.duels_count ? Math.round((ev.value.wins / ev.value.duels_count) * 100) : 0,
@@ -378,6 +423,8 @@ function renderCharts() {
   }))
 
   drawSelectedHeatmap()
+  drawRubricHeatmap()
+  drawAgendaChart()
 }
 
 function heatmapGrid() {
@@ -433,6 +480,163 @@ function drawHeatmap(canvas, grid) {
   }
 }
 
+/** Матрица рубрик: активные строки + ячейки channel_id -> rubric -> row */
+function rubricRows() {
+  const data = competitive.value?.rubrics
+  if (!data) return { names: [], cells: new Map() }
+  const channels = competitive.value.channels
+  const used = new Set()
+  const cells = new Map()
+  for (const ch of channels) {
+    const rows = data[String(ch.id)] || []
+    cells.set(ch.id, new Map(rows.map((r) => [r.rubric, r])))
+    for (const row of rows) if (row.n > 0) used.add(row.rubric)
+  }
+  return { names: (data.names || []).filter((n) => used.has(n)), cells }
+}
+
+function fmtHeat(v) {
+  if (v >= 1000000) return (v / 1000000).toFixed(1) + 'M'
+  if (v >= 1000) return Math.round(v / 1000) + 'k'
+  return String(Math.round(v))
+}
+
+function drawRubricHeatmap() {
+  const canvas = rubricHeatCanvas.value
+  const { names, cells } = rubricRows()
+  if (!canvas || !competitive.value || names.length === 0) return
+  const channels = competitive.value.channels
+
+  const W = (canvas.width = 760)
+  const left = 130
+  const headH = 34
+  const rowH = Math.max(20, Math.min(30, 300 / Math.max(names.length, 1)))
+  const H = (canvas.height = Math.ceil(headH + names.length * rowH + 6))
+  const cw = (W - left - 8) / channels.length
+
+  // значение и подпись текущего режима; n — всегда рядом, для контекста
+  const metric = (row) => {
+    if (!row) return null
+    if (rubricMetric.value === 'median') return row.views_median
+    if (rubricMetric.value === 'posts') return row.n
+    return row.share
+  }
+  const label = (row) => {
+    if (!row) return ''
+    if (rubricMetric.value === 'median') return `${fmtHeat(row.views_median)} (n=${row.n})`
+    if (rubricMetric.value === 'posts') return String(row.n)
+    return `${Number(row.share).toFixed(1)}% (n=${row.n})`
+  }
+
+  const vals = []
+  for (const ch of channels) {
+    for (const name of names) {
+      const v = metric(cells.get(ch.id)?.get(name))
+      if (v != null && v > 0) vals.push(v)
+    }
+  }
+  // медиана — лог-шкала (просмотры лог-нормальны), счёт/доля — sqrt от максимума
+  const maxV = Math.max(1, ...vals)
+  const lo = Math.log10(Math.max(Math.min(...(vals.length ? vals : [1])), 1))
+  const hi = Math.log10(maxV)
+  const intensity = (v) => {
+    if (v == null || v <= 0) return null
+    if (rubricMetric.value === 'median') {
+      return Math.max(0.12, Math.min(1, (Math.log10(Math.max(v, 1)) - lo) / ((hi - lo) || 1)))
+    }
+    return Math.max(0.12, Math.min(1, Math.sqrt(v / maxV)))
+  }
+
+  const ctx = canvas.getContext('2d')
+  ctx.clearRect(0, 0, W, H)
+  ctx.font = '10px sans-serif'
+  ctx.textBaseline = 'middle'
+
+  for (let c = 0; c < channels.length; c++) {
+    ctx.fillStyle = channels[c].is_own ? '#b91c1c' : '#64748b'
+    ctx.fillText((channels[c].is_own ? '★ ' : '') + channels[c].title.slice(0, 12), left + c * cw + 2, headH / 2)
+  }
+
+  for (let r = 0; r < names.length; r++) {
+    const y = headH + r * rowH
+    ctx.fillStyle = '#475569'
+    ctx.fillText(names[r].slice(0, 19), 6, y + rowH / 2)
+    for (let c = 0; c < channels.length; c++) {
+      const ch = channels[c]
+      const row = cells.get(ch.id)?.get(names[r])
+      const t = intensity(metric(row))
+      const x = left + c * cw
+      if (t == null) {
+        ctx.fillStyle = 'rgba(148,163,184,0.15)'
+        ctx.fillRect(x, y, cw - 2, rowH - 2)
+        continue
+      }
+      const alpha = 0.15 + 0.85 * t
+      ctx.fillStyle = ch.is_own ? `rgba(231,76,60,${alpha.toFixed(2)})` : `rgba(37,99,235,${alpha.toFixed(2)})`
+      ctx.fillRect(x, y, cw - 2, rowH - 2)
+      if (cw > 60) {
+        ctx.fillStyle = t > 0.55 ? '#fff' : '#334155'
+        ctx.fillText(label(row), x + 4, y + rowH / 2)
+      }
+    }
+  }
+}
+
+/** Профиль повестки: 100% stacked bars — доля рубрик по каналам */
+function drawAgendaChart() {
+  const canvas = agendaChart.value
+  const data = competitive.value?.rubrics
+  if (!canvas || !data) return
+  const channels = competitive.value.channels
+
+  const shares = new Map() // rubric -> доля по каждому каналу
+  channels.forEach((ch, idx) => {
+    for (const row of data[String(ch.id)] || []) {
+      if (!shares.has(row.rubric)) shares.set(row.rubric, channels.map(() => 0))
+      shares.get(row.rubric)[idx] = row.share
+    }
+  })
+
+  const ranked = [...shares.entries()]
+    .map(([rubric, arr]) => ({ rubric, total: arr.reduce((a, b) => a + b, 0) }))
+    .sort((a, b) => b.total - a.total)
+  const named = ranked
+    .filter((x) => x.rubric !== 'Без рубрики' && x.total > 0)
+    .slice(0, 6)
+    .map((x) => x.rubric)
+  const other = channels.map((_, idx) =>
+    Math.max(0, 100 - named.reduce((s, r) => s + (shares.get(r)?.[idx] || 0), 0)),
+  )
+
+  const palette = ['#e74c3c', '#3498db', '#2ecc71', '#f39c12', '#9b59b6', '#1abc9c']
+  charts.push(new Chart(canvas, {
+    type: 'bar',
+    data: {
+      labels: channels.map((c) => (c.is_own ? '★ ' : '') + c.title.slice(0, 16)),
+      datasets: [
+        ...named.map((r, i) => ({
+          label: r,
+          data: channels.map((_, idx) => shares.get(r)?.[idx] || 0),
+          backgroundColor: palette[i % palette.length],
+        })),
+        { label: 'прочее', data: other, backgroundColor: '#cbd5e1' },
+      ],
+    },
+    options: {
+      indexAxis: 'y',
+      responsive: true,
+      plugins: {
+        legend: { position: 'bottom', labels: { boxWidth: 12, font: { size: 10 } } },
+        tooltip: { callbacks: { label: (c) => `${c.dataset.label}: ${Number(c.raw).toFixed(1)}%` } },
+      },
+      scales: {
+        x: { stacked: true, max: 100, ticks: { callback: (v) => v + '%' } },
+        y: { stacked: true },
+      },
+    },
+  }))
+}
+
 async function loadTopFilters() {
   topFormat.value = ''
   topRubric.value = ''
@@ -451,7 +655,24 @@ async function loadTop() {
 
 async function onTopChannelChange() {
   await loadTopFilters()
+  if (pendingRubric) {
+    // белое пятно: рубрику выставляем после загрузки фильтров канала
+    topRubric.value = pendingRubric
+    pendingRubric = null
+  }
   await loadTop()
+}
+
+async function openWhiteSpot(spot) {
+  pendingRubric = spot.rubric
+  if (selectedCompetitor.value === spot.best_channel.id) {
+    topRubric.value = spot.rubric
+    pendingRubric = null
+    await loadTop()
+  } else {
+    selectedCompetitor.value = spot.best_channel.id
+  }
+  topPostsCard.value?.scrollIntoView({ behavior: 'smooth', block: 'start' })
 }
 
 watch(selectedOwn, loadAll)
@@ -461,6 +682,7 @@ watch(topRubric, loadTop)
 watch(formatSource, () => nextTick().then(renderCharts))
 watch(lengthSource, () => nextTick().then(renderCharts))
 watch(heatTarget, drawSelectedHeatmap)
+watch(rubricMetric, drawRubricHeatmap)
 
 onMounted(async () => {
   try {
@@ -502,5 +724,6 @@ canvas.heat { width: 100%; height: auto; max-height: none; border: 1px solid #e2
 .badge.lose { background: #dc2626; color: #fff; padding: 2px 8px; border-radius: 999px; font-size: 11px; }
 .post { font-size: 14px; margin: 2px 0; }
 .post a { color: #1d4ed8; text-decoration: none; }
+button.link { background: none; border: none; color: #1d4ed8; cursor: pointer; font-size: 13px; padding: 0; }
 td.wrap { max-width: 520px; word-break: break-word; }
 </style>

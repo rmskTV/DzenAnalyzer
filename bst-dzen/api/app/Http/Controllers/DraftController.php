@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\OwnPublication;
+use App\Models\SourceMaterial;
+use App\Services\Content\Rewriter;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 
@@ -34,7 +36,7 @@ class DraftController extends Controller
         ]);
 
         if (isset($data['title'])) {
-            $data['headline_pattern'] = \App\Services\Content\Rewriter::headlinePattern($data['title']);
+            $data['headline_pattern'] = Rewriter::headlinePattern($data['title']);
         }
 
         if ($draft->status === 'generated') {
@@ -57,7 +59,7 @@ class DraftController extends Controller
         $draft->update(['status' => 'rejected']);
 
         if ($materialId = data_get($draft->experiment_tags, 'material_id')) {
-            \App\Models\SourceMaterial::whereKey($materialId)->update(['status' => 'skipped']);
+            SourceMaterial::whereKey($materialId)->update(['status' => 'skipped']);
         }
 
         return response()->json($draft);

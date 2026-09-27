@@ -4,6 +4,4 @@ namespace App\Services\Dzen;
 
 use RuntimeException;
 
-class DzenApiException extends RuntimeException
-{
-}
+class DzenApiException extends RuntimeException {}

@@ -21,7 +21,7 @@ class LlmTest extends Command
             return self::FAILURE;
         }
 
-        $this->line('Базовый URL: ' . config('services.bothub.base_url'));
+        $this->line('Базовый URL: '.config('services.bothub.base_url'));
 
         foreach (['classify', 'rewrite', 'evergreen', 'rules'] as $operation) {
             $this->line("модель [{$operation}]: {$llm->modelFor($operation)}");
@@ -33,13 +33,13 @@ class LlmTest extends Command
                 ['role' => 'user', 'content' => 'Ответь одним словом: связь есть?'],
             ], 0.0);
         } catch (\Throwable $e) {
-            $this->error('Ошибка запроса: ' . $e->getMessage());
+            $this->error('Ошибка запроса: '.$e->getMessage());
 
             return self::FAILURE;
         }
 
-        $this->info('Ответ: ' . trim($answer));
-        $this->info('Задержка: ' . round((microtime(true) - $start), 1) . ' c');
+        $this->info('Ответ: '.trim($answer));
+        $this->info('Задержка: '.round((microtime(true) - $start), 1).' c');
 
         return self::SUCCESS;
     }

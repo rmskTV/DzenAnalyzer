@@ -37,7 +37,7 @@ class SettingController extends Controller
     public function update(Request $request): JsonResponse
     {
         $data = $request->validate([
-            'key' => ['required', 'string', 'in:' . implode(',', array_keys(self::DEFAULTS))],
+            'key' => ['required', 'string', 'in:'.implode(',', array_keys(self::DEFAULTS))],
             'value' => ['required', 'array'],
         ]);
 

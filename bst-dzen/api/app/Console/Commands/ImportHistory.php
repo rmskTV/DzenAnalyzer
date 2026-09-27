@@ -48,7 +48,7 @@ class ImportHistory extends Command
         // конкурентный набор
         $competitorIds = array_map(fn ($label) => $ids[$label], self::BST_COMPETITORS);
         $own->competitors()->syncWithoutDetaching($competitorIds);
-        $this->info('Конкуренты БСТ: ' . count($competitorIds));
+        $this->info('Конкуренты БСТ: '.count($competitorIds));
 
         // посты
         $handle = fopen($path, 'r');
@@ -112,7 +112,7 @@ class ImportHistory extends Command
             );
             $ids[$label] = $channel->id;
         }
-        $this->info('Каналы: ' . count($ids));
+        $this->info('Каналы: '.count($ids));
 
         return $ids;
     }

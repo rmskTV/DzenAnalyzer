@@ -13,9 +13,7 @@ use Illuminate\Support\Carbon;
  */
 class EvergreenGenerator
 {
-    public function __construct(private readonly LlmClient $llm)
-    {
-    }
+    public function __construct(private readonly LlmClient $llm) {}
 
     public function generate(int $ownChannelId, ?Carbon $date = null): OwnPublication
     {
@@ -27,7 +25,7 @@ class EvergreenGenerator
         $isPrimety = $day % 2 === 0;
 
         if ($isPrimety) {
-            $title = 'Народные приметы на ' . $date->translatedFormat('j F') . ': чего нельзя делать сегодня';
+            $title = 'Народные приметы на '.$date->translatedFormat('j F').': чего нельзя делать сегодня';
             $system = <<<'TXT'
             Ты составляешь ежедневную рубрику «Народные приметы». Верни JSON:
             {"titles": ["...","...","..."], "body": "html с <p>-абзацами", "rubric": "Развлечения/лайфстайл"}
@@ -39,7 +37,7 @@ class EvergreenGenerator
             Заголовок: 3 варианта с приёмами «вопрос», «двоеточие+деталь», «запрет с интригой».
             TXT;
         } else {
-            $title = 'Гороскоп на ' . $date->translatedFormat('j F') . ': кому сегодня повезёт';
+            $title = 'Гороскоп на '.$date->translatedFormat('j F').': кому сегодня повезёт';
             $system = <<<'TXT'
             Ты составляешь ежедневный гороскоп. Верни JSON:
             {"titles": ["...","...","..."], "body": "html с <p>-абзацами", "rubric": "Развлечения/лайфстайл"}
@@ -59,8 +57,8 @@ class EvergreenGenerator
             ->implode("\n\n");
 
         $result = $this->llm->chatJson('evergreen', [
-            ['role' => 'system', 'content' => $system . ($rules ? "\n\nПравила рерайта:\n{$rules}" : '')],
-            ['role' => 'user', 'content' => 'Дата: ' . $date->format('Y-m-d') . ' (Иркутск). Составь материал.'],
+            ['role' => 'system', 'content' => $system.($rules ? "\n\nПравила рерайта:\n{$rules}" : '')],
+            ['role' => 'user', 'content' => 'Дата: '.$date->format('Y-m-d').' (Иркутск). Составь материал.'],
         ], 0.8);
 
         $titles = array_values(array_slice((array) ($result['titles'] ?? []), 0, 3));

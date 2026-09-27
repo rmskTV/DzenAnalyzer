@@ -4,6 +4,7 @@ namespace App\Services\Content;
 
 use App\Models\Setting;
 use App\Models\SourceMaterial;
+use Illuminate\Database\Eloquent\Collection;
 
 /**
  * Отбор инфоповодов: новые материалы от парсеров, не использованные ранее.
@@ -11,8 +12,8 @@ use App\Models\SourceMaterial;
  */
 class InfopovodSelector
 {
-    /** @return \Illuminate\Database\Eloquent\Collection<int, SourceMaterial> */
-    public function selectNew(int $limit, array $excludeTypes = []): \Illuminate\Database\Eloquent\Collection
+    /** @return Collection<int, SourceMaterial> */
+    public function selectNew(int $limit, array $excludeTypes = []): Collection
     {
         $query = SourceMaterial::where('status', 'new')
             ->whereNotNull('body')
