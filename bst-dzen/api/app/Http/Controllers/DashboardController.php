@@ -15,6 +15,8 @@ class DashboardController extends Controller
             ? Channel::own()->findOrFail($request->integer('own'))
             : Channel::own()->firstOrFail();
 
+        $this->authorize('viewAnalysis', $own);
+
         $days = min(max($request->integer('days', 21), 7), 90);
 
         return response()->json($metrics->overview($own, $days));

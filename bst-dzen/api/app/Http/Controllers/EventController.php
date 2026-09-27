@@ -18,6 +18,8 @@ class EventController extends Controller
             ? Channel::own()->findOrFail($request->integer('own'))
             : Channel::own()->firstOrFail();
 
+        $this->authorize('viewAnalysis', $own);
+
         $now = now()->getTimestamp();
         $maturedCutoff = $now - Post::MATURITY_HOURS * 3600;
 

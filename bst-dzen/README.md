@@ -7,10 +7,15 @@ Laravel API + Vue SPA + MySQL + Docker. Серийный сбор и анали�
 
 ```bash
 cd bst-dzen
+make setup          # env + контейнеры + зависимости + миграции (список целей: make help)
+# или вручную:
 docker compose up -d --build
 docker compose exec app php artisan migrate --force
 docker compose exec app php artisan dzen:import-history   # разовый импорт истории прототипа
 docker compose exec app php artisan dzen:collect --sync --days=21   # разовый/ручной сбор
+
+make admin MAIL=admin@example.com PASS=...   # создать админа
+make user MAIL=analyst@example.com CHANNELS=1,3   # аналитик: только «Конкуренты» этих каналов
 ```
 
 - UI и API: http://localhost:8090 (SPA) · http://localhost:8090/api/health
@@ -29,10 +34,17 @@ docker compose exec app php artisan dzen:collect --sync --days=21   # разов
 | `dzen:track` | связка наших публикаций с постами Дзена, фиксация просмотров созревших постов (16 ч+) |
 | `dzen:rules` | предложение новой версии правил рерайта по статистике (вс) |
 | `dzen:import-history` | разовый импорт из CSV python-прототипа |
+| `dzen:user {email} [--admin] [--password=] [--channels=1,2]` | создать/обновить пользователя (админ или аналитик с доступом к own-каналам) |
 
 ## API
 
-`GET /api/health` · `GET /api/dashboard?days=21&own=<id>` · `GET /api/channels` ·
+Аутентификация — Sanctum SPA (cookie + CSRF): `POST /api/auth/login` · `POST /api/auth/logout` ·
+`GET /api/auth/me`; перед логином — `GET /sanctum/csrf-cookie`.
+Обычному пользователю доступна только аналитика назначенных ему own-каналов и их конкурентов
+(вкладка «Конкуренты»); управление (каналы/черновики/правила/настройки) — только админам.
+Публичные: `GET /api/health`, `GET /feed/{dzen_key}.xml`.
+
+`GET /api/dashboard?days=21&own=<id>` · `GET /api/channels` ·
 `PUT /api/channels/{id}` (флаги, конкурентный набор) · `GET /api/channels/{id}/posts|posts/filters|stats` ·
 `GET|PUT /api/drafts[/{id}]` + `POST /api/drafts/{id}/approve|reject` ·
 `GET /api/rules` + `POST /api/rules/{id}/activate` · `GET|PUT /api/settings` ·
@@ -57,4 +69,16 @@ docker compose exec app php artisan dzen:collect --sync --days=21   # разов
 - Парсеры: UI «Настройки» → секция «Парсеры» (JSON-массив `[{name,url,active}]`).
 - Модели LLM по операциям: UI «Настройки» → «Модели LLM».
 - Режимы публикации по типам контента: UI «Настройки» → «Публикация».
-- Секреты: `api/.env` — `LLM_BASE_URL`, `LLM_API_KEY`, `LLM_MODEL_DEFAULT`.
+- Секреты: `api/.env` — `LLM_BASE_URL`, `LLM_API_KEY`, `LLM_MODEL_DEFAULT`;
+  `SANCTUM_STATEFUL_DOMAINS` — домены SPA для cookie-аутентификации (localhost + прод-домен).
+
+## Деплой на сервер
+
+1. `git clone` … → `cd bst-dzen && make setup` (нужны docker, compose, node на сервере;
+   либо собрать `client/dist` локально и скопировать).
+2. В `api/.env` обязательно: `APP_URL=https://<домен>`, добавить домен в
+   `SANCTUM_STATEFUL_DOMAINS` (иначе после логина API вернёт 401),
+   `APP_ENV=production`, `APP_DEBUG=false`, ключи `LLM_*`.
+3. `make admin MAIL=... PASS=...` — первый админ; аналитики: `make user MAIL=... CHANNELS=<id own-каналов>`.
+4. Крон не нужен: расписание крутит контейнер `scheduler` (`schedule:work`),
+   очередь — контейнер `queue`. Обновление кода: `git pull && make up && make migrate`.

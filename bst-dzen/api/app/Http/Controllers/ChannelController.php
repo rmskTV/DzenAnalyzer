@@ -9,10 +9,14 @@ use Illuminate\Http\Request;
 
 class ChannelController extends Controller
 {
-    public function index(): JsonResponse
+    public function index(Request $request): JsonResponse
     {
         return response()->json(
             Channel::query()
+                ->when(
+                    $request->user()->visibleChannelIds(),
+                    fn ($q, $visibleIds) => $q->whereKey($visibleIds),
+                )
                 ->withCount('competitors')
                 ->orderByDesc('is_own')
                 ->orderBy('title')
@@ -22,6 +26,7 @@ class ChannelController extends Controller
 
     public function posts(Channel $channel, Request $request): JsonResponse
     {
+        $this->authorize('viewAnalysis', $channel);
         $posts = $channel->posts()
             ->when($request->integer('days'), fn ($q, $days) => $q->where(
                 'published_at',
@@ -45,6 +50,8 @@ class ChannelController extends Controller
     /** Значения для фильтров топа постов: рубрики/форматы, встречающиеся у постов канала за окно */
     public function postFilters(Channel $channel, Request $request): JsonResponse
     {
+        $this->authorize('viewAnalysis', $channel);
+
         $days = $request->integer('days');
 
         $values = fn (string $column) => $channel->posts()
@@ -82,6 +89,8 @@ class ChannelController extends Controller
 
     public function stats(Channel $channel): JsonResponse
     {
+        $this->authorize('viewAnalysis', $channel);
+
         $stats = Post::where('channel_id', $channel->id)
             ->selectRaw('type, count(*) as n')
             ->selectRaw('sum(views) as views_sum')

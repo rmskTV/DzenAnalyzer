@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ChannelController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\DraftController;
@@ -14,23 +15,36 @@ Route::get('/health', fn () => response()->json([
     'time' => now()->toIso8601String(),
 ]));
 
-Route::get('/system-status', SystemStatusController::class);
-Route::get('/competitive', [DashboardController::class, 'index']);
-Route::get('/events', [EventController::class, 'index']);
+// Аутентификация (SPA cookie-режим Sanctum)
+Route::post('/auth/login', [AuthController::class, 'login'])->middleware('throttle:5,1');
 
-Route::apiResource('channels', ChannelController::class)->only(['index', 'update']);
-Route::get('/channels/{channel}/posts', [ChannelController::class, 'posts']);
-Route::get('/channels/{channel}/posts/filters', [ChannelController::class, 'postFilters']);
-Route::get('/channels/{channel}/stats', [ChannelController::class, 'stats']);
+Route::middleware('auth:sanctum')->group(function (): void {
+    Route::post('/auth/logout', [AuthController::class, 'logout']);
+    Route::get('/auth/me', [AuthController::class, 'me']);
 
-Route::get('/drafts', [DraftController::class, 'index']);
-Route::get('/drafts/{draft}', [DraftController::class, 'show'])->whereNumber('draft');
-Route::put('/drafts/{draft}', [DraftController::class, 'update'])->whereNumber('draft');
-Route::post('/drafts/{draft}/approve', [DraftController::class, 'approve'])->whereNumber('draft');
-Route::post('/drafts/{draft}/reject', [DraftController::class, 'reject'])->whereNumber('draft');
+    // Аналитика (вкладка «Конкуренты»): каналы скоупятся политикой ChannelPolicy
+    Route::get('/competitive', [DashboardController::class, 'index']);
+    Route::get('/events', [EventController::class, 'index']);
+    Route::get('/channels', [ChannelController::class, 'index']);
+    Route::get('/channels/{channel}/posts', [ChannelController::class, 'posts']);
+    Route::get('/channels/{channel}/posts/filters', [ChannelController::class, 'postFilters']);
+    Route::get('/channels/{channel}/stats', [ChannelController::class, 'stats']);
 
-Route::get('/rules', [RuleController::class, 'index']);
-Route::post('/rules/{rule}/activate', [RuleController::class, 'activate'])->whereNumber('rule');
+    // Управление: только админы
+    Route::middleware('admin')->group(function (): void {
+        Route::get('/system-status', SystemStatusController::class);
+        Route::put('/channels/{channel}', [ChannelController::class, 'update']);
 
-Route::get('/settings', [SettingController::class, 'index']);
-Route::put('/settings', [SettingController::class, 'update']);
+        Route::get('/drafts', [DraftController::class, 'index']);
+        Route::get('/drafts/{draft}', [DraftController::class, 'show'])->whereNumber('draft');
+        Route::put('/drafts/{draft}', [DraftController::class, 'update'])->whereNumber('draft');
+        Route::post('/drafts/{draft}/approve', [DraftController::class, 'approve'])->whereNumber('draft');
+        Route::post('/drafts/{draft}/reject', [DraftController::class, 'reject'])->whereNumber('draft');
+
+        Route::get('/rules', [RuleController::class, 'index']);
+        Route::post('/rules/{rule}/activate', [RuleController::class, 'activate'])->whereNumber('rule');
+
+        Route::get('/settings', [SettingController::class, 'index']);
+        Route::put('/settings', [SettingController::class, 'update']);
+    });
+});
