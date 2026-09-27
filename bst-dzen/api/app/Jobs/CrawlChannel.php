@@ -57,11 +57,14 @@ class CrawlChannel implements ShouldQueue
             );
         }
 
-        // мета канала из блока source: актуальные подписчики + ежедневный снапшот
+        // мета канала из блока source: актуальные подписчики + ежедневный снапшот;
+        // название подхватываем, только пока оно-заглушка (= ключу)
         $meta = $crawler->channelMeta;
+        $metaTitle = trim((string) ($meta['title'] ?? ''));
         $channel->forceFill([
             'last_crawled_at' => now(),
             ...($meta ? ['subscribers' => $meta['subscribers']] : []),
+            ...($metaTitle !== '' && $channel->title === $channel->dzen_key ? ['title' => $metaTitle] : []),
         ])->save();
 
         if ($meta) {

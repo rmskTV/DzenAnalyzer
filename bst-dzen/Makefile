@@ -20,7 +20,7 @@ MYSQL    = $(DC) exec mysql mysql -udzen -pdzen_secret dzen
 
 
 
-.PHONY: help up down restart ps logs shell setup migrate seed fresh test pint stan key tinker mysql user admin queue-restart collect npm-install npm-build npm-dev clean
+.PHONY: help up down restart ps logs shell setup migrate seed fresh test pint stan key tinker mysql user admin channel queue-restart collect npm-install npm-build npm-dev clean
 
 
 
@@ -138,6 +138,13 @@ mysql: ## mysql-клиент внутри контейнера mysql (БД dzen)
 user: ## Создать/обновить пользователя: make user MAIL=a@b [PASS=...] [CHANNELS=1,2]
 	@test -n "$(MAIL)" || { echo "Укажите MAIL=user@example.com (опционально PASS=..., CHANNELS=1,2)"; exit 1; }
 	$(ARTISAN) dzen:user $(MAIL) $(if $(PASS),--password='$(PASS)') $(if $(CHANNELS),--channels='$(CHANNELS)')
+
+
+
+
+channel: ## Добавить канал Дзена: make channel KEY=<имя|24hex> [TITLE=] [TZ=] [OWN=1] [COMPETITORS_OF=<ownId>]
+	@test -n "$(KEY)" || { echo "Укажите KEY=<имя из url или 24-hex id> (опц. TITLE=, TZ=, OWN=1, COMPETITORS_OF=<id own-канала>)"; exit 1; }
+	$(ARTISAN) dzen:channel $(KEY) $(if $(TITLE),--title='$(TITLE)') $(if $(TZ),--tz='$(TZ)') $(if $(OWN),--own) $(if $(COMPETITORS_OF),--competitors-of='$(COMPETITORS_OF)')
 
 
 

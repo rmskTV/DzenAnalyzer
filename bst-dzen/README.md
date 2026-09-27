@@ -34,6 +34,7 @@ make user MAIL=analyst@example.com CHANNELS=1,3   # аналитик: тольк
 | `dzen:track` | связка наших публикаций с постами Дзена, фиксация просмотров созревших постов (16 ч+) |
 | `dzen:rules` | предложение новой версии правил рерайта по статистике (вс) |
 | `dzen:import-history` | разовый импорт из CSV python-прототипа |
+| `dzen:channel {key} [--own] [--title=] [--tz=] [--competitors-of=<id>]` | добавить/обновить канал Дзена (key = имя из URL или 24-hex id); данные подтянет ближайший `dzen:collect` |
 | `dzen:user {email} [--admin] [--password=] [--channels=1,2]` | создать/обновить пользователя (админ или аналитик с доступом к own-каналам) |
 
 ## API
