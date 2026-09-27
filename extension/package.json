@@ -1,0 +1,18 @@
+{
+  "name": "dzen-analytics-extension",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "build": "vite build && vite build --config vite.content.config.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "chart.js": "^4.5.1",
+    "vue": "^3.5.42"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^6.0.8",
+    "vite": "^8.3.0"
+  }
+}

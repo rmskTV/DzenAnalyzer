@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Дзен-аналитика",
+  "version": "0.1.3",
+  "description": "Статистика каналов Дзена: охваты, конкурентная сводка, дуэли инфоповодов, анализ заголовков",
+  "permissions": ["storage", "unlimitedStorage"],
+  "host_permissions": ["https://dzen.ru/*"],
+  "action": {
+    "default_title": "Дзен-аналитика — открыть дашборд"
+  },
+  "background": {
+    "service_worker": "sw.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://dzen.ru/*"],
+      "js": ["badge.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
