@@ -20,7 +20,7 @@ MYSQL    = $(DC) exec mysql mysql -udzen -pdzen_secret dzen
 
 
 
-.PHONY: help up down restart ps logs shell setup migrate seed fresh test pint stan key tinker mysql user admin channel queue-restart collect npm-install npm-build npm-dev clean
+.PHONY: help up down restart ps logs shell setup migrate seed fresh test pint stan key tinker mysql user admin channel transfer-competitors queue-restart collect npm-install npm-build npm-dev clean
 
 
 
@@ -145,6 +145,12 @@ user: ## Создать/обновить пользователя: make user MAI
 channel: ## Добавить канал Дзена: make channel KEY=<имя|24hex> [TITLE=] [TZ=] [OWN=1] [COMPETITORS_OF=<ownId>]
 	@test -n "$(KEY)" || { echo "Укажите KEY=<имя из url или 24-hex id> (опц. TITLE=, TZ=, OWN=1, COMPETITORS_OF=<id own-канала>)"; exit 1; }
 	$(ARTISAN) dzen:channel $(KEY) $(if $(TITLE),--title='$(TITLE)') $(if $(TZ),--tz='$(TZ)') $(if $(OWN),--own) $(if $(COMPETITORS_OF),--competitors-of='$(COMPETITORS_OF)')
+
+
+
+transfer-competitors: ## Перенос всех конкурентов между own-каналами: make transfer-competitors FROM=<oldId> TO=<newId>
+	@test -n "$(FROM)" && test -n "$(TO)" || { echo "Укажите FROM=<старый ownId> TO=<новый ownId>"; exit 1; }
+	$(ARTISAN) dzen:transfer-competitors $(FROM) $(TO)
 
 
 
