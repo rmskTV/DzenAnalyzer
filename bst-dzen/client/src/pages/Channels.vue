@@ -7,6 +7,7 @@
       <table v-else>
         <thead>
           <tr>
+            <th>ID</th>
             <th>Канал</th>
             <th>Ключ Дзена</th>
             <th>Роль</th>
@@ -18,6 +19,7 @@
         </thead>
         <tbody>
           <tr v-for="ch in channels" :key="ch.id">
+            <td><code>{{ ch.id }}</code></td>
             <td>{{ ch.title }}</td>
             <td><code>{{ ch.dzen_key }}</code></td>
             <td>
