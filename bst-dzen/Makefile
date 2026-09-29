@@ -168,8 +168,8 @@ queue-restart: ## Перезапуск воркеров очереди (посл
 
 
 
-collect: ## Ручной сбор Дзена (dzen:collect --sync, 21 день)
-	$(ARTISAN) dzen:collect --sync --days=21
+collect: ## Ручной сбор Дзена (dzen:collect --sync); опц. CHANNEL=<id|key> DAYS=<N>
+	$(ARTISAN) dzen:collect --sync --days=$(if $(DAYS),$(DAYS),21) $(if $(CHANNEL),--channel='$(CHANNEL)')
 
 
 

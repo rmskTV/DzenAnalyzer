@@ -93,7 +93,7 @@ class AddChannelCommand extends Command
             $channel->timezone,
             $ownId > 0 ? ", конкурентный набор #{$ownId}" : '',
         ));
-        $this->line('Данные подтянет ближайший dzen:collect (или запустите: make collect).');
+        $this->line('Данные подтянет ближайший dzen:collect (или запустите: make collect CHANNEL='.$key.').');
 
         return self::SUCCESS;
     }
